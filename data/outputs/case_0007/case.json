@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "case_id": "case_0007",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gi",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1976-06-21",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: т К., 49 лет Дата рождения: 21.06.1976 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ГЭРБ, хронический гастрит. Артериальная гипертензия I ст. Аллергии/непереносимость: Паклитаксел - покраснен"
+      },
+      {
+        "name": "гастрит/ГЭРБ",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: аспортная часть ФИО: Пациент К., 49 лет Дата рождения: 21.06.1976 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ГЭРБ, хронический гастрит. Артериальная гипертензия I ст. Аллергии/непереносимос"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "инфузии (купировано",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Паклитаксел - покраснение лица/одышка на инфузии (купировано, далее медленнее+премедикация)."
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "амлодипин",
+        "dose_value": 5.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: амлодипин 5 мг/сут, пантопразол 40 мг/сут, диуретики по потребности."
+      },
+      {
+        "drug": "пантопразол",
+        "dose_value": 40.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: амлодипин 5 мг/сут, пантопразол 40 мг/сут, диуретики по потребности."
+      },
+      {
+        "drug": "диуретики по потребности",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: амлодипин 5 мг/сут, пантопразол 40 мг/сут, диуретики по потребности."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак желудка",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": "T4A",
+        "n": "N2",
+        "m": "M1"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; анные (фрагменты) HER23+(ИГХ). PD-L1 CPS=5. CLDN18.2 2+(ИГХ, мембранная экспрессия ~40%). MSI: MSS; TMB 4.1 mut/Mb (низкий). Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: С 08.2024"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; (фрагменты) HER23+(ИГХ). PD-L1 CPS=5. CLDN18.2 2+(ИГХ, мембранная экспрессия ~40%). MSI: MSS; TMB 4.1 mut/Mb (низкий). Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: С 08.2024 - ран"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб,",
+      "start_date": "2024-10",
+      "end_date": "2025-02",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "оксалиплатин",
+          "std": "оксалиплатин",
+          "alternative_group": null
+        },
+        {
+          "raw": "5-фторурацил",
+          "std": "фторурацил",
+          "alternative_group": null
+        },
+        {
+          "raw": "кальция фолинат",
+          "std": "кальция фолинат",
+          "alternative_group": null
+        },
+        {
+          "raw": "трастузумаб,",
+          "std": "трастузумаб,",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "regimen_name": "трастузумаб дерукстекан 5.",
+      "start_date": "2025-06",
+      "end_date": "2025-10",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "трастузумаб дерукстекан 5.",
+          "std": "трастузумаб дерукстекан",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "паклитаксел",
+      "start_date": "2026-02",
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "паклитаксел",
+          "std": "паклитаксел",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

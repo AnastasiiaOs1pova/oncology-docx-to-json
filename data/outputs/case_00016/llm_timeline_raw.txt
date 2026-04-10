@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "date": "2024-01-01|2025-01-01",
+      "date_precision": "year|year",
+      "event_type": "therapy_start",
+      "text_snippet": "- 3 линия (2024-2025): доцетаксел 75 мг/м2 q3w (6 циклов), нейропатия.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-11-01",
+      "date_precision": "day",
+      "event_type": "therapy_start",
+      "text_snippet": "- 4 линия (2025): радий-223 дихлорид при костных мтс (6 введений).",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-11-01",
+      "date_precision": "day",
+      "event_type": "therapy_end",
+      "text_snippet": "- 4 линия (2025): радий-223 дихлорид при костных мтс (6 введений).",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-11-01",
+      "date_precision": "day",
+      "event_type": "therapy_start",
+      "text_snippet": "- 5 линия (с 11.2025): олапариб 300 мг 2 раза/сут (BRCA2/HRD+), частичный биохимический ответ.",
+      "confidence": 0.0
+    }
+  ]
+}

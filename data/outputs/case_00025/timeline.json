@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "date": "2025",
+      "date_precision": "year",
+      "event_type": "diagnosis",
+      "text_snippet": "Диагноз Острый миелобластный лейкоз (ОМЛ/AML), дебют 2025.",
+      "confidence": 0.0
+    },
+    {
+      "date": "08.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Анамнез: С 08.2025 - слабость, синяки, лихорадка.",
+      "confidence": 0.0
+    },
+    {
+      "date": "09.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: Индукция (09.2025): цитарабин 100 мг/м2/сут в/в 7 дней+даунорубицин 60 мг/м2/сут в/в 3 дня (режим \"7+3\").",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2025",
+      "date_precision": "month",
+      "event_type": "therapy_end",
+      "text_snippet": "Лечение: Индукция (09.2025): цитарабин 100 мг/м2/сут в/в 7 дней+даунорубицин 60 мг/м2/сут в/в 3 дня (режим \"7+3\").",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2025",
+      "date_precision": "month",
+      "event_type": "other",
+      "text_snippet": "Ремиссия 10.2025, далее консолидация высокодозным цитарабином (HiDAC) 11.2025-01.2026.",
+      "confidence": 0.0
+    },
+    {
+      "date": "11.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Ремиссия 10.2025, далее консолидация высокодозным цитарабином (HiDAC) 11.2025-01.2026.",
+      "confidence": 0.0
+    },
+    {
+      "date": "01.2026",
+      "date_precision": "month",
+      "event_type": "therapy_end",
+      "text_snippet": "Ремиссия 10.2025, далее консолидация высокодозным цитарабином (HiDAC) 11.2025-01.2026.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

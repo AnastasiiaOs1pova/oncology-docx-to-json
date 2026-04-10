@@ -1,0 +1,33 @@
+{
+  "events": [
+    {
+      "date": "11.2024-01.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Первичное лечение (11.2024-01.2025): Дистанционная ЛТ 45 Гр+брахитерапия; конкомитантная ХТ: цисплатин 40 мг/м2 еженедельно (4 введения), далее из-за ХБП - замена на карбоплатин AUC2.",
+      "confidence": 0.0
+    },
+    {
+      "date": "06.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 06.2025: КТ ОГК - мтс очаги в лёгких, рост тазовых л/у.",
+      "confidence": 0.0
+    },
+    {
+      "date": "07-11.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "1 линия системной терапии (07-11.2025): паклитаксел 175 мг/м2+карбоплатин AUC5+бевацизумаб 15 мг/кг каждые 3 недели, 6 циклов.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2026",
+      "date_precision": "month",
+      "event_type": "other",
+      "text_snippet": "Контроль 02.2026: стабилизация.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,80 @@
+{
+  "found": [
+    {
+      "regimen": "карбоплатин AUC5+паклитаксел 175 мг/м2 каждые 21 день, 3 цикла.",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Неоадъювантная ПХТ (03-05.2025): карбоплатин AUC5+паклитаксел 175 мг/м2 каждые 21 день, 3 цикла.",
+      "quote_match": "exact",
+      "date_hint": "03-05.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "карбоплатин+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Адъювантная ПХТ (07-09.2025): ещё 3 цикла карбоплатин+паклитаксел.",
+      "quote_match": "exact",
+      "date_hint": "07-09.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "нирампариб 200 мг/сут",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Поддержка (10.2025-...): нирампариб 200 мг/сут (редукция при тромбоцитопении).",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "карбоплатин AUC5+паклитаксел 175 мг/м2 каждые 21 день, 3 цикла.",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Неоадъювантная ПХТ (03-05.2025): карбоплатин AUC5+паклитаксел 175 мг/м2 каждые 21 день, 3 цикла.",
+      "quote_match": "exact",
+      "date_hint": "03-05.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "карбоплатин+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Адъювантная ПХТ (07-09.2025): ещё 3 цикла карбоплатин+паклитаксел.",
+      "quote_match": "exact",
+      "date_hint": "07-09.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "нирампариб 200 мг/сут",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Поддержка (10.2025-...): нирампариб 200 мг/сут (редукция при тромбоцитопении).",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 3,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

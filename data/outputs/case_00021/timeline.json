@@ -1,0 +1,33 @@
+{
+  "events": [
+    {
+      "date": "2022-08",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 08.2024.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09|2025-06",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (09.2024-06.2025): трастузумаб эмтанзин (T-DM1), стабилизация.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-07",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 07.2025.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-08|unknown",
+      "date_precision": "unknown",
+      "event_type": "therapy_start",
+      "text_snippet": "3 линия (08.2025-...): трастузумаб дерукстекан (T-DXd).",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,61 @@
+{
+  "events": [
+    {
+      "date": "10.2024",
+      "date_precision": "month",
+      "event_type": "diagnosis",
+      "text_snippet": "ЭГДС 10.09.2024: инфильтративно-язвенная опухоль тела желудка, биопсия - аденокарцинома.",
+      "confidence": 0.0
+    },
+    {
+      "date": "18.09.2024",
+      "date_precision": "day",
+      "event_type": "imaging",
+      "text_snippet": "КТ ОБП 18.09.2024: утолщение стенки желудка, увеличенные паракардиальные л/у, асцит.",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2024-02.2025",
+      "date_precision": "unknown",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (10.2024-02.2025): оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб, 8 циклов.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2025",
+      "date_precision": "month",
+      "event_type": "therapy_end",
+      "text_snippet": "Контроль ПЭТ-КТ 02.2025: частичный ответ, уменьшение асцита.",
+      "confidence": 0.0
+    },
+    {
+      "date": "05.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 05.2025: рост перитонеальных имплантов, усиление асцита.",
+      "confidence": 0.0
+    },
+    {
+      "date": "06-10.2025",
+      "date_precision": "unknown",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (06-10.2025): трастузумаб дерукстекан 5.4 мг/кг каждые 3 недели. Нейтропения 3 ст., редукция дозы.",
+      "confidence": 0.0
+    },
+    {
+      "date": "12.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "КТ 10.2025: стабилизация, затем рост узлов по брюшине 12.2025.",
+      "confidence": 0.0
+    },
+    {
+      "date": "01.2026-...",
+      "date_precision": "unknown",
+      "event_type": "therapy_start",
+      "text_snippet": "3 линия (01.2026-...): рамуцирумаб 8 мг/кг (дни 1 и 15)+паклитаксел 80 мг/м2 (дни 1, 8, 15) 28-дневного цикла.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

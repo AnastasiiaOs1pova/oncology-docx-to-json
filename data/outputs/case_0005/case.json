@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "case_id": "case_0005",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gi",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1963-03-12",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ода Дата рождения: 12.03.1963 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Сахарный диабет 2 типа (метформин). Артериальная гипертензия II ст. Подагра (аллопуринол). Аллергии/непереносимость:"
+      },
+      {
+        "name": "подагра",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: л: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Сахарный диабет 2 типа (метформин). Артериальная гипертензия II ст. Подагра (аллопуринол). Аллергии/непереносимость: Карбоплатин - крапивница на 2-м"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "2-м введении (премедикация",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Карбоплатин - крапивница на 2-м введении (премедикация, замена режима)."
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "метформин",
+        "dose_value": 1000.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": "2 раза/сут",
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: метформин 1000 мг 2 раза/сут, лизиноприл 10 мг/сут, аллопуринол 100 мг/сут, омепразол 20 мг/сут."
+      },
+      {
+        "drug": "лизиноприл",
+        "dose_value": 10.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: метформин 1000 мг 2 раза/сут, лизиноприл 10 мг/сут, аллопуринол 100 мг/сут, омепразол 20 мг/сут."
+      },
+      {
+        "drug": "аллопуринол",
+        "dose_value": 100.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: метформин 1000 мг 2 раза/сут, лизиноприл 10 мг/сут, аллопуринол 100 мг/сут, омепразол 20 мг/сут."
+      },
+      {
+        "drug": "омепразол",
+        "dose_value": 20.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: метформин 1000 мг 2 раза/сут, лизиноприл 10 мг/сут, аллопуринол 100 мг/сут, омепразол 20 мг/сут."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак ободочной кишки",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": "T3",
+        "n": "N2",
+        "m": "M1A"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSI-H",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSI-H; Кейс 01. Рак ободочной кишки (C18), MSI-H, BRAF V600E Паспортная часть ФИО: Пациент М., 62 года Дата рождения: 12.03.1963 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствую"
+    },
+    {
+      "name_raw": "pMMR",
+      "name_std": "pmmr",
+      "value": "pMMR",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=pMMR; я IV. G2. Биомаркеры и молекулярно-генетические данные (фрагменты) MSI-H (по ПЦР: MSI-H), pMMR не подтвержден. BRAF V600E - мутация обнаружена. KRAS/NRAS: дикый тип (RAS WT). TMB 18.4 mut/Mb (высокий). "
+    },
+    {
+      "name_raw": "BRAF",
+      "name_std": "braf",
+      "value": "V600E",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=V600E; Кейс 01. Рак ободочной кишки (C18), MSI-H, BRAF V600E Паспортная часть ФИО: Пациент М., 62 года Дата рождения: 12.03.1963 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующи"
+    },
+    {
+      "name_raw": "KRAS",
+      "name_std": "kras",
+      "value": "18.4",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=18.4; (фрагменты) MSI-H (по ПЦР: MSI-H), pMMR не подтвержден. BRAF V600E - мутация обнаружена. KRAS/NRAS: дикый тип (RAS WT). TMB 18.4 mut/Mb (высокий). PD-L1: CPS=2. Фрагменты выписки/консультаций/протоколов"
+    },
+    {
+      "name_raw": "NRAS",
+      "name_std": "nras",
+      "value": "18.4",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=18.4; гменты) MSI-H (по ПЦР: MSI-H), pMMR не подтвержден. BRAF V600E - мутация обнаружена. KRAS/NRAS: дикый тип (RAS WT). TMB 18.4 mut/Mb (высокий). PD-L1: CPS=2. Фрагменты выписки/консультаций/протоколов (св"
+    },
+    {
+      "name_raw": "RAS",
+      "name_std": "ras",
+      "value": "WT",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=WT; ПЦР: MSI-H), pMMR не подтвержден. BRAF V600E - мутация обнаружена. KRAS/NRAS: дикый тип (RAS WT). TMB 18.4 mut/Mb (высокий). PD-L1: CPS=2. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамн"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "FOLFOX+бевацизумаб",
+      "start_date": "2023-12",
+      "end_date": "2024-04",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "FOLFOX",
+          "std": "folfox",
+          "alternative_group": null
+        },
+        {
+          "raw": "бевацизумаб",
+          "std": "бевацизумаб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "regimen_name": "пембролизумаб",
+      "start_date": "2024-09",
+      "end_date": "2025-02",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "пембролизумаб",
+          "std": "пембролизумаб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "regimen_name": "энкорафениб+цетуксимаб",
+      "start_date": "2025-04",
+      "end_date": "2025-09",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "энкорафениб",
+          "std": "энкорафениб",
+          "alternative_group": null
+        },
+        {
+          "raw": "цетуксимаб",
+          "std": "цетуксимаб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": []
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "печени",
+      "date": null,
+      "source": "Диагноз C18.7 Аденокарцинома сигмовидной кишки, pT3N2M1a (мтс в печени), стадия IV"
+    }
+  ]
+}

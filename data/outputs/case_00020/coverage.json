@@ -1,0 +1,839 @@
+{
+  "meta": {
+    "text_hash": "sha256:897cc08c14a9d7cb5f62c9d480620b1cd4b903b96c53784d0e0491b179d8fc64",
+    "cleaner_version": "v1.1",
+    "created_at": "2026-02-24T08:08:56.795270+00:00",
+    "lang": "ru",
+    "length": 1130,
+    "source_type": "docx"
+  },
+  "text": {
+    "raw": "Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический анамнез\nСопутствующие заболевания: Сахарный диабет 2 типа.\nОстеопороз (T-score -2.7).\nАллергии/непереносимость: Нет данных.\nДиагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс в кости).\nБиомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаружены.\nФрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Первичный диагноз 2018, проведено хирургическое лечение и адъювантная гормонотерапия.\nПрогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.\nКостная поддержка: деносумаб/золедроновая кислота, витамин D.",
+    "clean": "Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический анамнез\nСопутствующие заболевания: Сахарный диабет 2 типа.\nОстеопороз (T-score -2.7).\nАллергии/непереносимость: Нет данных.\nДиагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс в кости).\nБиомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаружены.\nФрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Первичный диагноз 2018, проведено хирургическое лечение и адъювантная гормонотерапия.\nПрогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.\nКостная поддержка: деносумаб/золедроновая кислота, витамин D."
+  },
+  "entities": [
+    {
+      "id": "e000001",
+      "type": "date",
+      "value": "09.02.1969",
+      "norm": null,
+      "span": {
+        "start": 119,
+        "end": 129
+      },
+      "context": "CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический анамнез\nСо",
+      "source": "regex:date_dmy",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000002",
+      "type": "date",
+      "value": "02.2024",
+      "norm": null,
+      "span": {
+        "start": 791,
+        "end": 798
+      },
+      "context": "рогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000003",
+      "type": "date",
+      "value": "01.2025",
+      "norm": null,
+      "span": {
+        "start": 799,
+        "end": 806
+      },
+      "context": "рование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000004",
+      "type": "date",
+      "value": "02.2025",
+      "norm": null,
+      "span": {
+        "start": 869,
+        "end": 876
+      },
+      "context": "01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000005",
+      "type": "date",
+      "value": "03.2025",
+      "norm": null,
+      "span": {
+        "start": 908,
+        "end": 915
+      },
+      "context": "зация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000006",
+      "type": "date",
+      "value": "12.2025",
+      "norm": null,
+      "span": {
+        "start": 1000,
+        "end": 1007
+      },
+      "context": "рант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.\nКостная ",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000007",
+      "type": "date",
+      "value": "2018",
+      "norm": null,
+      "span": {
+        "start": 652,
+        "end": 656
+      },
+      "context": "/консультаций/протоколов (свободный текст) Анамнез: Первичный диагноз 2018, проведено хирургическое лечение и адъювантная гормонотерапия.\nПрогре",
+      "source": "regex:date_y",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000008",
+      "type": "date",
+      "value": "2024",
+      "norm": null,
+      "span": {
+        "start": 737,
+        "end": 741
+      },
+      "context": " хирургическое лечение и адъювантная гормонотерапия.\nПрогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): ле",
+      "source": "regex:date_y",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000009",
+      "type": "number",
+      "value": "16",
+      "norm": null,
+      "span": {
+        "start": 5,
+        "end": 7
+      },
+      "context": "Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000010",
+      "type": "number",
+      "value": "6",
+      "norm": null,
+      "span": {
+        "start": 54,
+        "end": 55
+      },
+      "context": "Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000011",
+      "type": "number",
+      "value": "57",
+      "norm": null,
+      "span": {
+        "start": 97,
+        "end": 99
+      },
+      "context": "CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000012",
+      "type": "number",
+      "value": "09.02",
+      "norm": null,
+      "span": {
+        "start": 119,
+        "end": 124
+      },
+      "context": "CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический анамн",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000013",
+      "type": "number",
+      "value": "1969",
+      "norm": null,
+      "span": {
+        "start": 125,
+        "end": 129
+      },
+      "context": "+PI3K Паспортная часть ФИО: Пациентка О., 57 лет\nДата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический анамнез\nСо",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000014",
+      "type": "number",
+      "value": "2",
+      "norm": null,
+      "span": {
+        "start": 240,
+        "end": 241
+      },
+      "context": " аллергологический анамнез\nСопутствующие заболевания: Сахарный диабет 2 типа.\nОстеопороз (T-score -2.7).\nАллергии/непереносимость: Нет данных",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000015",
+      "type": "number",
+      "value": "2.7",
+      "norm": null,
+      "span": {
+        "start": 269,
+        "end": 272
+      },
+      "context": "путствующие заболевания: Сахарный диабет 2 типа.\nОстеопороз (T-score -2.7).\nАллергии/непереносимость: Нет данных.\nДиагноз C50.4 Инвазивный рак ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000016",
+      "type": "number",
+      "value": "4",
+      "norm": null,
+      "span": {
+        "start": 325,
+        "end": 326
+      },
+      "context": "роз (T-score -2.7).\nАллергии/непереносимость: Нет данных.\nДиагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000017",
+      "type": "number",
+      "value": "90",
+      "norm": null,
+      "span": {
+        "start": 467,
+        "end": 469
+      },
+      "context": "в кости).\nБиомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000018",
+      "type": "number",
+      "value": "60",
+      "norm": null,
+      "span": {
+        "start": 475,
+        "end": 477
+      },
+      "context": ".\nБиомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутац",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000019",
+      "type": "number",
+      "value": "25",
+      "norm": null,
+      "span": {
+        "start": 492,
+        "end": 494
+      },
+      "context": "лекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаружены.",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000020",
+      "type": "number",
+      "value": "2",
+      "norm": null,
+      "span": {
+        "start": 539,
+        "end": 540
+      },
+      "context": "%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаружены.\nФрагменты выписки/консультаций/протоколов (св",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000021",
+      "type": "number",
+      "value": "2018",
+      "norm": null,
+      "span": {
+        "start": 652,
+        "end": 656
+      },
+      "context": "/консультаций/протоколов (свободный текст) Анамнез: Первичный диагноз 2018, проведено хирургическое лечение и адъювантная гормонотерапия.\nПрогре",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000022",
+      "type": "number",
+      "value": "2024",
+      "norm": null,
+      "span": {
+        "start": 737,
+        "end": 741
+      },
+      "context": " хирургическое лечение и адъювантная гормонотерапия.\nПрогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): ле",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000023",
+      "type": "number",
+      "value": "1",
+      "norm": null,
+      "span": {
+        "start": 782,
+        "end": 783
+      },
+      "context": "ерапия.\nПрогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nП",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000024",
+      "type": "number",
+      "value": "02.2024",
+      "norm": null,
+      "span": {
+        "start": 791,
+        "end": 798
+      },
+      "context": "рогрессирование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000025",
+      "type": "number",
+      "value": "01.2025",
+      "norm": null,
+      "span": {
+        "start": 799,
+        "end": 806
+      },
+      "context": "рование 2024: костные мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000026",
+      "type": "number",
+      "value": "10",
+      "norm": null,
+      "span": {
+        "start": 844,
+        "end": 846
+      },
+      "context": "ечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000027",
+      "type": "number",
+      "value": "02.2025",
+      "norm": null,
+      "span": {
+        "start": 869,
+        "end": 876
+      },
+      "context": "01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000028",
+      "type": "number",
+      "value": "2",
+      "norm": null,
+      "span": {
+        "start": 899,
+        "end": 900
+      },
+      "context": ", стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюко",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000029",
+      "type": "number",
+      "value": "03.2025",
+      "norm": null,
+      "span": {
+        "start": 908,
+        "end": 915
+      },
+      "context": "зация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000030",
+      "type": "number",
+      "value": "1",
+      "norm": null,
+      "span": {
+        "start": 981,
+        "end": 982
+      },
+      "context": "2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем п",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000031",
+      "type": "number",
+      "value": "2",
+      "norm": null,
+      "span": {
+        "start": 983,
+        "end": 984
+      },
+      "context": "25-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем про",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000032",
+      "type": "number",
+      "value": "3",
+      "norm": null,
+      "span": {
+        "start": 989,
+        "end": 990
+      },
+      "context": "): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогресси",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000033",
+      "type": "number",
+      "value": "12.2025",
+      "norm": null,
+      "span": {
+        "start": 1000,
+        "end": 1007
+      },
+      "context": "рант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.\nКостная ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000034",
+      "type": "number",
+      "value": "14",
+      "norm": null,
+      "span": {
+        "start": 1031,
+        "end": 1033
+      },
+      "context": "оль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.\nКостная поддержка: деносумаб/золед",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000035",
+      "type": "number",
+      "value": "7",
+      "norm": null,
+      "span": {
+        "start": 1034,
+        "end": 1035
+      },
+      "context": " глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.\nКостная поддержка: деносумаб/золедро",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000036",
+      "type": "diagnosis_code",
+      "value": "C50.4",
+      "norm": null,
+      "span": {
+        "start": 321,
+        "end": 326
+      },
+      "context": "еопороз (T-score -2.7).\nАллергии/непереносимость: Нет данных.\nДиагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс",
+      "source": "regex:icd10",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000037",
+      "type": "biomarker",
+      "value": "HER2",
+      "norm": "HER2",
+      "span": {
+        "start": 16,
+        "end": 20
+      },
+      "context": "Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациент",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000038",
+      "type": "biomarker",
+      "value": "PIK3CA",
+      "norm": "PIK3CA",
+      "span": {
+        "start": 23,
+        "end": 29
+      },
+      "context": "Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000039",
+      "type": "biomarker",
+      "value": "ER",
+      "norm": "ER",
+      "span": {
+        "start": 366,
+        "end": 368
+      },
+      "context": "сть: Нет данных.\nДиагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс в кости).\nБиомаркеры и молекулярно-генети",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000040",
+      "type": "biomarker",
+      "value": "PR",
+      "norm": "PR",
+      "span": {
+        "start": 370,
+        "end": 372
+      },
+      "context": " Нет данных.\nДиагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс в кости).\nБиомаркеры и молекулярно-генетическ",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000041",
+      "type": "biomarker",
+      "value": "ER",
+      "norm": "ER",
+      "span": {
+        "start": 464,
+        "end": 466
+      },
+      "context": "тс в кости).\nБиомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRC",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000042",
+      "type": "biomarker",
+      "value": "PR",
+      "norm": "PR",
+      "span": {
+        "start": 472,
+        "end": 474
+      },
+      "context": "ти).\nБиомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: му",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000043",
+      "type": "biomarker",
+      "value": "Ki67",
+      "norm": "Ki67",
+      "span": {
+        "start": 487,
+        "end": 491
+      },
+      "context": " и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаруже",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000044",
+      "type": "biomarker",
+      "value": "PIK3CA",
+      "norm": "PIK3CA",
+      "span": {
+        "start": 497,
+        "end": 503
+      },
+      "context": "ярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаружены.\nФрагмент",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000045",
+      "type": "biomarker",
+      "value": "BRCA1",
+      "norm": "BRCA1",
+      "span": {
+        "start": 533,
+        "end": 538
+      },
+      "context": " ER 90%, PR 60%, HER20.\nKi67 25%.\nPIK3CA H1047R - мутация обнаружена.\nBRCA1/2: мутации не обнаружены.\nФрагменты выписки/консультаций/протоколов (",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000046",
+      "type": "biomarker",
+      "value": "PIK3CA",
+      "norm": "PIK3CA",
+      "span": {
+        "start": 946,
+        "end": 952
+      },
+      "context": ": новые костные очаги.\n2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.\n3 линия (с 12.2025): капецитабин ",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000047",
+      "type": "medication",
+      "value": "палбоциклиб",
+      "norm": "палбоциклиб",
+      "span": {
+        "start": 818,
+        "end": 829
+      },
+      "context": "ые мтс, боль в пояснице.\nЛечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.\nПрогрессирование 02.2025: новые костные очаги.\n",
+      "source": "regex:suffix",
+      "confidence": "medium",
+      "negated": null,
+      "attrs": {
+        "evidence": [
+          "suffix",
+          "onco_context"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "e000048",
+      "type": "medication",
+      "value": "деносумаб",
+      "norm": "деносумаб",
+      "span": {
+        "start": 1088,
+        "end": 1097
+      },
+      "context": "бин в режиме 14/7 при дальнейшем прогрессировании.\nКостная поддержка: деносумаб/золедроновая кислота, витамин D.",
+      "source": "regex:suffix",
+      "confidence": "low",
+      "negated": null,
+      "attrs": {
+        "evidence": [
+          "suffix"
+        ],
+        "confidence": "low"
+      }
+    }
+  ],
+  "views": {
+    "date": [
+      "e000001",
+      "e000002",
+      "e000003",
+      "e000004",
+      "e000005",
+      "e000006",
+      "e000007",
+      "e000008"
+    ],
+    "number": [
+      "e000009",
+      "e000010",
+      "e000011",
+      "e000012",
+      "e000013",
+      "e000014",
+      "e000015",
+      "e000016",
+      "e000017",
+      "e000018",
+      "e000019",
+      "e000020",
+      "e000021",
+      "e000022",
+      "e000023",
+      "e000024",
+      "e000025",
+      "e000026",
+      "e000027",
+      "e000028",
+      "e000029",
+      "e000030",
+      "e000031",
+      "e000032",
+      "e000033",
+      "e000034",
+      "e000035"
+    ],
+    "diagnosis_code": [
+      "e000036"
+    ],
+    "biomarker": [
+      "e000037",
+      "e000038",
+      "e000039",
+      "e000040",
+      "e000041",
+      "e000042",
+      "e000043",
+      "e000044",
+      "e000045",
+      "e000046"
+    ],
+    "medication": [
+      "e000047",
+      "e000048"
+    ]
+  },
+  "coverage": {
+    "counts": {
+      "date": 8,
+      "number": 27,
+      "diagnosis_code": 1,
+      "biomarker": 10,
+      "medication": 2
+    },
+    "notes": [],
+    "dedup_removed": 0
+  },
+  "edges": []
+}

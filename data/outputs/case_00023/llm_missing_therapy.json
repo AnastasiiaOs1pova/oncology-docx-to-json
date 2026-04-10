@@ -1,0 +1,58 @@
+{
+  "found": [
+    {
+      "regimen": "ЛТ 60 Гр+темозоломид ежедневно, далее 6 циклов адъювантного темозоломида (5/23)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Химиолучевое лечение (03-05.2024): ЛТ 60 Гр+темозоломид ежедневно, далее 6 циклов адъювантного темозоломида (5/23).",
+      "quote_match": "exact",
+      "date_hint": "03-05.2024",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "темозоломид/терапия по клиническому исследованию (по протоколу)",
+      "kind": "trial",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Повторная операция 10.2025, далее темозоломид/терапия по клиническому исследованию (по протоколу).",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "ЛТ 60 Гр+темозоломид ежедневно, далее 6 циклов адъювантного темозоломида (5/23)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Химиолучевое лечение (03-05.2024): ЛТ 60 Гр+темозоломид ежедневно, далее 6 циклов адъювантного темозоломида (5/23).",
+      "quote_match": "exact",
+      "date_hint": "03-05.2024",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "темозоломид/терапия по клиническому исследованию (по протоколу)",
+      "kind": "trial",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Повторная операция 10.2025, далее темозоломид/терапия по клиническому исследованию (по протоколу).",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 2,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

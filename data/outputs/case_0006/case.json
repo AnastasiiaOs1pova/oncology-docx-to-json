@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "case_id": "case_0006",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gi",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1970-09-07",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "ишемическая болезнь сердца",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ет Дата рождения: 07.09.1970 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хроническая железодефицитная анемия. ИБС: стенокардия напряжения I ФК. Аллергии/непереносимость: Оксалиплатин - бронх"
+      },
+      {
+        "name": "анемия (хроническая/сопутствующая)",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: С., 55 лет Дата рождения: 07.09.1970 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хроническая железодефицитная анемия. ИБС: стенокардия напряжения I ФК. Аллергии/непереносимость: Оксалиплатин"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Оксалиплатин - бронхоспазм и гипотензия (реакция немедленного",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Оксалиплатин - бронхоспазм и гипотензия (реакция немедленного типа)."
+      },
+      {
+        "substance": "оксалиплатин Паспортная часть",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: Кейс 02. Рак прямой кишки (C20), RAS WT, осложнение: аллергия на оксалиплатин Паспортная часть ФИО: Пациентка С., 55 лет Дата рождения: 07.09.1970 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания:"
+      },
+      {
+        "substance": "оксалиплатин",
+        "reaction": "крапивница",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: е заболевания и аллергологический анамнез Сопутствующие заболевания: Хроническая железодефицитная анемия. ИБС: стенокардия напряжения I ФК. Аллергии/непереносимость: Оксалиплатин - бронхоспазм и гипотензия (реакция немедленного типа). Йодсо"
+      },
+      {
+        "substance": "4-м цикле - аллергическая реакция на оксалиплатин (бронхоспазм",
+        "reaction": "аллергическая реакция",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: екция, TME. ПГИ: ypT2N0, края R0. Адъювантная ХТ (08-11.2024): оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX), 6 циклов. На 4-м цикле - аллергическая реакция на оксалиплатин (бронхоспазм). Оксалиплатин отменён, завершено 2 цикла 5-фтору"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "бисопролол",
+        "dose_value": 5.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: бисопролол 5 мг/сут, ацетилсалициловая кислота 75 мг/сут, препараты железа перорально."
+      },
+      {
+        "drug": "ацетилсалициловая кислота",
+        "dose_value": 75.0,
+        "dose_unit": "мг",
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: бисопролол 5 мг/сут, ацетилсалициловая кислота 75 мг/сут, препараты железа перорально."
+      },
+      {
+        "drug": "препараты железа перорально",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: бисопролол 5 мг/сут, ацетилсалициловая кислота 75 мг/сут, препараты железа перорально."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак прямой кишки",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "III",
+      "tnm": {
+        "t": "T3",
+        "n": "N1",
+        "m": "M0"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; ческие данные (фрагменты) KRAS/NRAS: мутации не обнаружены (RAS WT). BRAF: не обнаружено. MSI: MSS. PD-L1: TPS=0%. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Жалобы с 01.2024: т"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; е данные (фрагменты) KRAS/NRAS: мутации не обнаружены (RAS WT). BRAF: не обнаружено. MSI: MSS. PD-L1: TPS=0%. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Жалобы с 01.2024: тенезм"
+    },
+    {
+      "name_raw": "BRAF",
+      "name_std": "braf",
+      "value": "не обнаружено",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаружено; и молекулярно-генетические данные (фрагменты) KRAS/NRAS: мутации не обнаружены (RAS WT). BRAF: не обнаружено. MSI: MSS. PD-L1: TPS=0%. Фрагменты выписки/консультаций/протоколов (свободный текст"
+    },
+    {
+      "name_raw": "KRAS",
+      "name_std": "kras",
+      "value": "не обнаружены",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаружены; III), затем мтс в лёгких (2025). Биомаркеры и молекулярно-генетические данные (фрагменты) KRAS/NRAS: мутации не обнаружены (RAS WT). BRAF: не обнаружено. MSI: MSS. PD-L1: TPS=0%. Фрагменты выпи"
+    },
+    {
+      "name_raw": "NRAS",
+      "name_std": "nras",
+      "value": "не обнаружены",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаружены; затем мтс в лёгких (2025). Биомаркеры и молекулярно-генетические данные (фрагменты) KRAS/NRAS: мутации не обнаружены (RAS WT). BRAF: не обнаружено. MSI: MSS. PD-L1: TPS=0%. Фрагменты выписки/ко"
+    },
+    {
+      "name_raw": "RAS",
+      "name_std": "ras",
+      "value": "WT",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=WT; Кейс 02. Рак прямой кишки (C20), RAS WT, осложнение: аллергия на оксалиплатин Паспортная часть ФИО: Пациентка С., 55 лет Дата рождения: 07.09.1970 Пол: женский Сопутствующие заболевания и аллергол"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "FOLFIRI+панитумумаб (RAS WT)",
+      "start_date": "2025-05",
+      "end_date": "2025-10",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "FOLFIRI",
+          "std": "folfiri",
+          "alternative_group": null
+        },
+        {
+          "raw": "панитумумаб (RAS WT)",
+          "std": "панитумумаб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "Диагноз C20 Аденокарцинома прямой кишки, cT3N1M0 (стадия III), затем мтс в лёгких",
+      "start_date": "2025",
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "Диагноз C20 Аденокарцинома прямой кишки, cT3N1M0 (стадия III), затем мтс в лёгких",
+          "std": "диагноз c аденокарцинома прямой кишки, ct n m , затем мтс в лёгких",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "therapy: удалено пустых/несистемных/дозовых фрагментов: 2",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

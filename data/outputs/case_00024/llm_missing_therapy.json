@@ -1,0 +1,36 @@
+{
+  "found": [
+    {
+      "regimen": "R-CHOP",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: R-CHOP x 6 (06-10.2025): ритуксимаб+циклофосфамид+доксорубицин+винкристин+преднизолон.",
+      "quote_match": "exact",
+      "date_hint": "06-10.2025",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "R-CHOP",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: R-CHOP x 6 (06-10.2025): ритуксимаб+циклофосфамид+доксорубицин+винкристин+преднизолон.",
+      "quote_match": "exact",
+      "date_hint": "06-10.2025",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 1,
+    "missing_total": 1,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

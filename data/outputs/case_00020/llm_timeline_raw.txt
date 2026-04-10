@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "date": "2018",
+      "date_precision": "year",
+      "event_type": "diagnosis",
+      "text_snippet": "Первичный диагноз 2018, проведено хирургическое лечение и адъювантная гормонотерапия.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2024-01.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 02.2025: новые костные очаги.",
+      "confidence": 0.0
+    },
+    {
+      "date": "03.2025-...",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.",
+      "confidence": 0.0
+    },
+    {
+      "date": "с 12.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.",
+      "confidence": 0.0
+    }
+  ]
+}

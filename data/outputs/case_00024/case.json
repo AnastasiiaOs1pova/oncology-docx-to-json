@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "case_id": "case_00024",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "heme",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1966-06-06",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "хронический гепатит",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: сть ФИО: Пациент У., 59 лет Дата рождения: 06.06.1966 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хронический гепатит B (HBsAg+). Сахарный диабет 2 типа. Аллергии/непереносимость: Ритуксимаб"
+      },
+      {
+        "name": "хроническая инфекция (HBV/HCV)",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: зоны поражения выше и ниже диафрагмы. Лечение: R-CHOP x 6 (06-10.2025): ритуксимаб+циклофосфамид+доксорубицин+винкристин+преднизолон. Профилактика реактивации HBV: энтекавир на весь период терапии и 12 мес после. Контроль ПЭТ-КТ 11.2025: по"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "1-й инфузии (озноб",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Ритуксимаб - реакция на 1-й инфузии (озноб, гипотензия), далее медленная инфузия+премедикация."
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "противорвотные",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: противорвотные, Г-КСФ по показаниям."
+      },
+      {
+        "drug": "Г-КСФ по показаниям",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: противорвотные, Г-КСФ по показаниям."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "диффузная крупноклеточная B-клеточная лимфома",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "III",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": "Лечение: R-CHOP x 6",
+      "start_date": "2025-06",
+      "end_date": "2025-10",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "Лечение: R-CHOP x 6",
+          "std": "лечение: r-chop x",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Биомаркеры не найдены правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

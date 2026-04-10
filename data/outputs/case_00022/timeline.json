@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "date": "2024",
+      "date_precision": "year",
+      "event_type": "imaging",
+      "text_snippet": "В 2024 на КТ - мтс в печени.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-2025",
+      "date_precision": "year",
+      "event_type": "therapy_start",
+      "text_snippet": "1 линия: иматиниб 400 мг/сут (2024-2025), затем прогрессирование.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-2025",
+      "date_precision": "year",
+      "event_type": "therapy_end",
+      "text_snippet": "1 линия: иматиниб 400 мг/сут (2024-2025), затем прогрессирование.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024",
+      "date_precision": "year",
+      "event_type": "progression",
+      "text_snippet": "1 линия: иматиниб 400 мг/сут (2024-2025), затем прогрессирование.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024",
+      "date_precision": "year",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия: сунитиниб 50 мг (4 недели приёма/2 недели перерыв), токсичность: гипертензия, стоматит.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024",
+      "date_precision": "year",
+      "event_type": "therapy_end",
+      "text_snippet": "2 линия: сунитиниб 50 мг (4 недели приёма/2 недели перерыв), токсичность: гипертензия, стоматит.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

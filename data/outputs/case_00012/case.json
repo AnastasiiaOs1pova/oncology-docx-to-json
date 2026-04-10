@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "case_id": "case_00012",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gyne",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1963-01-11",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: ортная часть ФИО: Пациентка Т., 63 года Дата рождения: 11.01.1963 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Ожирение II ст. Хроническая болезнь почек 2 ст. Аллерг"
+      },
+      {
+        "name": "ожирение",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: а Т., 63 года Дата рождения: 11.01.1963 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Ожирение II ст. Хроническая болезнь почек 2 ст. Аллергии/непереносимость: Йодкон"
+      },
+      {
+        "name": "хроническая болезнь почек",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: та рождения: 11.01.1963 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Ожирение II ст. Хроническая болезнь почек 2 ст. Аллергии/непереносимость: Йодконтраст - анафилак"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Йодконтраст - анафилактоидная реакция в прошлом (строго с прем",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Йодконтраст - анафилактоидная реакция в прошлом (строго с премедикацией/по показаниям)."
+      },
+      {
+        "substance": "достарлимаб",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: иммунотерапия достарлимабом Паспортная часть ФИО: Пациентка Т., 63 года Дата рождения: 11.01.1963 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Ожирение II ст. Хронич"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Артериальная гипертензия",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: аболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Ожирение II ст. Хроническая болезнь почек 2 ст. Аллергии/непереносимость: Йодконтраст - анафилактоидная реакция в прошлом (строго с премедикацией/по"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "амлодипин",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: амлодипин, ингибитор АПФ, контроль глюкозы."
+      },
+      {
+        "drug": "ингибитор АПФ",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: амлодипин, ингибитор АПФ, контроль глюкозы."
+      },
+      {
+        "drug": "контроль глюкозы",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: амлодипин, ингибитор АПФ, контроль глюкозы."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак тела матки (эндометрия)",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": "T1B",
+        "n": "N0",
+        "m": "M0"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSI-H",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSI-H; Кейс 08. Рак тела матки (C54), dMMR/MSI-H, иммунотерапия достарлимабом Паспортная часть ФИО: Пациентка Т., 63 года Дата рождения: 11.01.1963 Пол: женский Сопутствующие заболевания и аллергологический"
+    },
+    {
+      "name_raw": "dMMR",
+      "name_std": "dmmr",
+      "value": "dMMR",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=dMMR; Кейс 08. Рак тела матки (C54), dMMR/MSI-H, иммунотерапия достарлимабом Паспортная часть ФИО: Пациентка Т., 63 года Дата рождения: 11.01.1963 Пол: женский Сопутствующие заболевания и аллергологиче"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": null,
+      "start_date": "2025",
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": []
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": []
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

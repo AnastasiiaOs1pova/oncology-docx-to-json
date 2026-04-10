@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "case_id": "case_0002",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "lung",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1983-01-01",
+      "sex": null
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "инсульт/ОНМК в анамнезе",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: от 11.03.21: без динамики в сравнении. При очередном контроле КТ ОГК от 10.06.21: без отриц. динамики: - МРТ от 23.07.2021 МР-данные за органические изменения, ОНМК, эпи- и субдуральные гематомы не получены. МР-признаки немногочисленных оча"
+      }
+    ],
+    "allergies": [],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": "немелкоклеточный рак лёгкого",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": "T1B",
+        "n": "N0",
+        "m": "M0"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": [
+          "2022-01-21",
+          "2024-10",
+          "2025-07"
+        ]
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "EGFR",
+      "name_std": "egfr",
+      "value": "+",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=+; с тяжами к паракостальной и междолевой плевре (рецидив?). Очаги единичные в легких 3 мм. EGFR+. При контрольном КТ ОГК от 11.03.21: без динамики в сравнении. При очередном контроле КТ ОГК от 10.06.21: без "
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "Состояние после таргетной терапии Осимертинибом",
+      "start_date": "2022-01",
+      "end_date": "2024-10",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "Состояние после таргетной терапии Осимертинибом",
+          "std": "состояние после таргетной терапии осимертиниб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "regimen_name": "(",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "(",
+          "std": "(",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "regimen_name": "пеметрекседом",
+      "start_date": null,
+      "end_date": "2025-09-30",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "пеметрекседом",
+          "std": "пеметрексед",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "regimen_name": "пеметрекседом",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "пеметрекседом",
+          "std": "пеметрексед",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "паклитаксел+карбоплатин+атезолизумаб+бевацизумаб, далее проводилась поддерживающая терапия атезолизумаб+бевацизумаб",
+      "start_date": "2025-04",
+      "end_date": "2025-07",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "паклитаксел",
+          "std": "паклитаксел",
+          "alternative_group": null
+        },
+        {
+          "raw": "карбоплатин",
+          "std": "карбоплатин",
+          "alternative_group": null
+        },
+        {
+          "raw": "атезолизумаб",
+          "std": "атезолизумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "бевацизумаб, далее проводилась поддерживающая терапия атезолизумаб",
+          "std": "бевацизумаб, далее проводилась поддерживающая терапия атезолизумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "бевацизумаб",
+          "std": "бевацизумаб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "therapy: line=1 присвоена эвристически (т.к. есть линии >=2, но нет 1)",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [
+    {
+      "date": "2020-12-15",
+      "name": "выполнена торакотомия, анатомическая резекция",
+      "source": "нных за tbc нет. От 15.12.20г в ХО2 РОД выполнена торакотомия, анатомическая резекция с 6 слева, ЛАЭ д2. - ПГА ОП 012009 от 2"
+    }
+  ],
+  "metastases": [
+    {
+      "site": "легкие",
+      "date": "2022-01-21",
+      "source": "Прогрессирование от 21.01.22г: мтс в легкие, в ВГЛУ, в седалищную кость"
+    },
+    {
+      "site": "легких до 13мм",
+      "date": "2022-02",
+      "source": "Пр очередном контроле ПЭТ от 02.22: множественные мтс в легких до 13мм"
+    },
+    {
+      "site": "правой седал",
+      "date": null,
+      "source": "мтс в правой седал"
+    },
+    {
+      "site": "легких и на плевре с обеих сторон",
+      "date": null,
+      "source": "- увеличились размеры и количество бесчисленных метастазов в легких и на плевре с обеих сторон;"
+    },
+    {
+      "site": "печени",
+      "date": null,
+      "source": "-появление немногочисленных метаболически активных мтс в печени;"
+    }
+  ]
+}

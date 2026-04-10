@@ -1,0 +1,58 @@
+{
+  "found": [
+    {
+      "regimen": "оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Адъювантная ХТ (08-11.2024): оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX), 6 циклов.",
+      "quote_match": "exact",
+      "date_hint": "08-11.2024",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "иринотекан+5-фторурацил+кальция фолинат (FOLFIRI)+панитумумаб (RAS WT)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия при метастатическом процессе (05-10.2025): иринотекан+5-фторурацил+кальция фолинат (FOLFIRI)+панитумумаб (RAS WT), 10 циклов.",
+      "quote_match": "exact",
+      "date_hint": "05-10.2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Адъювантная ХТ (08-11.2024): оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX), 6 циклов.",
+      "quote_match": "exact",
+      "date_hint": "08-11.2024",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "иринотекан+5-фторурацил+кальция фолинат (FOLFIRI)+панитумумаб (RAS WT)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия при метастатическом процессе (05-10.2025): иринотекан+5-фторурацил+кальция фолинат (FOLFIRI)+панитумумаб (RAS WT), 10 циклов.",
+      "quote_match": "exact",
+      "date_hint": "05-10.2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 2,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

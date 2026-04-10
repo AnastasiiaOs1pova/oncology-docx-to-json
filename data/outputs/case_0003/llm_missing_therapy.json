@@ -1,0 +1,105 @@
+{
+  "found": [
+    {
+      "regimen": "XELOX",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "4 курса ХТ, протокол XELOX с 24.03.2023 по 13.06.2023.",
+      "quote_match": "exact",
+      "date_hint": "с 24.03.2023 по 13.06.2023",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "рамуцирумаб+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 25.12.24г по 23.09.25г проведено 10 курсов ХТТ 2 линии по протоколу: рамуцирумаб 8 мг/кг, внутривенно в Дни 1 и 15+паклитаксел 80 мг/м2 внутривенно в дни 1, 8 и 15 28-дневного цикла.",
+      "quote_match": "exact",
+      "date_hint": "с 25.12.24г по 23.09.25г",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "рамуцирумаб+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Онкологический консилиум от 22.11.24г: пациенту показано проведение химиотерапии 2 линии.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [],
+  "present": [
+    {
+      "regimen": "XELOX",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "4 курса ХТ, протокол XELOX с 24.03.2023 по 13.06.2023.",
+      "quote_match": "exact",
+      "date_hint": "с 24.03.2023 по 13.06.2023",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "рамуцирумаб+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 25.12.24г по 23.09.25г проведено 10 курсов ХТТ 2 линии по протоколу: рамуцирумаб 8 мг/кг, внутривенно в Дни 1 и 15+паклитаксел 80 мг/м2 внутривенно в дни 1, 8 и 15 28-дневного цикла.",
+      "quote_match": "exact",
+      "date_hint": "с 25.12.24г по 23.09.25г",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "рамуцирумаб+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Онкологический консилиум от 22.11.24г: пациенту показано проведение химиотерапии 2 линии.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "dropped": [
+    {
+      "regimen": "капецитабин",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Рекомендовано проведение 3 курсов ХТ капецитабином ... Лечение начато в октябре 2023г, последний курс химиотерапии капецитабином завершен 22.11.23г.",
+      "reason": "quote_not_found_in_text"
+    },
+    {
+      "regimen": "рамуцирумаб+паклитаксел",
+      "kind": "chemo",
+      "mention_type": "unclear",
+      "confidence": "low",
+      "quote": "МРТ ОБП от 02.10.25г: ... Изменения в позвонке Th11, необходима корреляция с данными сцинтиграфии. Гемангиомы в телах Th11, Th12, L1 позвонков.",
+      "reason": "quote_not_found_in_text"
+    },
+    {
+      "regimen": "рамуцирумаб+иринотекан",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "Молекулярно-генетическое исследование опухолевого материала 2025год: ... Решение: Учитывая гистологический и молекулярно-генетический профиль опухоли, ранее проведенное лечение, прогрессирование опухолевого процесса рекомендовано проведение химиотаргетной терапии по протоколу: рамуцирумаб 8 мг/кг в/в+иринотекан 150-180 мг/м2 в/в в 1-й и 15-й дни, каждые 28 дней.",
+      "reason": "quote_not_found_in_text"
+    }
+  ],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 0,
+    "present_total": 3,
+    "dropped_total": 3
+  }
+}

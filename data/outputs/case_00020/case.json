@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "case_id": "case_00020",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "breast",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1969-02-09",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Нет данных",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Нет данных."
+      },
+      {
+        "substance": "эндокринотерапия",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет Дата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Сахарный диабет 2 типа. Остеопороз (T-score -2.7"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Сахарный диабет 2 типа. О",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Сахарный диабет 2 типа. Остеопороз (T-score -2.7). Аллергии/непереносимость: Нет данных. Диагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, "
+      }
+    ],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": "рак молочной железы",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "BRCA1",
+      "name_std": "brca1",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; е данные (фрагменты) ER 90%, PR 60%, HER20. Ki67 25%. PIK3CA H1047R - мутация обнаружена. BRCA1/2: мутации не обнаружены. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Перви"
+    },
+    {
+      "name_raw": "BRCA1/2",
+      "name_std": "brca1/2",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; е данные (фрагменты) ER 90%, PR 60%, HER20. Ki67 25%. PIK3CA H1047R - мутация обнаружена. BRCA1/2: мутации не обнаружены. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Перви"
+    },
+    {
+      "name_raw": "PIK3CA",
+      "name_std": "pik3ca",
+      "value": "4",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=4; Кейс 16. РМЖ HR+HER2-, PIK3CA+, эндокринотерапия+CDK4/6+PI3K Паспортная часть ФИО: Пациентка О., 57 лет Дата рождения: 09.02.1969 Пол: женский Сопутствующие заболевания и аллергологический"
+    },
+    {
+      "name_raw": "PIK3CA",
+      "name_std": "pik3ca",
+      "value": "H1047R",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=H1047R; Биомаркеры и молекулярно-генетические данные (фрагменты) ER 90%, PR 60%, HER20. Ki67 25%. PIK3CA H1047R - мутация обнаружена. BRCA1/2: мутации не обнаружены. Фрагменты выписки/консультаций/протоколов "
+    },
+    {
+      "name_raw": "PIK3CA",
+      "name_std": "pik3ca",
+      "value": "1",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=1; рессирование 02.2025: новые костные очаги. 2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст. 3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессир"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "летрозол+палбоциклиб, стабилизация 10 мес",
+      "start_date": "2024-02",
+      "end_date": "2025-01",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "летрозол",
+          "std": "летрозол",
+          "alternative_group": null
+        },
+        {
+          "raw": "палбоциклиб, стабилизация 10 мес",
+          "std": "палбоциклиб, стабилизация мес",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "regimen_name": "капецитабин в режиме 14/7 при дальнейшем прогрессировании",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "капецитабин в режиме 14",
+          "std": "капецитабин в режиме",
+          "alternative_group": 1
+        },
+        {
+          "raw": "7 при дальнейшем прогрессировании",
+          "std": "при дальнейшем прогрессировании",
+          "alternative_group": 1
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "кости",
+      "date": null,
+      "source": "Диагноз C50.4 Инвазивный рак правой молочной железы, ER+/PR+, HER20, стадия IV (мтс в кости)"
+    }
+  ]
+}

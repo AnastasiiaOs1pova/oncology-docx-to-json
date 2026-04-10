@@ -1,0 +1,80 @@
+{
+  "found": [
+    {
+      "regimen": "FOLFOX+бевацизумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (12.2023-04.2024): оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX)+бевацизумаб, 8 циклов.",
+      "quote_match": "exact",
+      "date_hint": "12.2023-04.2024",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (09.2024-02.2025): пембролизумаб 200 мг каждые 3 недели (на фоне MSI-H). Частичный ответ.",
+      "quote_match": "exact",
+      "date_hint": "09.2024-02.2025",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "энкорафениб+цетуксимаб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (04.2025-09.2025): энкорафениб+цетуксимаб.",
+      "quote_match": "exact",
+      "date_hint": "04.2025-09.2025",
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "missing": [],
+  "present": [
+    {
+      "regimen": "FOLFOX+бевацизумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (12.2023-04.2024): оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX)+бевацизумаб, 8 циклов.",
+      "quote_match": "exact",
+      "date_hint": "12.2023-04.2024",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (09.2024-02.2025): пембролизумаб 200 мг каждые 3 недели (на фоне MSI-H). Частичный ответ.",
+      "quote_match": "exact",
+      "date_hint": "09.2024-02.2025",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "энкорафениб+цетуксимаб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (04.2025-09.2025): энкорафениб+цетуксимаб.",
+      "quote_match": "exact",
+      "date_hint": "04.2025-09.2025",
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 0,
+    "present_total": 3,
+    "dropped_total": 0
+  }
+}

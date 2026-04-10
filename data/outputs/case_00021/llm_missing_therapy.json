@@ -1,0 +1,80 @@
+{
+  "found": [
+    {
+      "regimen": "доцетаксел+трастузумаб+пертузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (2022-2023): доцетаксел+трастузумаб+пертузумаб, затем поддержка трастузумаб+пертузумаб.",
+      "quote_match": "exact",
+      "date_hint": "2022-2023",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб эмтанзин (T-DM1)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (09.2024-06.2025): трастузумаб эмтанзин (T-DM1), стабилизация.",
+      "quote_match": "exact",
+      "date_hint": "09.2024-06.2025",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб дерукстекан (T-DXd)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (08.2025-...): трастузумаб дерукстекан (T-DXd).",
+      "quote_match": "exact",
+      "date_hint": "08.2025-...",
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "доцетаксел+трастузумаб+пертузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (2022-2023): доцетаксел+трастузумаб+пертузумаб, затем поддержка трастузумаб+пертузумаб.",
+      "quote_match": "exact",
+      "date_hint": "2022-2023",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб эмтанзин (T-DM1)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (09.2024-06.2025): трастузумаб эмтанзин (T-DM1), стабилизация.",
+      "quote_match": "exact",
+      "date_hint": "09.2024-06.2025",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб дерукстекан (T-DXd)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (08.2025-...): трастузумаб дерукстекан (T-DXd).",
+      "quote_match": "exact",
+      "date_hint": "08.2025-...",
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 3,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

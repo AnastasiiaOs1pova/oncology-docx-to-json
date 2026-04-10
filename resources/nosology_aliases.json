@@ -1,0 +1,1076 @@
+{
+  "meta": {
+    "name": "nosology_aliases",
+    "version": "0.3",
+    "notes": "Сопоставление вариантов написания нозологий с каноническими названиями из каталога. Паттерны — regex (Python re), по умолчанию применять IGNORECASE. | Расширено: ОМТ/тазовые органы/мочевой пузырь/эндометрий/яичники + подтипы RCC + общие 'не уточнено'. | Unified: добавлены profiles + profile в rules; удалён дубль C53-only; OMT понижен/безопаснее."
+  },
+  "common_patterns": {
+    "modifiers_to_ignore": [
+      "лев(ой|ая|ое|ые)?",
+      "прав(ой|ая|ое|ые)?",
+      "двусторонн(ий|яя|ее|ие)?",
+      "локальн(ый|ая|ое|ые)?",
+      "первичн(ый|ая|ое|ые)?",
+      "вторичн(ый|ая|ое|ые)?",
+      "инвазивн(ый|ая|ое|ые)?",
+      "метастатическ(ий|ая|ое|ие)?",
+      "распространенн(ый|ая|ое|ые)?",
+      "рецидив(ный|ная|ное|ные)?",
+      "с\\s*мтс|с\\s*метастаз"
+    ],
+    "cancer_words": [
+      "рак",
+      "карцинома",
+      "злокачественн(ая|ый|ое|ые)\\s+опухол(ь|и)",
+      "зно",
+      "са(\\b|\\.)",
+      "ca(\\b|\\.)",
+      "cancer",
+      "carcinoma"
+    ],
+    "in_situ_words": [
+      "in\\s*situ",
+      "ин\\s*ситу",
+      "in\\s*situ\\s*carcinoma",
+      "карцинома\\s+in\\s*situ"
+    ]
+  },
+  "rules": [
+    {
+      "canonical": "рак неизвестной первичной локализации",
+      "priority": 200,
+      "patterns": [
+        "\\bрак\\s+неизвестн\\w+\\s+первичн\\w+\\s+локализаци\\w+\\b",
+        "\\bcup\\b",
+        "\\bcancer\\s+of\\s+unknown\\s+primary\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "светлоклеточная папиллярная почечно-клеточная карцинома",
+      "priority": 145,
+      "patterns": [
+        "\\bсветлоклеточн\\w+\\s+папиллярн\\w+\\s+(?:карцином\\w+|рак)\\b",
+        "\\bclear\\s+cell\\s+papillary\\s+renal\\s+cell\\s+carcinoma\\b",
+        "\\bccprcc\\b"
+      ],
+      "profile": "kidney"
+    },
+    {
+      "canonical": "диффузная крупноклеточная B-клеточная лимфома",
+      "priority": 140,
+      "patterns": [
+        "\\bдкбкл\\b",
+        "\\bдиффузн\\w+\\s+крупноклеточн\\w+\\s+b\\-?клеточн\\w+\\s+лимфом\\w+\\b",
+        "\\bdlbcl\\b",
+        "\\bdiffuse\\s+large\\s+b\\-?cell\\s+lymphoma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "острый промиелоцитарный лейкоз",
+      "priority": 140,
+      "patterns": [
+        "\\bопл\\b",
+        "\\bостр(ый|ая|ое|ые)\\s+промиелоцитарн\\w+\\s+лейкоз\\b",
+        "\\bapl\\b",
+        "\\bacute\\s+promyelocytic\\s+leukemia\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "папиллярный почечно-клеточный рак",
+      "priority": 140,
+      "patterns": [
+        "\\bпапиллярн\\w+\\s+почечно[-\\s]?клеточн\\w+\\s+(?:рак|карцином\\w+)\\b",
+        "\\bpapillary\\s+renal\\s+cell\\s+carcinoma\\b",
+        "\\bprcc\\b"
+      ],
+      "profile": "kidney"
+    },
+    {
+      "canonical": "светлоклеточный почечно-клеточный рак",
+      "priority": 140,
+      "patterns": [
+        "\\bсветлоклеточн\\w+\\s+почечно[-\\s]?клеточн\\w+\\s+(?:рак|карцином\\w+)\\b",
+        "\\bclear\\s+cell\\s+renal\\s+cell\\s+carcinoma\\b",
+        "\\bccrcc\\b"
+      ],
+      "profile": "kidney"
+    },
+    {
+      "canonical": "хромофобный почечно-клеточный рак",
+      "priority": 140,
+      "patterns": [
+        "\\bхромофобн\\w+\\s+почечно[-\\s]?клеточн\\w+\\s+(?:рак|карцином\\w+)\\b",
+        "\\bchromophobe\\s+renal\\s+cell\\s+carcinoma\\b"
+      ],
+      "profile": "kidney"
+    },
+    {
+      "canonical": "аденокарцинома мочевого пузыря",
+      "priority": 130,
+      "patterns": [
+        "\\bаденокарцином\\w+\\b.*\\bмочев(ого|ой)\\s+пузыр\\w*\\b",
+        "\\badenocarcinoma\\b.*\\bbladder\\b"
+      ],
+      "profile": "urology"
+    },
+    {
+      "canonical": "лимфома Бёркитта",
+      "priority": 130,
+      "patterns": [
+        "\\bлимфом\\w+\\s+б[её]ркитт\\w*\\b",
+        "\\bburkitt\\s+lymphoma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "лимфома Ходжкина",
+      "priority": 130,
+      "patterns": [
+        "\\bлимфом\\w+\\s+ходжкин\\w*\\b",
+        "\\bболезн(ь|и)\\s+ходжкин\\w*\\b",
+        "\\bhl\\b",
+        "\\bhodgkin\\s+lymphoma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "лимфома из клеток мантии",
+      "priority": 130,
+      "patterns": [
+        "\\bлимфом\\w+\\s+из\\s+клеток\\s+манти\\w*\\b",
+        "\\bmcl\\b",
+        "\\bmantle\\s+cell\\s+lymphoma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "лимфома маргинальной зоны",
+      "priority": 130,
+      "patterns": [
+        "\\bлимфом\\w+\\s+маргинальн\\w+\\s+зон\\w*\\b",
+        "\\bmzl\\b",
+        "\\bmarginal\\s+zone\\s+lymphoma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "макроглобулинемия Вальденстрема",
+      "priority": 130,
+      "patterns": [
+        "\\bмакроглобулинеми\\w+\\s+вальденстрем\\w*\\b",
+        "\\bwaldenstr[öo]m\\s+macroglobulinemia\\b",
+        "\\bwm\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "множественная миелома",
+      "priority": 130,
+      "patterns": [
+        "\\bмножественн\\w+\\s+миелом\\w+\\b",
+        "\\bmm\\b",
+        "\\bmultiple\\s+myeloma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "острый лимфобластный лейкоз",
+      "priority": 130,
+      "patterns": [
+        "\\bолл\\b",
+        "\\bостр(ый|ая|ое|ые)\\s+лимфобластн\\w+\\s+лейкоз\\b",
+        "\\ball\\b",
+        "\\bacute\\s+lymphoblastic\\s+leukemia\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "острый миелобластный лейкоз",
+      "priority": 130,
+      "patterns": [
+        "\\bомл\\b",
+        "\\bостр(ый|ая|ое|ые)\\s+миелобластн\\w+\\s+лейкоз\\b",
+        "\\baml\\b",
+        "\\bacute\\s+myeloid\\s+leukemia\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "плоскоклеточный рак мочевого пузыря",
+      "priority": 130,
+      "patterns": [
+        "\\bплоскоклеточн\\w+\\s+рак\\b.*\\bмочев(ого|ой)\\s+пузыр\\w*\\b",
+        "\\bsquamous\\s+cell\\s+carcinoma\\b.*\\bbladder\\b"
+      ],
+      "profile": "urology"
+    },
+    {
+      "canonical": "серозная карцинома яичников (высокой степени злокачественности)",
+      "priority": 130,
+      "patterns": [
+        "\\bвысок(ой|ая|ое|ие)\\s+степен(и|ь)\\s+злокачественност(и|ь)\\b.*\\bсерозн\\w*\\s+карцином\\w*\\b.*\\bяичник\\w*\\b",
+        "\\bhgsc\\b",
+        "\\bhigh\\-?grade\\s+serous\\s+carcinoma\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "серозная карцинома яичников (низкой степени злокачественности)",
+      "priority": 130,
+      "patterns": [
+        "\\bнизк(ой|ая|ое|ие)\\s+степен(и|ь)\\s+злокачественност(и|ь)\\b.*\\bсерозн\\w*\\s+карцином\\w*\\b.*\\bяичник\\w*\\b",
+        "\\blgsc\\b",
+        "\\blow\\-?grade\\s+serous\\s+carcinoma\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "фолликулярная лимфома",
+      "priority": 130,
+      "patterns": [
+        "\\bфолликулярн\\w+\\s+лимфом\\w+\\b",
+        "\\bfl\\b",
+        "\\bfollicular\\s+lymphoma\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "хронический лимфоцитарный лейкоз",
+      "priority": 130,
+      "patterns": [
+        "\\bхлл\\b",
+        "\\bхронич\\w+\\s+лимфоцитарн\\w+\\s+лейкоз\\b",
+        "\\bcll\\b",
+        "\\bchronic\\s+lymphocytic\\s+leukemia\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "хронический миелолейкоз",
+      "priority": 130,
+      "patterns": [
+        "\\bхмл\\b",
+        "\\bхронич\\w+\\s+миелолейкоз\\b",
+        "\\bcml\\b",
+        "\\bchronic\\s+myeloid\\s+leukemia\\b"
+      ],
+      "profile": "heme"
+    },
+    {
+      "canonical": "карцинома Меркеля",
+      "priority": 125,
+      "patterns": [
+        "\\bкарцинома\\s+меркел\\w*\\b",
+        "\\bmerkel\\s+cell\\s+carcinoma\\b",
+        "\\bmcc\\b"
+      ],
+      "profile": "skin"
+    },
+    {
+      "canonical": "немеланомный рак кожи (базальноклеточный)",
+      "priority": 125,
+      "patterns": [
+        "\\bбазальноклеточн\\w+\\s+рак\\s+кож\\w*\\b",
+        "\\bbasal\\s+cell\\s+carcinoma\\b",
+        "\\bbcc\\b"
+      ],
+      "profile": "skin"
+    },
+    {
+      "canonical": "немеланомный рак кожи (плоскоклеточный)",
+      "priority": 125,
+      "patterns": [
+        "\\bплоскоклеточн\\w+\\s+рак\\s+кож\\w*\\b",
+        "\\bsquamous\\s+cell\\s+carcinoma\\b.*\\bskin\\b",
+        "\\bscc\\b.*\\bskin\\b"
+      ],
+      "profile": "skin"
+    },
+    {
+      "canonical": "переходноклеточный рак почечной лоханки и мочеточника (уротелиальный)",
+      "priority": 125,
+      "patterns": [
+        "\\bуротелиальн\\w+\\s+рак\\b.*\\b(лоханк|мочеточн)\\w*\\b",
+        "\\bпереходноклеточн\\w+\\s+рак\\b.*\\b(лоханк|мочеточн)\\w*\\b",
+        "\\butuc\\b",
+        "\\bupper\\s+tract\\s+urothelial\\s+carcinoma\\b",
+        "\\bC65\\b",
+        "\\bC66\\b"
+      ],
+      "profile": "urology"
+    },
+    {
+      "canonical": "рак мочевого пузыря (уротелиальный)",
+      "priority": 125,
+      "patterns": [
+        "\\bуротелиальн\\w+\\s+рак\\s+мочев(ого|ой)\\s+пузыр\\w*\\b",
+        "\\bпереходноклеточн\\w+\\s+рак\\s+мочев(ого|ой)\\s+пузыр\\w*\\b",
+        "\\bрак\\s+мочев(ого|ой)\\s+пузыр\\w*\\b",
+        "\\bbladder\\s+cancer\\b",
+        "\\burothelial\\s+carcinoma\\b.*\\bbladder\\b",
+        "\\bC67\\b",
+        "\\bуротелиальн\\w+\\s+карцином\\w+\\b.*\\bмочев(ого|ой)\\s+пузыр\\w*",
+        "\\btransitional\\s+cell\\s+carcinoma\\b.*\\bbladder\\b",
+        "\\btcc\\b.*\\bbladder\\b"
+      ],
+      "profile": "urology"
+    },
+    {
+      "canonical": "рак почки (почечно-клеточный)",
+      "priority": 125,
+      "patterns": [
+        "\\bрак\\s+почек\\b",
+        "\\bрак\\s+почки\\b",
+        "\\bпочечно\\-?клеточн\\w+\\s+рак\\b",
+        "\\brcc\\b",
+        "\\brenal\\s+cell\\s+carcinoma\\b",
+        "\\bC64\\b",
+        "\\bпочечно[-\\s]?клеточн\\w+\\s+карцином\\w+\\b",
+        "\\bсветлоклеточн\\w+\\s+(?:рак|карцином\\w+)\\b.*\\bпочек|почки\\b"
+      ],
+      "profile": "kidney"
+    },
+    {
+      "canonical": "первичный рак брюшины",
+      "priority": 122,
+      "patterns": [
+        "\\bпервичн(ый|ая|ое|ые)\\s+рак\\s+брюшин(ы|а)\\b",
+        "\\bprimary\\s+peritoneal\\s+cancer\\b",
+        "\\bпервичн\\w+\\s+перитонеальн\\w+\\s+карцином\\w+\\b",
+        "\\bperitoneal\\s+carcinomatosis\\b",
+        "\\bprimary\\s+peritoneal\\s+carcinoma\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "ампулярный рак (рак фатерова соска)",
+      "priority": 120,
+      "patterns": [
+        "\\bампулярн(ый|ая|ое|ые)\\s+рак\\b",
+        "\\bрак\\s+фатерова\\s+соск(а|ка)\\b",
+        "\\bampullary\\s+cancer\\b",
+        "\\bampulla\\s+of\\s+vater\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "болезнь Педжета молочной железы",
+      "priority": 120,
+      "patterns": [
+        "\\bболезн(ь|и)\\s+педжет(а|а\\s+соска)?\\b.*\\bмолочн(ой|ая|ое|ые)\\s+желез(ы|а)\\b",
+        "\\bpaget('?s)?\\s+disease\\b.*\\bbreast\\b",
+        "\\bрак\\s+педжета\\b.*\\bмолочн(ой|ая|ое|ые)\\s+желез(ы|а)\\b"
+      ],
+      "profile": "breast"
+    },
+    {
+      "canonical": "воспалительный рак молочной железы",
+      "priority": 120,
+      "patterns": [
+        "\\bвоспалительн(ый|ая|ое|ые)\\s+рак\\s+молочн(ой|ая|ое|ые)\\s+желез(ы|а)\\b",
+        "\\binflammatory\\s+breast\\s+cancer\\b",
+        "\\bibc\\b"
+      ],
+      "profile": "breast"
+    },
+    {
+      "canonical": "гастроинтестинальная стромальная опухоль",
+      "priority": 120,
+      "patterns": [
+        "\\bгисо\\b",
+        "\\bгастроинтестинальн(ая|ый|ое|ые)\\s+стромальн(ая|ый|ое|ые)\\s+опухол(ь|и)\\b",
+        "\\bgist\\b",
+        "\\bgastrointestinal\\s+stromal\\s+tumou?r\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "герминогенные опухоли яичника (злокачественные)",
+      "priority": 120,
+      "patterns": [
+        "\\bгерминоген\\w*\\s+опухол\\w*\\b.*\\bяичник\\w*\\b",
+        "\\bmalignant\\s+germ\\s+cell\\s+tumou?r\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "гестационная трофобластическая неоплазия",
+      "priority": 120,
+      "patterns": [
+        "\\bгестационн(ая|ый|ое|ые)\\s+трофобластическ\\w+\\s+неоплаз\\w+\\b",
+        "\\bgtn\\b",
+        "\\bgestational\\s+trophoblastic\\s+neoplas\\w+\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "злокачественная гигантоклеточная опухоль кости",
+      "priority": 120,
+      "patterns": [
+        "\\bгигантоклеточн\\w+\\s+опухол\\w+\\s+кост\\w*\\b.*\\bзлокачественн\\w*\\b",
+        "\\bmalignant\\s+giant\\s+cell\\s+tumou?r\\b.*\\bbone\\b"
+      ],
+      "profile": "sarcoma"
+    },
+    {
+      "canonical": "меланома кожи",
+      "priority": 120,
+      "patterns": [
+        "\\bмеланом\\w+\\b.*\\bкож\\w*\\b",
+        "\\bmelanoma\\b",
+        "\\bC43\\b"
+      ],
+      "profile": "skin"
+    },
+    {
+      "canonical": "миелодиспластический синдром",
+      "priority": 120,
+      "patterns": [
+        "\\bмдс\\b",
+        "\\bмиелодиспластическ\\w+\\s+синдром\\b",
+        "\\bmds\\b",
+        "\\bmyelodysplastic\\s+syndrome\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "муцинозная карцинома яичников",
+      "priority": 120,
+      "patterns": [
+        "\\bмуцинозн(ая|ый|ое|ие)\\s+карцинома\\b.*\\bяичник\\w*\\b",
+        "\\bmucinous\\s+carcinoma\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "остеосаркома",
+      "priority": 120,
+      "patterns": [
+        "\\bостеосарком\\w+\\b",
+        "\\bosteosarcoma\\b"
+      ],
+      "profile": "sarcoma"
+    },
+    {
+      "canonical": "первичный рак маточной трубы",
+      "priority": 120,
+      "patterns": [
+        "\\bпервичн(ый|ая|ое|ые)\\s+рак\\s+маточн(ой|ая|ое|ие)\\s+труб(ы|а)\\b",
+        "\\bfallopian\\s+tube\\s+cancer\\b",
+        "\\bC57\\.0\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "пограничная опухоль яичника",
+      "priority": 120,
+      "patterns": [
+        "\\bпограничн(ая|ый|ое|ые)\\s+опухол(ь|и)\\b.*\\bяичник\\w*\\b",
+        "\\bborderline\\s+tumou?r\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "рак яичка (герминогенные опухоли)",
+      "priority": 120,
+      "patterns": [
+        "\\bрак\\s+яичк(а|о)\\b",
+        "\\bгерминоген\\w+\\s+опухол\\w+\\b.*\\bяичк\\w*\\b",
+        "\\btesticular\\s+cancer\\b",
+        "\\bC62\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "саркома Юинга",
+      "priority": 120,
+      "patterns": [
+        "\\bсарком\\w+\\s+юинг\\w*\\b",
+        "\\bewing\\s+sarcoma\\b"
+      ],
+      "profile": "sarcoma"
+    },
+    {
+      "canonical": "светлоклеточная карцинома яичников",
+      "priority": 120,
+      "patterns": [
+        "\\bсветлоклеточн(ая|ый|ое|ие)\\s+карцинома\\b.*\\bяичник\\w*\\b",
+        "\\bclear\\s+cell\\s+carcinoma\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "серозная карцинома эндометрия",
+      "priority": 120,
+      "patterns": [
+        "\\bсерозн(ая|ый|ое|ие)\\s+карцинома\\b.*\\bэндометр\\w*\\b",
+        "\\bserous\\s+carcinoma\\b.*\\bendomet\\w*\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "холангиокарцинома (внепечёночная)",
+      "priority": 120,
+      "patterns": [
+        "\\bвнепеч[её]ночн(ая|ый|ое|ие)\\s+холангиокарцином(а|ы)\\b",
+        "\\bextrahepatic\\s+cholangiocarcinoma\\b",
+        "\\bC24\\.0\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "холангиокарцинома (внутрипечёночная)",
+      "priority": 120,
+      "patterns": [
+        "\\bвнутрипеч[её]ночн(ая|ый|ое|ие)\\s+холангиокарцином(а|ы)\\b",
+        "\\bintrahepatic\\s+cholangiocarcinoma\\b",
+        "\\bC22\\.1\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "хондросаркома",
+      "priority": 120,
+      "patterns": [
+        "\\bхондросарком\\w+\\b",
+        "\\bchondrosarcoma\\b"
+      ],
+      "profile": "sarcoma"
+    },
+    {
+      "canonical": "эндометриоидная карцинома яичников",
+      "priority": 120,
+      "patterns": [
+        "\\bэндометриоидн(ая|ый|ое|ие)\\s+карцинома\\b.*\\bяичник\\w*\\b",
+        "\\bendometrioid\\s+carcinoma\\b.*\\bovary\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "гепатоцеллюлярная карцинома",
+      "priority": 115,
+      "patterns": [
+        "\\bгепатоцеллюлярн(ая|ый|ое|ые)\\s+карцинома\\b",
+        "\\bгцк\\b",
+        "\\bhcc\\b",
+        "\\bhepatocellular\\s+carcinoma\\b",
+        "\\bC22(\\.0)?\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "мезотелиома плевры",
+      "priority": 115,
+      "patterns": [
+        "\\bмезотелиом(а|ы)\\b.*\\bплевр\\w*\\b",
+        "\\bpleural\\s+mesothelioma\\b",
+        "\\bmesothelioma\\b.*\\bpleura\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "тимический рак",
+      "priority": 115,
+      "patterns": [
+        "\\bтимическ(ий|ая|ое|ие)\\s+рак\\b",
+        "\\bthymic\\s+carcinoma\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "филлоидная опухоль молочной железы (злокачественная)",
+      "priority": 115,
+      "patterns": [
+        "\\bфиллоидн(ая|ый)\\s+опухол(ь|и)\\b.*\\bмолочн(ой|ая|ое|ые)\\s+желез(ы|а)\\b",
+        "\\bphyllodes\\s+tumou?r\\b.*\\bmalignan\\w*\\b",
+        "\\bmalignant\\s+phyllodes\\b"
+      ],
+      "profile": "breast"
+    },
+    {
+      "canonical": "рак тела матки (эндометрия)",
+      "priority": 112,
+      "patterns": [
+        "\\bрак\\s+тела\\s+матк(и|а)\\b",
+        "\\bрак\\s+эндометр(ия|ия)\\b",
+        "\\bendometrial\\s+cancer\\b",
+        "\\buterine\\s+cancer\\b",
+        "\\bC54\\b",
+        "\\bэндометриальн\\w+\\s+карцином\\w+\\b",
+        "\\bкарцином\\w+\\s+эндометр\\w+\\b",
+        "\\bаденокарцином\\w+\\s+эндометр\\w+\\b",
+        "\\bcarcinoma\\s+of\\s+the\\s+endometrium\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "рак шейки матки",
+      "priority": 112,
+      "patterns": [
+        "\\bрак\\s+шейк(и|а)\\s+матк(и|а)\\b",
+        "\\bcervical\\s+cancer\\b",
+        "\\bC53\\b",
+        "\\bкарцином\\w+\\s+шейк\\w+\\s+матк\\w+\\b",
+        "\\bплоскоклеточн\\w+\\s+карцином\\w+\\b.*\\bшейк\\w+\\s+матк\\w+\\b",
+        "\\bca\\s+cervix\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "рак яичников (эпителиальный)",
+      "priority": 112,
+      "patterns": [
+        "\\bрак\\s+яичник(ов|а)\\b",
+        "\\bэпителиальн(ый|ая|ое|ые)\\s+рак\\s+яичник\\w*\\b",
+        "\\bovarian\\s+cancer\\b",
+        "\\bC56\\b",
+        "\\bовариальн\\w+\\s+карцином\\w+\\b",
+        "\\bкарцином\\w+\\s+яичник\\w+\\b",
+        "\\bопухол\\w+\\s+яичник\\w+\\b.*\\bзлокачественн\\w*\\b",
+        "\\bca\\s+ovarii\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "анальный рак",
+      "priority": 110,
+      "patterns": [
+        "\\bанальн(ый|ая|ое|ые)\\s+рак\\b",
+        "\\bрак\\s+анальн(ого|ой)\\s+канал(а|е)\\b",
+        "\\banal\\s+cancer\\b",
+        "\\bC21\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "дольковая карцинома in situ молочной железы",
+      "priority": 110,
+      "patterns": [
+        "\\blcis\\b",
+        "\\blobular\\s+carcinoma\\s+in\\s+situ\\b",
+        "\\bдольков(ая|ый)\\s+карцинома\\s+in\\s*situ\\b",
+        "\\bкарцинома\\s+in\\s*situ\\s+дольков(ая|ый)\\b"
+      ],
+      "profile": "breast"
+    },
+    {
+      "canonical": "карциноид лёгкого (атипичный)",
+      "priority": 110,
+      "patterns": [
+        "\\bатипичн(ый|ая|ое|ые)\\s+карциноид\\b.*\\bл(е|ё)гк\\w*\\b",
+        "\\batypical\\s+carcinoid\\b.*\\blung\\b",
+        "\\bбронхопульмональн(ый|ая|ое|ые)\\s+карциноид\\b.*\\bатипичн\\w*\\b"
+      ],
+      "profile": "lung"
+    },
+    {
+      "canonical": "карциноид лёгкого (типичный)",
+      "priority": 110,
+      "patterns": [
+        "\\bтипичн(ый|ая|ое|ые)\\s+карциноид\\b.*\\bл(е|ё)гк\\w*\\b",
+        "\\btypical\\s+carcinoid\\b.*\\blung\\b",
+        "\\bбронхопульмональн(ый|ая|ое|ые)\\s+карциноид\\b.*\\bтипичн\\w*\\b"
+      ],
+      "profile": "lung"
+    },
+    {
+      "canonical": "мелкоклеточный рак лёгкого",
+      "priority": 110,
+      "patterns": [
+        "\\bмрл\\b",
+        "\\bмелкоклеточн(ый|ая|ое|ые)\\s+рак\\s+л(е|ё)гк(ого|их|ие|ая)?\\b",
+        "\\bsclc\\b",
+        "\\bsmall\\s+cell\\s+lung\\s+cancer\\b"
+      ],
+      "profile": "lung"
+    },
+    {
+      "canonical": "протоковая карцинома in situ молочной железы",
+      "priority": 110,
+      "patterns": [
+        "\\bdcis\\b",
+        "\\bductal\\s+carcinoma\\s+in\\s+situ\\b",
+        "\\bпротоков(ая|ый)\\s+карцинома\\s+in\\s*situ\\b",
+        "\\bкарцинома\\s+in\\s*situ\\s+протоков(ая|ый)\\b",
+        "\\bрак\\s+молочн(ой|ая|ое|ые)\\s+желез(ы|а)\\s+in\\s*situ\\b"
+      ],
+      "profile": "breast"
+    },
+    {
+      "canonical": "рак влагалища",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+влагалищ(а|е)\\b",
+        "\\bvaginal\\s+cancer\\b",
+        "\\bC52\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "рак вульвы",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+вульв(ы|а)\\b",
+        "\\bvulvar\\s+cancer\\b",
+        "\\bC51\\b"
+      ],
+      "profile": "gyne"
+    },
+    {
+      "canonical": "рак желчного пузыря",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+желчн(ого|ый)\\s+пузыр(я|ь)\\b",
+        "\\bgallbladder\\s+cancer\\b",
+        "\\bC23\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "рак поджелудочной железы",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+поджелудочн(ой|ая|ое|ие)\\s+желез(ы|а)\\b",
+        "\\bрак\\s+пж\\b",
+        "\\bpancreatic\\s+cancer\\b",
+        "\\bC25\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "рак полового члена",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+полов(ого|ой)\\s+член(а|е)\\b",
+        "\\bpenile\\s+cancer\\b",
+        "\\bC60\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "рак предстательной железы",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+предстательн(ой|ая|ое|ие)\\s+желез(ы|а)\\b",
+        "\\bрак\\s+простаты\\b",
+        "\\bprostate\\s+cancer\\b",
+        "\\bC61\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "рак прямой кишки",
+      "priority": 110,
+      "patterns": [
+        "\\bрак\\s+прям(ой|ая|ое|ие)\\s+кишк(и|а|е)\\b",
+        "\\brectal\\s+cancer\\b",
+        "\\bC20\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "рак гортани",
+      "priority": 105,
+      "patterns": [
+        "\\blaryngeal\\s+cancer\\b",
+        "\\bcarcinoma\\s+of\\s+the\\s+larynx\\b",
+        "\\bC32\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "рак носоглотки",
+      "priority": 105,
+      "patterns": [
+        "\\bnasopharyngeal\\s+cancer\\b",
+        "\\bC11\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "рак ободочной кишки",
+      "priority": 105,
+      "patterns": [
+        "\\bрак\\s+ободочн(ой|ая|ое|ие)\\s+кишк(и|а|е)\\b",
+        "\\bрак\\s+толст(ой|ая|ое|ие)\\s+кишк(и|а|е)\\b",
+        "\\bcolon\\s+cancer\\b",
+        "\\bC18\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "рак ротоглотки",
+      "priority": 105,
+      "patterns": [
+        "\\boropharyngeal\\s+cancer\\b",
+        "\\bC10\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "тимома",
+      "priority": 105,
+      "patterns": [
+        "\\bтимом(а|ы)\\b",
+        "\\bthymoma\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "немелкоклеточный рак лёгкого",
+      "priority": 100,
+      "patterns": [
+        "\\bнмрл\\b",
+        "\\bнрл\\b",
+        "\\bнемелкоклеточн(ый|ая|ое|ые)\\s+рак\\s+л(е|ё)гк(ого|их|ие|ая)?\\b",
+        "\\bnsclc\\b",
+        "\\bnon\\-?small\\s+cell\\s+lung\\s+cancer\\b",
+        "\\bC34\\b"
+      ],
+      "profile": "lung"
+    },
+    {
+      "canonical": "рак желудка",
+      "priority": 100,
+      "patterns": [
+        "\\bрак\\s+желудк(а|е)\\b",
+        "\\bкарцинома\\s+желудк(а|е)\\b",
+        "\\bgastric\\s+cancer\\b",
+        "\\bstomach\\s+cancer\\b",
+        "\\bC16\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "рак молочной железы",
+      "priority": 100,
+      "patterns": [
+        "\\bрмж\\b",
+        "\\bрак\\s+(молочн(ой|ая|ое|ые)\\s+желез(ы|а))\\b",
+        "\\bкарцинома\\s+(молочн(ой|ая|ое|ые)\\s+желез(ы|а))\\b",
+        "\\bbreast\\s+cancer\\b",
+        "\\bmammary\\s+cancer\\b",
+        "\\bca\\s+mammae\\b",
+        "\\bcarcinoma\\s+of\\s+the\\s+breast\\b",
+        "\\bC50\\b"
+      ],
+      "profile": "breast"
+    },
+    {
+      "canonical": "рак пищевода",
+      "priority": 100,
+      "patterns": [
+        "\\bрак\\s+пищевод(а|е)\\b",
+        "\\bcarcinoma\\s+of\\s+the\\s+esophagus\\b",
+        "\\besophageal\\s+cancer\\b",
+        "\\bC15\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "рак тонкой кишки",
+      "priority": 100,
+      "patterns": [
+        "\\bрак\\s+тонк(ой|ая|ое|ие)\\s+кишк(и|а|е)\\b",
+        "\\bsmall\\s+bowel\\s+cancer\\b",
+        "\\bC17\\b"
+      ],
+      "profile": "gi"
+    },
+    {
+      "canonical": "опухоль мочеполовой системы (злокачественная, не уточнена)",
+      "priority": 85,
+      "patterns": [
+        "\\bопухол\\w+\\s+мочеполов\\w+\\s+систем\\w+\\b",
+        "\\bопухол\\w+\\s+мочевыделит\\w+\\s+систем\\w+\\b",
+        "\\burogenital\\s+cancer\\b",
+        "\\burinary\\s+tract\\s+cancer\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "опухоль брюшной полости (злокачественная, не уточнена)",
+      "priority": 80,
+      "patterns": [
+        "\\bопухол\\w+\\s+брюшн\\w+\\s+полост\\w+\\b",
+        "\\babdominal\\s+tumou?r\\b",
+        "\\babdominal\\s+mass\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "рак щитовидной железы",
+      "priority": 70,
+      "patterns": [
+        "\\bрак\\s+щитовидн\\w+\\s+желез\\w+\\b",
+        "\\bthyroid\\s+cancer\\b",
+        "\\bC73\\b"
+      ],
+      "profile": "unknown"
+    },
+    {
+      "canonical": "опухоль органов малого таза (злокачественная, не уточнена)",
+      "priority": 60,
+      "patterns": [
+        "\\bопухол\\w+\\s+омт\\b",
+        "\\bопухол\\w+\\s+орган\\w+\\s+малого\\s+таза\\b",
+        "\\bобразован\\w+\\s+орган\\w+\\s+малого\\s+таза\\b",
+        "\\bопухол\\w+\\s+малого\\s+таза\\b",
+        "\\bpelvic\\s+tumou?r\\b",
+        "\\bpelvic\\s+mass\\b",
+        "\\bомт\\b"
+      ],
+      "profile": "unknown"
+    }
+  ],
+  "negation": {
+    "enabled": true,
+    "window_chars": 60,
+    "triggers": [
+      "исключить",
+      "исключена",
+      "исключено",
+      "подозрение",
+      "под вопросом",
+      "вопрос",
+      "\\?",
+      "дифф\\.?\\s*диаг",
+      "ddx",
+      "differential"
+    ],
+    "note": "Рекомендуется применять в коде: если триггер встречается в окне перед совпадением — не считать как установленную нозологию."
+  },
+  "profiles": {
+    "breast": {
+      "allow_er_pr": true,
+      "gene_markers": [
+        "PIK3CA",
+        "PTEN",
+        "TP53",
+        "BRCA1",
+        "BRCA2",
+        "PALB2",
+        "ERBB2",
+        "HER2"
+      ],
+      "notes": "РМЖ/болезнь Педжета/филлоидные"
+    },
+    "lung": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "EGFR",
+        "ALK",
+        "ROS1",
+        "RET",
+        "MET",
+        "KRAS",
+        "BRAF",
+        "NTRK",
+        "ERBB2",
+        "HER2"
+      ],
+      "notes": "рак лёгкого/карциноиды"
+    },
+    "gi": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "KRAS",
+        "NRAS",
+        "BRAF",
+        "APC",
+        "SMAD4",
+        "HER2",
+        "ERBB2",
+        "NTRK",
+        "KIT",
+        "PDGFRA"
+      ],
+      "notes": "ЖКТ/ГИСО/панкреатобилиарная"
+    },
+    "gyne": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "BRCA1",
+        "BRCA2",
+        "PALB2",
+        "TP53",
+        "PIK3CA",
+        "PTEN",
+        "POLE",
+        "MLH1",
+        "MSH2",
+        "MSH6",
+        "PMS2"
+      ],
+      "notes": "гинекология/эндометрий/яичники/шейка"
+    },
+    "kidney": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "VHL",
+        "PBRM1",
+        "SETD2",
+        "BAP1",
+        "MET",
+        "FH",
+        "SDHB",
+        "TSC1",
+        "TSC2",
+        "MTOR"
+      ],
+      "notes": "почечно-клеточные опухоли"
+    },
+    "urology": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "FGFR3",
+        "ERBB2",
+        "HER2",
+        "TP53",
+        "RB1",
+        "TERT"
+      ],
+      "notes": "уротелиальные/мочевой пузырь/верхние мочевые пути"
+    },
+    "heme": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "FLT3",
+        "NPM1",
+        "JAK2",
+        "BCR-ABL",
+        "BCR",
+        "ABL"
+      ],
+      "notes": "гемобластозы"
+    },
+    "skin": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "BRAF",
+        "NRAS",
+        "KIT",
+        "TP53"
+      ],
+      "notes": "меланома/немеланомный рак кожи/Меркеля"
+    },
+    "sarcoma": {
+      "allow_er_pr": false,
+      "gene_markers": [
+        "TP53",
+        "RB1",
+        "MDM2",
+        "CDK4"
+      ],
+      "notes": "саркомы/костные опухоли"
+    },
+    "unknown": {
+      "allow_er_pr": false,
+      "gene_markers": [],
+      "notes": "фоллбек"
+    }
+  }
+}

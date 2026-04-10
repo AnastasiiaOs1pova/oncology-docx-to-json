@@ -1,0 +1,81 @@
+{
+  "found": [
+    {
+      "regimen": "паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Первичное лечение (11.2024-01.2025): Дистанционная ЛТ 45 Гр+брахитерапия; конкомитантная ХТ: цисплатин 40 мг/м2 еженедельно (4 введения), далее из-за ХБП - замена на карбоплатин AUC2.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "1 линия системной терапии (07-11.2025): паклитаксел 175 мг/м2+карбоплатин AUC5+бевацизумаб 15 мг/кг каждые 3 недели, 6 циклов.",
+      "note": null
+    },
+    {
+      "regimen": "паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия системной терапии (07-11.2025): паклитаксел 175 мг/м2+карбоплатин AUC5+бевацизумаб 15 мг/кг каждые 3 недели, 6 циклов.",
+      "quote_match": "exact",
+      "date_hint": "07-11.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 12.2025 - добавлен пембролизумаб (PD-L1 CPS=18) каждые 3 недели.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 12.2025 - добавлен пембролизумаб (PD-L1 CPS=18) каждые 3 недели.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Первичное лечение (11.2024-01.2025): Дистанционная ЛТ 45 Гр+брахитерапия; конкомитантная ХТ: цисплатин 40 мг/м2 еженедельно (4 введения), далее из-за ХБП - замена на карбоплатин AUC2.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "1 линия системной терапии (07-11.2025): паклитаксел 175 мг/м2+карбоплатин AUC5+бевацизумаб 15 мг/кг каждые 3 недели, 6 циклов.",
+      "note": null
+    },
+    {
+      "regimen": "паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия системной терапии (07-11.2025): паклитаксел 175 мг/м2+карбоплатин AUC5+бевацизумаб 15 мг/кг каждые 3 недели, 6 циклов.",
+      "quote_match": "exact",
+      "date_hint": "07-11.2025",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 1,
+    "present_total": 2,
+    "dropped_total": 0
+  }
+}

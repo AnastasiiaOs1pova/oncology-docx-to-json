@@ -1,0 +1,58 @@
+{
+  "found": [
+    {
+      "regimen": "иринотекан+оксалиплатин+5-фторурацил (FOLFIRINOX)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (07-12.2025): иринотекан+оксалиплатин+5-фторурацил (FOLFIRINOX), 10 циклов.",
+      "quote_match": "exact",
+      "date_hint": "07-12.2025",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "олапариб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Поддержка (02.2026-...): олапариб 300 мг 2 раза/сут (на фоне BRCA2/HRD+).",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "иринотекан+оксалиплатин+5-фторурацил (FOLFIRINOX)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (07-12.2025): иринотекан+оксалиплатин+5-фторурацил (FOLFIRINOX), 10 циклов.",
+      "quote_match": "exact",
+      "date_hint": "07-12.2025",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "олапариб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Поддержка (02.2026-...): олапариб 300 мг 2 раза/сут (на фоне BRCA2/HRD+).",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 2,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

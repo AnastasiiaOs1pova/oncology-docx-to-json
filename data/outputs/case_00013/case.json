@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "case_id": "case_00013",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gyne",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1979-08-30",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "тромбоз/ТЭЛА",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: обавлен пембролизумаб (PD-L1 CPS=18) каждые 3 недели. Контроль 02.2026: стабилизация. Сопутствующая терапия: препараты железа, антигипертензивные, профилактика тромбозов по риску."
+      },
+      {
+        "name": "хроническая болезнь почек",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: тка Е., 46 лет Дата рождения: 30.08.1979 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хронический пиелонефрит, ХБП 3a (СКФ ~52 мл/мин). Железодефицитная анемия. Аллергии/непереносимость: Цисп"
+      },
+      {
+        "name": "анемия (хроническая/сопутствующая)",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хронический пиелонефрит, ХБП 3a (СКФ ~52 мл/мин). Железодефицитная анемия. Аллергии/непереносимость: Цисплатин - выраженная тошнота/рвота (потребов"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Цисплатин - выраженная тошнота/рвота (потребовалось усиление п",
+        "reaction": "тошнота",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Цисплатин - выраженная тошнота/рвота (потребовалось усиление противорвотной терапии)."
+      },
+      {
+        "substance": "цисплатин",
+        "reaction": "тошнота",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: S=18, комбинированная терапия Паспортная часть ФИО: Пациентка Е., 46 лет Дата рождения: 30.08.1979 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хронический пиелонефрит, ХБП 3a (СКФ ~52 мл/мин"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "препараты железа",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: препараты железа, антигипертензивные, профилактика тромбозов по риску."
+      },
+      {
+        "drug": "антигипертензивные",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: препараты железа, антигипертензивные, профилактика тромбозов по риску."
+      },
+      {
+        "drug": "профилактика тромбозов по риску",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: препараты железа, антигипертензивные, профилактика тромбозов по риску."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак шейки матки",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IVB",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; я группа 2. Биомаркеры и молекулярно-генетические данные (фрагменты) PD-L1 CPS=18 (22C3). MSI: MSS. TMB 7.8 mut/Mb (умеренный). Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: С 09.2"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; ппа 2. Биомаркеры и молекулярно-генетические данные (фрагменты) PD-L1 CPS=18 (22C3). MSI: MSS. TMB 7.8 mut/Mb (умеренный). Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: С 09.2024 -"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "паклитаксел",
+      "start_date": "2025-07",
+      "end_date": "2025-11",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "паклитаксел",
+          "std": "паклитаксел",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "therapy: удалено пустых/несистемных/дозовых фрагментов: 1",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

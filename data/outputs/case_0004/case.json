@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "case_id": "case_0004",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "kidney",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1954-01-01",
+      "sex": null
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [],
+    "allergies": [],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": "светлоклеточная папиллярная почечно-клеточная карцинома",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": [
+          "2025-10-06"
+        ]
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "HER2",
+      "name_std": "her2",
+      "value": "13",
+      "unit": null,
+      "date": "2025-04-24",
+      "method": null,
+      "source": "правила: ИГХ: value=13; ности; онкогенный вариант: обнаружена в гене ТР53, обнаружена амплификация гена HER2 (13 копий). С 26.05.2025 г. по 19.09.2025 г. проведено 6 курсов терапии по протоколу: ТахСр+Трастузумаб. ПЭТ-КТ от 06.10"
+    },
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; 3+от 30.04.2025 г. Молекулярно - генетическая диагностика от 16.06.2025 г: статус опухоли MSI - не обнаружено микросателлитной нестабильности; онкогенный вариант: обнаружена в гене ТР53, обнаружен"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; я папиллярная карцинома) IVст., TxNxM1 (мтс поражение забрюшинных, тазовых, паховых л/у). MSS, HER2pos. 1 линия терапии, 6 курсов ХТТ: ТС+трастузумаб (05.25г - 09.25г).Прогрессирование от 06.10.25г. Анам"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "ТС+трастузумаб",
+      "start_date": "2025-05",
+      "end_date": "2025-09",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "ТС",
+          "std": "тс",
+          "alternative_group": null
+        },
+        {
+          "raw": "трастузумаб",
+          "std": "трастузумаб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "ТахСр+Трастузумаб",
+      "start_date": "2025-05-26",
+      "end_date": "2025-09-19",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "ТахСр",
+          "std": "тахср",
+          "alternative_group": null
+        },
+        {
+          "raw": "Трастузумаб",
+          "std": "трастузумаб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [
+    {
+      "date": "2025-02-08",
+      "name": "выполнена трепан-биопсия",
+      "source": "8.02.2025 г. - 73.7 Ед/мл 19.02.2025 г. выполнена трепан-биопсия подвздошного лимфатического узла справа"
+    }
+  ],
+  "metastases": [
+    {
+      "site": "ражение забрюшинных",
+      "date": null,
+      "source": ", TxNxM1 (мтс поражение забрюшинных, тазовых, паховых л/у)"
+    }
+  ]
+}

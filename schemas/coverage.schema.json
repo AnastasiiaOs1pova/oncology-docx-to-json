@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/coverage.v1_1.schema.json",
+  "title": "Coverage Layer Schema v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "text", "entities"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cleaner_version", "lang", "length"],
+      "properties": {
+        "text_hash": {
+          "anyOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "null" }
+          ]
+        },
+        "cleaner_version": { "type": "string", "minLength": 1 },
+        "created_at": {
+          "anyOf": [
+            { "type": "string", "format": "date-time" },
+            { "type": "null" }
+          ]
+        },
+        "lang": { "type": "string", "minLength": 2, "maxLength": 20 },
+        "length": { "type": "integer", "minimum": 0 },
+        "source_type": {
+          "type": "string",
+          "enum": ["text", "pdf", "docx", "html", "other"]
+        }
+      }
+    },
+
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["raw", "clean"],
+      "properties": {
+        "raw": { "type": "string" },
+        "clean": { "type": "string" }
+      }
+    },
+
+    "entities": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entity" }
+    },
+
+    "views": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Опционально. Представления (списки id) по типам/категориям."
+    },
+
+    "coverage": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Опционально. Метрики покрытия/счётчики/диагностика."
+    },
+
+    "edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/edge" }
+    }
+  },
+
+  "$defs": {
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      }
+    },
+
+    "entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "value", "span", "context", "source"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^e\\d{6}$" },
+
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Тип сущности (расширяемый). Например: date, number, unit, medication..."
+        },
+
+        "value": { "type": "string", "minLength": 1 },
+
+        "norm": {
+          "anyOf": [
+            { "type": "string" },
+            { "type": "number" },
+            { "type": "integer" },
+            { "type": "null" }
+          ]
+        },
+
+        "span": { "$ref": "#/$defs/span" },
+
+        "context": { "type": "string" },
+
+        "source": { "type": "string", "minLength": 1 },
+
+        "confidence": {
+          "anyOf": [
+            { "type": "number", "minimum": 0, "maximum": 1 },
+            { "type": "null" }
+          ]
+        },
+
+        "negated": {
+          "anyOf": [
+            { "type": "boolean" },
+            { "type": "null" }
+          ],
+          "description": "Опционально: признак отрицания (напр. 'не принимает')."
+        },
+
+        "attrs": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Доп. поля для конкретных типов"
+        }
+      }
+    },
+
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to", "type", "rule"],
+      "properties": {
+        "from": { "type": "string", "pattern": "^e\\d{6}$" },
+        "to": { "type": "string", "pattern": "^e\\d{6}$" },
+        "type": { "type": "string", "minLength": 1 },
+        "rule": { "type": "string", "minLength": 1 },
+        "score": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "case_id": "case_00022",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "unknown",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1965-02-02",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "язвенная болезнь",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: спортная часть ФИО: Пациент КК., 61 год Дата рождения: 02.02.1965 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Язвенная болезнь двенадцатиперстной кишки (ремиссия). Аллергии/непереносимость: "
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Иодконтраст - зуд",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Иодконтраст - зуд."
+      },
+      {
+        "substance": "сунитиниб",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: терапия иматинибом/сунитинибом Паспортная часть ФИО: Пациент КК., 61 год Дата рождения: 02.02.1965 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Язвенная болезнь двенадцатиперстной кишки (реми"
+      },
+      {
+        "substance": "ской анамнез Сопутствующие заболевания: Язвенная болезнь дв",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: ской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Язвенная болезнь двенадцатиперстной кишки (ремиссия). Аллергии/непереносимость: Иодконтраст - зуд. Диагноз Гастроинтестинальная стромальная опухоль желудк"
+      }
+    ],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": "гастроинтестинальная стромальная опухоль",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "иматиниб",
+      "start_date": "2024",
+      "end_date": "2025",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "иматиниб",
+          "std": "иматиниб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Биомаркеры не найдены правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [
+    {
+      "date": "2020",
+      "name": "выполнена резекция",
+      "source": "колов (свободный текст) Анамнез: В 2020 выполнена резекция опухоли желудка, диагноз GIST подтвержд"
+    }
+  ],
+  "metastases": [
+    {
+      "site": "печени",
+      "date": null,
+      "source": "Диагноз Гастроинтестинальная стромальная опухоль желудка (GIST), множественные мтс в печени"
+    },
+    {
+      "site": "печени",
+      "date": "2024",
+      "source": "В 2024 на КТ - мтс в печени"
+    }
+  ]
+}

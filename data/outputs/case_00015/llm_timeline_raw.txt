@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "date": "01.2024",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "КТ 01.2024: опухоль правой почки 9 см, мтс в лёгких.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2024",
+      "date_precision": "month",
+      "event_type": "surgery",
+      "text_snippet": "Нефрэктомия 02.2024: светлоклеточный RCC, pT3a.",
+      "confidence": 0.0
+    },
+    {
+      "date": "03-08.2024",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (03-08.2024): ниволумаб+ипилимумаб, 4 введения, далее ниволумаб поддержка.",
+      "confidence": 0.0
+    },
+    {
+      "date": "09.2024",
+      "date_precision": "month",
+      "event_type": "therapy_end",
+      "text_snippet": "Ответ: стабилизация по КТ 09.2024.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 02.2025: рост лёгочных очагов.",
+      "confidence": 0.0
+    },
+    {
+      "date": "03-10.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (03-10.2025): кабозантиниб 60 мг/сут, редукция до 40 мг/сут из-за ладонно-подошвенного синдрома.",
+      "confidence": 0.0
+    },
+    {
+      "date": "11.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "3 линия (с 11.2025): ленватиниб+эверолимус, мониторинг АД и функции почек.",
+      "confidence": 0.0
+    }
+  ]
+}

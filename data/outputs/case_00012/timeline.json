@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "date": "2024-05",
+      "date_precision": "month",
+      "event_type": "diagnosis",
+      "text_snippet": "Кровянистые выделения 05.2024. Раздельное диагностическое выскабливание: аденокарцинома эндометрия.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-07",
+      "date_precision": "month",
+      "event_type": "surgery",
+      "text_snippet": "Операция 07.2024: экстирпация матки с придатками+тазовая ЛАЭ. pT1bN0.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Адъювантная ЛТ 09.2024: брахитерапия влагалищного культи.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-03",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Рецидив 03.2025: ПЭТ-КТ - узлы брюшины, асцит.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-04",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (04.2025-...): достарлимаб 500 мг каждые 3 недели 4 введения, затем 1000 мг каждые 6 недель.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-08",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "КТ 08.2025: частичный ответ.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

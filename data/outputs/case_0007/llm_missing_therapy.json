@@ -1,0 +1,103 @@
+{
+  "found": [
+    {
+      "regimen": "оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (10.2024-02.2025): оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб, 8 циклов.",
+      "quote_match": "exact",
+      "date_hint": "1 линия (10.2024-02.2025)",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб дерукстекан 5.4 мг/кг",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (06-10.2025): трастузумаб дерукстекан 5.4 мг/кг каждые 3 недели.",
+      "quote_match": "exact",
+      "date_hint": "2 линия (06-10.2025)",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "рамуцирумаб 8 мг/кг+паклитаксел 80 мг/м2",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (01.2026-...): рамуцирумаб 8 мг/кг (дни 1 и 15)+паклитаксел 80 мг/м2 (дни 1, 8, 15) 28-дневного цикла.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "3 линия (01.2026-...)",
+      "note": null
+    },
+    {
+      "regimen": "паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (10.2024-02.2025): оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб, 8 циклов.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "1 линия (10.2024-02.2025)",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (10.2024-02.2025): оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб, 8 циклов.",
+      "quote_match": "exact",
+      "date_hint": "1 линия (10.2024-02.2025)",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб дерукстекан 5.4 мг/кг",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (06-10.2025): трастузумаб дерукстекан 5.4 мг/кг каждые 3 недели.",
+      "quote_match": "exact",
+      "date_hint": "2 линия (06-10.2025)",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "рамуцирумаб 8 мг/кг+паклитаксел 80 мг/м2",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (01.2026-...): рамуцирумаб 8 мг/кг (дни 1 и 15)+паклитаксел 80 мг/м2 (дни 1, 8, 15) 28-дневного цикла.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "3 линия (01.2026-...)",
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "паклитаксел",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (10.2024-02.2025): оксалиплатин+5-фторурацил+кальция фолинат+трастузумаб, 8 циклов.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "1 линия (10.2024-02.2025)",
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 4,
+    "missing_total": 3,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

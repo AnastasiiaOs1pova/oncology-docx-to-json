@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "date": "01.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "В 01.2025 - увеличение живота, одышка при нагрузке.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2025",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "УЗИ/КТ ОМТ 02.2025: двусторонние опухоли яичников, асцит, сальниковый \"кек\".",
+      "confidence": 0.0
+    },
+    {
+      "date": "03.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: Неоадъювантная ПХТ (03-05.2025): карбоплатин AUC5+паклитаксел 175 мг/м2 каждые 21 день, 3 цикла.",
+      "confidence": 0.0
+    },
+    {
+      "date": "06.2025",
+      "date_precision": "month",
+      "event_type": "surgery",
+      "text_snippet": "Интервальная операция 06.2025: циторедукция, оментэктомия, гистерэктомия с придатками, R0.",
+      "confidence": 0.0
+    },
+    {
+      "date": "07.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Адъювантная ПХТ (07-09.2025): ещё 3 цикла карбоплатин+паклитаксел.",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Поддержка (10.2025-...): нирампариб 200 мг/сут (редукция при тромбоцитопении).",
+      "confidence": 0.0
+    },
+    {
+      "date": "12.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Осложнение 12.2025: тромбоз подвздошной вены - антикоагулянты.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

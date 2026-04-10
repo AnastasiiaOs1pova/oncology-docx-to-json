@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "case_id": "case_0003",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "unknown",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1973-01-01",
+      "sex": null
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "тромбоз/ТЭЛА",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ыраженный сладж желчного пузыря. Изменения в позвонке Th11, необходима корреляция с данными сцинтиграфии. Гемангиомы в телах Th11, Th12, L1 позвонков. Признаки тромбоза воротной вены с формированием множественных коллатералей. При сравнении"
+      }
+    ],
+    "allergies": [],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": "Злокачественное новообразование (не уточнено)",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "III",
+      "tnm": {
+        "t": "T3",
+        "n": "N2",
+        "m": "M0"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": [
+          "2024-02-06",
+          "2025-10"
+        ]
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "PD-L1",
+      "name_std": "pd-l1",
+      "value": null,
+      "unit": null,
+      "date": "2024-04-13",
+      "method": null,
+      "source": "правила: ИГХ: г.: статус экспрессии PD-L1 позитивный (СPS более/равно 1) CPS=8. HER2-статус 1+, HER2-негативный статус аденокарциномы желудка. Оценка микросателлитной нестабильности"
+    },
+    {
+      "name_raw": "CPS",
+      "name_std": "cps",
+      "value": "8",
+      "unit": null,
+      "date": "2024-04-13",
+      "method": null,
+      "source": "правила: ИГХ: value=8; г.: статус экспрессии PD-L1 позитивный (СPS более/равно 1) CPS=8. HER2-статус 1+, HER2-негативный статус аденокарциномы желудка. Оценка микросателлитной нестабильности не проводилась. КТ ОГК от 06.02.24"
+    },
+    {
+      "name_raw": "HER2",
+      "name_std": "her2",
+      "value": "1+",
+      "unit": null,
+      "date": "2024-04-13",
+      "method": null,
+      "source": "правила: ИГХ: value=1+; г.: статус экспрессии PD-L1 позитивный (СPS более/равно 1) CPS=8. HER2-статус 1+, HER2-негативный статус аденокарциномы желудка. Оценка микросателлитной нестабильности не проводилась. КТ ОГК от 06.02.24г: "
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; тус 1+(негативный статус) PD-L1 (22C3) CPS=3 Микросателлитная нестабильность не выявлена (MSS) Решение: Учитывая гистологический и молекулярно-генетический профиль опухоли, ранее проведенное лечение, про"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "капецитабин",
+      "start_date": null,
+      "end_date": "2023-11-22",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "капецитабин",
+          "std": "капецитабин",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 1,
+      "regimen_name": "капецитабин",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "капецитабин",
+          "std": "капецитабин",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "regimen_name": "рамуцирумаб",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "рамуцирумаб",
+          "std": "рамуцирумаб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "regimen_name": "рамуцирумаб+паклитаксел",
+      "start_date": "2024-12",
+      "end_date": "2025-09",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "рамуцирумаб",
+          "std": "рамуцирумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "паклитаксел",
+          "std": "паклитаксел",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "XELOX",
+      "start_date": "2023-03-24",
+      "end_date": "2023-06-13",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "XELOX",
+          "std": "xelox",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "Нозология не нормализована (nosology_aliases.json не дал совпадений)",
+      "therapy: удалено дублей (line=null) по drug-set/датам: 2",
+      "Привязка прогрессирования к линиям (эвристика): 2024-02-06 -> line 2 (до), затем line 2 (после)"
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [
+    {
+      "date": "2023-08-07",
+      "name": "выполнена операция",
+      "source": "на серозу нет, взяты смывы. 07.08.2023г выполнена операция типа Льюиса с эзофагопластикой желудком"
+    },
+    {
+      "date": "2024-11-08",
+      "name": "выполнена операция: лимфаденэктомия",
+      "source": "до 30 мл свободной жидкости. 08.11.24г выполнена операция: лимфаденэктомия надключичных и паратрахеальных лимфоузл"
+    }
+  ],
+  "metastases": [
+    {
+      "site": "паратрахеальные лимфоузлы",
+      "date": null,
+      "source": ": мтс в паратрахеальные лимфоузлы"
+    },
+    {
+      "site": "параэзофагеальный л/у",
+      "date": null,
+      "source": "По данным КТ - картина рака кардиозофагеального перехода с мтс в параэзофагеальный л/у"
+    },
+    {
+      "site": "верхние паратрахеальные лифоузлы",
+      "date": "2024-09-10",
+      "source": "ПЭТ-КТ от 10.09.24г: единичные метаболически активные мтс в верхние паратрахеальные лифоузлы (SUVmax = 13), размеры 16×22 мм, правый надключичный л/у 8мм SUVmax =2.68 ,малый плевральный выпот справа"
+    },
+    {
+      "site": "двух надключичных лимфатических узлах",
+      "date": null,
+      "source": "Заключение: №1 Метастазы в двух надключичных лимфатических узлах; ENE 0 №2 Метастазы в двух из пяти паратрахеальных лимфатических узлов, ENE1"
+    },
+    {
+      "site": "двух из пяти паратрахеальных лимфатических узлов",
+      "date": null,
+      "source": "Заключение: №1 Метастазы в двух надключичных лимфатических узлах; ENE 0 №2 Метастазы в двух из пяти паратрахеальных лимфатических узлов, ENE1"
+    }
+  ]
+}

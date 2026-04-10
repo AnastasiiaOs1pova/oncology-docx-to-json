@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "case_id": "case_00018",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "lung",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1992-04-01",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "анемия (хроническая/сопутствующая)",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: Пациентка В., 33 года Дата рождения: 01.04.1992 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Железодефицитная анемия (легкая). Аллергии/непереносимость: Контраст - бронхоспазм (премедикация)."
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Контраст - бронхоспазм (премедикация",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Контраст - бронхоспазм (премедикация)."
+      },
+      {
+        "substance": "нокарцинома, метастазы в ЦНС Паспортная часть ФИО: Пациентка",
+        "reaction": null,
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: нокарцинома, метастазы в ЦНС Паспортная часть ФИО: Пациентка В., 33 года Дата рождения: 01.04.1992 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Железодефицитная анемия (легкая). Аллергии/непе"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Железодефицитная анемия",
+        "reaction": null,
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: 01.04.1992 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Железодефицитная анемия (легкая). Аллергии/непереносимость: Контраст - бронхоспазм (премедикация). Диагноз C34.1 Аденокарцинома правого"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "статины",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: статины, антиконвульсанты по показаниям."
+      },
+      {
+        "drug": "антиконвульсанты по показаниям",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: статины, антиконвульсанты по показаниям."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "немелкоклеточный рак лёгкого",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "EGFR",
+      "name_std": "egfr",
+      "value": "не обнаружены",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаружены; олекулярно-генетические данные (фрагменты) ALK: перестройка (ALK fusion) - положительный. EGFR: мутации не обнаружены. ROS1: отрицательный. PD-L1: TPS=5%. Фрагменты выписки/консультаций/протоко"
+    },
+    {
+      "name_raw": "EGFR",
+      "name_std": "egfr",
+      "value": "-",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=-; ерхней доли справа 3.2 см, множественные очаги. Биопсия: аденокарцинома. МГИ: ALK+(FISH), EGFR-. Лечение: 1 линия (02.2025-...): алектиниб 600 мг 2 раза/сут. МРТ головного мозга 03.2025: множественные мтс "
+    },
+    {
+      "name_raw": "ALK",
+      "name_std": "alk",
+      "value": "ALK+",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=ALK+; Кейс 14. НМРЛ (C34), ALK+аденокарцинома, метастазы в ЦНС Паспортная часть ФИО: Пациентка В., 33 года Дата рождения: 01.04.1992 Пол: женский Сопутствующие заболевания и аллергологически"
+    },
+    {
+      "name_raw": "ALK",
+      "name_std": "alk",
+      "value": "fusion",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=fusion; стадия IV (мтс в мозг и кости). Биомаркеры и молекулярно-генетические данные (фрагменты) ALK: перестройка (ALK fusion) - положительный. EGFR: мутации не обнаружены. ROS1: отрицательный. PD-L1: TPS=5%."
+    },
+    {
+      "name_raw": "ROS1",
+      "name_std": "ros1",
+      "value": "отрицат",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=отрицат; е (фрагменты) ALK: перестройка (ALK fusion) - положительный. EGFR: мутации не обнаружены. ROS1: отрицательный. PD-L1: TPS=5%. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Каше"
+    }
+  ],
+  "treatment_history": [],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Терапия не найдена правилами",
+      "therapy: удалено пустых/несистемных/дозовых фрагментов: 1",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "ЦНС Паспортная часть ФИО",
+      "date": null,
+      "source": "НМРЛ (C34), ALK+аденокарцинома, метастазы в ЦНС Паспортная часть ФИО: Пациентка В"
+    },
+    {
+      "site": "мозг и кости",
+      "date": null,
+      "source": "Диагноз C34.1 Аденокарцинома правого лёгкого, стадия IV (мтс в мозг и кости)"
+    }
+  ]
+}

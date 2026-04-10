@@ -1,0 +1,21 @@
+{
+  "found": [],
+  "missing": [],
+  "present": [],
+  "dropped": [
+    {
+      "regimen": "достарлимаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "\"2 линия (04.2025-...): достарлимаб 500 мг каждые 3 недели 4 введения, затем 1000 мг каждые 6 недель\"",
+      "reason": "quote_not_found_in_text"
+    }
+  ],
+  "stats": {
+    "found_total": 0,
+    "missing_total": 0,
+    "present_total": 0,
+    "dropped_total": 1
+  }
+}

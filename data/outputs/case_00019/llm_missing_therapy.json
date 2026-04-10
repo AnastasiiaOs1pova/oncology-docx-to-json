@@ -1,0 +1,45 @@
+{
+  "found": [
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.",
+      "quote_match": "exact",
+      "date_hint": "10.2024-05.2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "missing": [],
+  "present": [
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.",
+      "quote_match": "exact",
+      "date_hint": "10.2024-05.2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "dropped": [
+    {
+      "regimen": "пембролизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Паспортная часть: терапия пембролизумабом и соторасибом",
+      "reason": "quote_not_found_in_text"
+    }
+  ],
+  "stats": {
+    "found_total": 1,
+    "missing_total": 0,
+    "present_total": 1,
+    "dropped_total": 1
+  }
+}

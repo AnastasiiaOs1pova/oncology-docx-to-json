@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "case_id": "anon_001",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "default",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": null,
+      "sex": null
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [],
+    "allergies": [],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": null,
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": null,
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": []
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": []
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

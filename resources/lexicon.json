@@ -1,0 +1,540 @@
+{
+  "version": "1.0",
+  "schema": "normalize_med_text.lexicon",
+  "notes": "Полный словарь 1:1 под текущий normalize_med_text.py (literal + regex safe + units + clinical + спец-фиксы №).",
+
+  "literal_replacements": [
+    { "from": "\\", "to": "/" },
+
+    { "from": "Nº", "to": "№" },
+    { "from": "No ", "to": "№ " },
+    { "from": "No.", "to": "№" },
+    { "from": "№  ", "to": "№ " },
+
+    { "from": "‐", "to": "-" },
+    { "from": "‒", "to": "-" },
+    { "from": "–", "to": "-" },
+    { "from": "—", "to": "-" },
+    { "from": "−", "to": "-" },
+    { "from": "…", "to": "..." },
+
+    { "from": "\u00A0", "to": " " },
+    { "from": "\u202F", "to": " " },
+    { "from": "\u2007", "to": " " }
+  ],
+
+  "special_regex_fixes_after_literal": [
+    {
+      "pattern": "\\bNo\\.?\\s*(?=\\d)",
+      "to": "№",
+      "flags": "NONE",
+      "comment": "эквивалент _apply_literal: No 12 -> №12"
+    },
+    {
+      "pattern": "№\\s{2,}",
+      "to": "№ ",
+      "flags": "NONE",
+      "comment": "эквивалент _apply_literal: убрать двойные пробелы после №"
+    }
+  ],
+
+  "regex_groups": {
+    "safe": [
+      {
+        "pattern": "\\bПЭТ\\s*[-/]\\s*КТ\\b",
+        "to": "ПЭТ-КТ",
+        "flags": "IGNORECASE",
+        "comment": "ПЭТ-КТ"
+      },
+      {
+        "pattern": "\\bПЭТ\\s+КТ\\b",
+        "to": "ПЭТ-КТ",
+        "flags": "IGNORECASE",
+        "comment": "ПЭТ КТ"
+      },
+      {
+        "pattern": "\\bPET\\s*[-/ ]\\s*CT\\b",
+        "to": "ПЭТ-КТ",
+        "flags": "IGNORECASE",
+        "comment": "PET-CT"
+      },
+      {
+        "pattern": "\\bМСКТ\\b",
+        "to": "КТ",
+        "flags": "IGNORECASE",
+        "comment": "МСКТ -> КТ"
+      },
+      {
+        "pattern": "\\bМРТ\\s+ГМ\\b",
+        "to": "МРТ головного мозга",
+        "flags": "IGNORECASE",
+        "comment": "МРТ ГМ"
+      },
+      {
+        "pattern": "\\bМРТ\\s+головн(ого|ого)\\s+мозга\\b",
+        "to": "МРТ головного мозга",
+        "flags": "IGNORECASE",
+        "comment": "МРТ головного мозга (варианты)"
+      },
+
+      {
+        "pattern": "\\bHER\\s*[- ]?\\s*2\\s*(?:/?\\s*neu|neu)?\\b",
+        "to": "HER2",
+        "flags": "IGNORECASE",
+        "comment": "HER2 унификация"
+      },
+      {
+        "pattern": "\\bTPS\\s*=\\s*",
+        "to": "TPS=",
+        "flags": "IGNORECASE",
+        "comment": "TPS= (склейка как CPS=)"
+      },
+      {
+        "pattern": "\\b([dp])\\s*MMR\\b",
+        "to_type": "func",
+        "func": "MMR_DP",
+        "flags": "IGNORECASE",
+        "comment": "dMMR/pMMR унификация"
+      },
+      {
+        "pattern": "\\bE\\s*G\\s*F\\s*R\\b",
+        "to": "EGFR",
+        "flags": "IGNORECASE",
+        "comment": "E G F R -> EGFR"
+      },
+      {
+        "pattern": "\\bA\\s*L\\s*K\\b",
+        "to": "ALK",
+        "flags": "IGNORECASE",
+        "comment": "A L K -> ALK"
+      },
+      {
+        "pattern": "\\bR\\s*O\\s*S\\s*1\\b",
+        "to": "ROS1",
+        "flags": "IGNORECASE",
+        "comment": "R O S 1 -> ROS1"
+      },
+      {
+        "pattern": "\\bK\\s*R\\s*A\\s*S\\b",
+        "to": "KRAS",
+        "flags": "IGNORECASE",
+        "comment": "K R A S -> KRAS"
+      },
+      {
+        "pattern": "\\bN\\s*R\\s*A\\s*S\\b",
+        "to": "NRAS",
+        "flags": "IGNORECASE",
+        "comment": "N R A S -> NRAS"
+      },
+      {
+        "pattern": "\\bB\\s*R\\s*A\\s*F\\b",
+        "to": "BRAF",
+        "flags": "IGNORECASE",
+        "comment": "B R A F -> BRAF"
+      },
+      {
+        "pattern": "\\bP\\s*I\\s*K\\s*3\\s*C\\s*A\\b",
+        "to": "PIK3CA",
+        "flags": "IGNORECASE",
+        "comment": "P I K 3 C A -> PIK3CA"
+      },
+      {
+        "pattern": "\\bM\\s*E\\s*T\\b",
+        "to": "MET",
+        "flags": "IGNORECASE",
+        "comment": "M E T -> MET"
+      },
+      {
+        "pattern": "\\bR\\s*E\\s*T\\b",
+        "to": "RET",
+        "flags": "IGNORECASE",
+        "comment": "R E T -> RET"
+      },
+      {
+        "pattern": "\\bCLDN\\s*18\\s*\\.?\\s*2\\b",
+        "to": "CLDN18.2",
+        "flags": "IGNORECASE",
+        "comment": "CLDN 18.2 / CLDN18.2 -> CLDN18.2"
+      },
+      {
+        "pattern": "\\bK\\s*I\\s*T\\b",
+        "to": "KIT",
+        "flags": "IGNORECASE",
+        "comment": "K I T -> KIT"
+      },
+      {
+        "pattern": "\\bP\\s*D\\s*G\\s*F\\s*R\\s*A\\b",
+        "to": "PDGFRA",
+        "flags": "IGNORECASE",
+        "comment": "P D G F R A -> PDGFRA"
+      },
+      {
+        "pattern": "\\bI\\s*D\\s*H\\s*1\\b",
+        "to": "IDH1",
+        "flags": "IGNORECASE",
+        "comment": "I D H 1 -> IDH1"
+      },
+      {
+        "pattern": "\\bI\\s*D\\s*H\\s*2\\b",
+        "to": "IDH2",
+        "flags": "IGNORECASE",
+        "comment": "I D H 2 -> IDH2"
+      },
+      {
+        "pattern": "\\bM\\s*G\\s*M\\s*T\\b",
+        "to": "MGMT",
+        "flags": "IGNORECASE",
+        "comment": "M G M T -> MGMT"
+      },
+      {
+        "pattern": "\\bERBB\\s*[- ]?\\s*2\\b",
+        "to": "HER2",
+        "flags": "IGNORECASE",
+        "comment": "ERBB2 -> HER2"
+      },
+
+      {
+        "pattern": "\\bKi\\s*[- ]?\\s*67\\b",
+        "to": "Ki67",
+        "flags": "IGNORECASE",
+        "comment": "Ki-67 -> Ki67"
+      },
+      {
+        "pattern": "\\bКi67\\b",
+        "to": "Ki67",
+        "flags": "NONE",
+        "comment": "кириллическая К в 'Кi67'"
+      },
+
+      {
+        "pattern": "\\bPD\\s*[- ]?\\s*L\\s*[- ]?\\s*1\\b",
+        "to": "PD-L1",
+        "flags": "IGNORECASE",
+        "comment": "PD L1 -> PD-L1"
+      },
+      {
+        "pattern": "\\bPDL\\s*[- ]?\\s*1\\b",
+        "to": "PD-L1",
+        "flags": "IGNORECASE",
+        "comment": "PDL-1 -> PD-L1"
+      },
+
+      {
+        "pattern": "\\bCPS\\s*=\\s*",
+        "to": "CPS=",
+        "flags": "IGNORECASE",
+        "comment": "CPS= (склейка)"
+      },
+
+      {
+        "pattern": "\\bMSI\\s*[- ]?\\s*H\\b",
+        "to": "MSI-H",
+        "flags": "IGNORECASE",
+        "comment": "MSI-H"
+      },
+      {
+        "pattern": "\\bMSI\\b",
+        "to": "MSI",
+        "flags": "IGNORECASE",
+        "comment": "MSI"
+      },
+      {
+        "pattern": "\\bMSS\\b",
+        "to": "MSS",
+        "flags": "IGNORECASE",
+        "comment": "MSS"
+      },
+
+      {
+        "pattern": "\\bBRCA\\s*[- ]?\\s*1\\b",
+        "to": "BRCA1",
+        "flags": "IGNORECASE",
+        "comment": "BRCA1"
+      },
+      {
+        "pattern": "\\bBRCA\\s*[- ]?\\s*2\\b",
+        "to": "BRCA2",
+        "flags": "IGNORECASE",
+        "comment": "BRCA2"
+      },
+
+      {
+        "pattern": "\\bNTRK\\s*[- ]?\\s*(1|2|3)\\b",
+        "to_type": "func",
+        "func": "NTRK_GROUP",
+        "flags": "IGNORECASE",
+        "comment": "NTRK 1/2/3 -> NTRK1/2/3"
+      },
+
+      {
+        "pattern": "\\bmts\\b",
+        "to": "мтс",
+        "flags": "IGNORECASE",
+        "comment": "mts -> мтс"
+      },
+
+      {
+        "pattern": "(\\d)\\s+\\+",
+        "to": "\\1+",
+        "flags": "NONE",
+        "comment": "3 + -> 3+"
+      },
+      {
+        "pattern": "(\\d)\\s+%",
+        "to": "\\1%",
+        "flags": "NONE",
+        "comment": "80 % -> 80%"
+      },
+
+      {
+        "pattern": "(\\d),(\\d)",
+        "to": "\\1.\\2",
+        "flags": "NONE",
+        "comment": "десятичная запятая -> точка"
+      },
+
+      {
+        "pattern": "\\s+:",
+        "to": ":",
+        "flags": "NONE",
+        "comment": "пробел перед двоеточием"
+      },
+      {
+        "pattern": ":\\s+",
+        "to": ": ",
+        "flags": "NONE",
+        "comment": "нормализация пробела после двоеточия"
+      },
+      {
+        "pattern": "\\(\\s+",
+        "to": "(",
+        "flags": "NONE",
+        "comment": "пробел после ("
+      },
+      {
+        "pattern": "\\s+\\)",
+        "to": ")",
+        "flags": "NONE",
+        "comment": "пробел перед )"
+      },
+
+      {
+        "pattern": "\\b(I|II|III|IV)\\s*([А-Я])\\b",
+        "to_type": "func",
+        "func": "STAGE_RU_TO_LAT",
+        "flags": "IGNORECASE",
+        "comment": "IIА -> IIA (кирилл А/В/С)"
+      },
+
+      {
+        "pattern": "(\\d{2}\\.\\d{2}\\.\\d{4})\\s+\\.",
+        "to": "\\1.",
+        "flags": "NONE",
+        "comment": "09.01.2024 . -> 09.01.2024."
+      },
+
+      {
+        "pattern": "\\b[сc]\\s*T\\s*([0-4][a-dA-D]?)\\s*N\\s*([0-3xXхХ][a-cA-C]?)\\s*M\\s*([01xхXХ])\\b",
+        "to_type": "func",
+        "func": "TNM_C",
+        "flags": "IGNORECASE",
+        "comment": "cT2N0M0, поддержка х/Х -> x/X"
+      },
+      {
+        "pattern": "\\b([cp])\\s*T\\s*([0-4][a-dA-D]?)\\s*N\\s*([0-3xXхХ][a-cA-C]?)\\s*M\\s*([01xхXХ])\\b",
+        "to_type": "func",
+        "func": "TNM_CP",
+        "flags": "IGNORECASE",
+        "comment": "pT1N0Mx, c/p + х/Х -> x/X"
+      },
+
+      {
+        "pattern": "\\s*\\+\\s*",
+        "to": "+",
+        "flags": "NONE",
+        "comment": "убрать пробелы вокруг +"
+      },
+      {
+        "pattern": "\\s*/\\s*",
+        "to": "/",
+        "flags": "NONE",
+        "comment": "убрать пробелы вокруг /"
+      }
+    ],
+
+    "clinical": [
+      {
+        "pattern": "\\bл\\s*/\\s*у\\b",
+        "to": "л/у",
+        "flags": "IGNORECASE",
+        "comment": "л/у"
+      },
+      {
+        "pattern": "\\bл\\s*/\\s*узл(ы|ах|ов)?\\b",
+        "to": "л/у",
+        "flags": "IGNORECASE",
+        "comment": "л/узлы -> л/у"
+      },
+      {
+        "pattern": "\\bл\\s*\\\\\\s*у\\b",
+        "to": "л/у",
+        "flags": "IGNORECASE",
+        "comment": "л\\у -> л/у"
+      },
+
+      {
+        "pattern": "\\bм\\s*/\\s*ж\\b",
+        "to": "м/ж",
+        "flags": "IGNORECASE",
+        "comment": "м/ж"
+      },
+
+      {
+        "pattern": "\\bПХТ\\b",
+        "to": "ПХТ",
+        "flags": "IGNORECASE",
+        "comment": "ПХТ"
+      },
+      {
+        "pattern": "\\bХТТ\\b",
+        "to": "ХТТ",
+        "flags": "IGNORECASE",
+        "comment": "ХТТ"
+      },
+      {
+        "pattern": "\\bХТ\\b",
+        "to": "ХТ",
+        "flags": "IGNORECASE",
+        "comment": "ХТ"
+      },
+      {
+        "pattern": "\\bМХТ\\b",
+        "to": "МХТ",
+        "flags": "IGNORECASE",
+        "comment": "МХТ"
+      },
+      {
+        "pattern": "\\bИТ\\b",
+        "to": "ИТ",
+        "flags": "IGNORECASE",
+        "comment": "ИТ"
+      },
+      {
+        "pattern": "\\bТТ\\b",
+        "to": "ТТ",
+        "flags": "IGNORECASE",
+        "comment": "ТТ"
+      },
+
+      {
+        "pattern": "\\bмтс\\b",
+        "to": "мтс",
+        "flags": "IGNORECASE",
+        "comment": "мтс"
+      }
+    ],
+
+    "units": [
+      {
+        "pattern": "\\bмг\\s*/\\s*м\\s*\\^?\\s*2\\b",
+        "to": "мг/м2",
+        "flags": "IGNORECASE",
+        "comment": "мг/м2"
+      },
+      {
+        "pattern": "\\bмгм2\\b",
+        "to": "мг/м2",
+        "flags": "IGNORECASE",
+        "comment": "мгм2 -> мг/м2"
+      },
+      {
+        "pattern": "\\bmg\\s*/\\s*m\\s*2\\b",
+        "to": "мг/м2",
+        "flags": "IGNORECASE",
+        "comment": "mg/m2 -> мг/м2"
+      },
+
+      {
+        "pattern": "\\bмг\\s*/\\s*кг\\b",
+        "to": "мг/кг",
+        "flags": "IGNORECASE",
+        "comment": "мг/кг"
+      },
+
+      {
+        "pattern": "(\\d)\\s*Гр\\b",
+        "to": "\\1 Гр",
+        "flags": "NONE",
+        "comment": "10Гр -> 10 Гр"
+      },
+      {
+        "pattern": "\\bСОД\\s*(\\d+)\\b",
+        "to": "СОД \\1",
+        "flags": "IGNORECASE",
+        "comment": "СОД60 -> СОД 60"
+      },
+
+      {
+        "pattern": "\\bAUC\\s*([0-9]+)\\b",
+        "to": "AUC\\1",
+        "flags": "IGNORECASE",
+        "comment": "AUC 6 -> AUC6"
+      },
+
+      {
+        "pattern": "\\b(\\d{1,2})\\s*й\\b",
+        "to": "\\1-й",
+        "flags": "IGNORECASE",
+        "comment": "12й -> 12-й"
+      },
+      {
+        "pattern": "\\b(\\d{1,2})\\s*,\\s*(\\d{1,2})\\s*дни\\b",
+        "to": "\\1-й и \\2-й дни",
+        "flags": "IGNORECASE",
+        "comment": "1, 8 дни -> 1-й и 8-й дни"
+      }
+    ]
+  },
+
+  "functions_required": [
+    "NTRK_GROUP",
+    "STAGE_RU_TO_LAT",
+    "RU_TO_LAT_X",
+    "TNM_C",
+    "TNM_CP",
+    "MMR_DP"
+  ],
+
+  "function_specs": {
+    "NTRK_GROUP": {
+      "signature": "(m: re.Match[str]) -> str",
+      "description": "NTRK + номер группы 1/2/3",
+      "python_equivalent": "return f\"NTRK{m.group(1)}\""
+    },
+    "STAGE_RU_TO_LAT": {
+      "signature": "(m: re.Match[str]) -> str",
+      "description": "IIА/IIВ/IIС -> IIA/IIB/IIC",
+      "python_equivalent": "return f\"{m.group(1)}{ {'А':'A','В':'B','С':'C'}.get(m.group(2), m.group(2)) }\""
+    },
+    "RU_TO_LAT_X": {
+      "signature": "(ch: str) -> str",
+      "description": "х/Х -> x/X (для TNM)",
+      "python_equivalent": "return {'х':'x','Х':'X'}.get(ch, ch)"
+    },
+    "TNM_C": {
+      "signature": "(m: re.Match[str]) -> str",
+      "description": "cT..N..M.. с заменой х/Х",
+      "python_equivalent": "return f\"cT{m.group(1)}N{ru_to_lat_x(m.group(2))}M{ru_to_lat_x(m.group(3))}\""
+    },
+    "TNM_CP": {
+      "signature": "(m: re.Match[str]) -> str",
+      "description": "p/cT..N..M.. с заменой х/Х",
+      "python_equivalent": "return f\"{m.group(1)}T{m.group(2)}N{ru_to_lat_x(m.group(3))}M{ru_to_lat_x(m.group(4))}\""
+    },
+    "MMR_DP": {
+      "signature": "(m: re.Match[str]) -> str",
+      "description": "dMMR/pMMR унификация регистра префикса",
+      "python_equivalent": "return f\"{m.group(1).lower()}MMR\""
+    }
+  }
+}

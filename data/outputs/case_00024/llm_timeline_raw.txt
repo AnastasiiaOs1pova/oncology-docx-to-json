@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "date": "04.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Увеличение шейных л/у 04.2025, ночная потливость, субфебрилитет.",
+      "confidence": 0.0
+    },
+    {
+      "date": "05.2025",
+      "date_precision": "month",
+      "event_type": "diagnosis",
+      "text_snippet": "Биопсия л/у 05.2025: DLBCL.",
+      "confidence": 0.0
+    },
+    {
+      "date": "06-10.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: R-CHOP x 6 (06-10.2025): ритуксимаб+циклофосфамид+доксорубицин+винкристин+преднизолон.",
+      "confidence": 0.0
+    },
+    {
+      "date": "11.2025",
+      "date_precision": "month",
+      "event_type": "therapy_end",
+      "text_snippet": "Контроль ПЭТ-КТ 11.2025: полный метаболический ответ.",
+      "confidence": 0.0
+    }
+  ]
+}

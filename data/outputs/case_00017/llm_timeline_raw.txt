@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "date": "2022-10-05",
+      "date_precision": "day",
+      "event_type": "therapy_start",
+      "text_snippet": "Удаление пигментного образования 2022 (без стадирования). В 05.2024 - увеличение подмышечных л/у, кашель.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-06",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "ПЭТ-КТ 06.2024: мтс в л/у и лёгких.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-07-10",
+      "date_precision": "day",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (07-10.2024): дабрафениб+траметиниб.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-11",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Частичный ответ, затем прогрессирование 11.2024.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-12",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (12.2024-...): ниволумаб+ипилимумаб (4 введения), далее ниволумаб.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-02",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Осложнение 02.2025: иммуноопосредованный колит 3 ст. (диарея до 10 раз/сут) - ГКС, затем инфликсимаб (по решению консилиума).",
+      "confidence": 0.0
+    }
+  ]
+}

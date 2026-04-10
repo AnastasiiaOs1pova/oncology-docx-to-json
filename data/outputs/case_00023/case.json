@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "case_id": "case_00023",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "unknown",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1977-03-13",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "эпилепсия",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: ортная часть ФИО: Пациентка ПП., 48 лет Дата рождения: 13.03.1977 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Эпилепсия (вторичная, после операции). Аллергии/непереносимость: Нет данных. Диа"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Нет данных",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Нет данных."
+      },
+      {
+        "substance": "после химиолучевого лечения Паспортная часть анамнез Сопутс",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: после химиолучевого лечения Паспортная часть ФИО: Пациентка ПП., 48 лет Дата рождения: 13.03.1977 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Эпилепсия (вторичная, после операции). Аллергии/"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Эпилепсия (вторичная, пос",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: 3.1977 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Эпилепсия (вторичная, после операции). Аллергии/непереносимость: Нет данных. Диагноз Глиобластома, WHO grade 4, опухоль правой лобной доли,"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "леветирацетам",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: леветирацетам, дексаметазон короткими курсами при отёке."
+      },
+      {
+        "drug": "дексаметазон короткими курсами при отёке",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: леветирацетам, дексаметазон короткими курсами при отёке."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "Злокачественное новообразование (не уточнено)",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": "у)",
+      "start_date": "2024-03",
+      "end_date": "2024-05",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "у)",
+          "std": "у)",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Биомаркеры не найдены правилами",
+      "Нозология не нормализована (nosology_aliases.json не дал совпадений)",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

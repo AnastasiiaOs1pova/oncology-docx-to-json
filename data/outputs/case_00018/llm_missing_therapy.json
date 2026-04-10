@@ -1,0 +1,58 @@
+{
+  "found": [
+    {
+      "regimen": "алектиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (02.2025-...): алектиниб 600 мг 2 раза/сут.",
+      "quote_match": "exact",
+      "date_hint": "02.2025-...",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "лорлатиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (01.2026-...): лорлатиниб 100 мг/сут.",
+      "quote_match": "exact",
+      "date_hint": "01.2026-...",
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "алектиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (02.2025-...): алектиниб 600 мг 2 раза/сут.",
+      "quote_match": "exact",
+      "date_hint": "02.2025-...",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "лорлатиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (01.2026-...): лорлатиниб 100 мг/сут.",
+      "quote_match": "exact",
+      "date_hint": "01.2026-...",
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 2,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

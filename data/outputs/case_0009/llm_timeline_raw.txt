@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "date": "03.2024",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "С 03.2024 - слабость, похудание, периодический субфебрилитет.",
+      "confidence": 0.0
+    },
+    {
+      "date": "05.2024",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "МРТ/МРХПГ 05.2024: очаг в S8 печени 5.2 см, расширение внутрипечёночных протоков.",
+      "confidence": 0.0
+    },
+    {
+      "date": "06.2024",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Биопсия 06.2024: аденокарцинома, соответствует холангиокарциноме.",
+      "confidence": 0.0
+    },
+    {
+      "date": "07.2024-12.2024",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (07.2024-12.2024): гемцитабин 1000 мг/м2 (дни 1 и 8)+цисплатин 25 мг/м2 (дни 1 и 8) каждые 21 день, 6 циклов.",
+      "confidence": 0.0
+    },
+    {
+      "date": "01.2025",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "КТ 01.2025: стабилизация.",
+      "confidence": 0.0
+    },
+    {
+      "date": "06.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 06.2025: новые очаги в лёгких, рост внутрипечёночного узла.",
+      "confidence": 0.0
+    },
+    {
+      "date": "07.2025-...",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (07.2025-...): пемигатиниб (ингибитор FGFR), режим 14 дней приёма/7 дней перерыв.",
+      "confidence": 0.0
+    }
+  ]
+}

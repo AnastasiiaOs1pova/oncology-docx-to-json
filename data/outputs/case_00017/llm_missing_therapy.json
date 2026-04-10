@@ -1,0 +1,81 @@
+{
+  "found": [
+    {
+      "regimen": "дабрафениб+траметиниб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (07-10.2024): дабрафениб+траметиниб.",
+      "quote_match": "exact",
+      "date_hint": "07-10.2024",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "ниволумаб+ипилимумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (12.2024-...): ниволумаб+ипилимумаб (4 введения), далее ниволумаб.",
+      "quote_match": "exact",
+      "date_hint": "12.2024",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "ниволумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (12.2024-...): ниволумаб+ипилимумаб (4 введения), далее ниволумаб.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "ниволумаб+ипилимумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (12.2024-...): ниволумаб+ипилимумаб (4 введения), далее ниволумаб.",
+      "quote_match": "exact",
+      "date_hint": "12.2024",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "ниволумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (12.2024-...): ниволумаб+ипилимумаб (4 введения), далее ниволумаб.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "дабрафениб+траметиниб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (07-10.2024): дабрафениб+траметиниб.",
+      "quote_match": "exact",
+      "date_hint": "07-10.2024",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 2,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

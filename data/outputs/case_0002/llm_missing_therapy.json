@@ -1,0 +1,169 @@
+{
+  "found": [
+    {
+      "regimen": "осимертиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Продолжен прием осимерт.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "атезолизумаб+бевацизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 4 курса. по данным ПЭТ-КТ всего тела с 18f-ФДГ от 07.02.2025г.",
+      "quote_match": "normalized",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "паклитаксел+карбоплатин+атезолизумаб+бевацизумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 4 курса.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "пеметрекседом",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Состояние после 3-х курсов МХТ пеметрекседом по в/у схеме.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "атезолизумаб+бевацизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "Рекомендовано проведение по м/жительства лекарственной терапии со сменой режима по схеме: Атезолизумаб 1200 мг в/в+паклитаксел 200 мг/м2+карбоплатин AUC6 в/в+бевацизумаб 15 мг/кг в/в в 1-й день каждые 3 нед. 4 цикла, в дальнейшем - поддерживающая терапия атезолизумабом и бевацизумабом до прогрессирования или непереносимой токсичности.",
+      "quote_match": "normalized",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "доцетаксел 75 мг/м2 в/в+/- нинтеданиб 200 мг внутрь х 2 раза в день",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "Рекомендовано, при отсутствии противопоказаний, проведение по м/жительства лекарственной терапии по одной из схем: Доцетаксел 75 мг/м2 в/в в 1-й день+/- Нинтеданиб 200 мг внутрь х 2 раза в день 2-21 дни, ИЛИ в режиме Пеметрексед 500 мг/м2 в/в в 1-й день на фоне стандартной пре- и постмедикациии, интервал 21 день до прогрессирования или непереносимой токсичности с контролем каждые 2-3 курса лечения.",
+      "quote_match": "normalized",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "пеметрексед 500 мг/м2 в/в в 1-й день на фоне стандартной пре- и постмедикациии",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "МДОК от 14.08.25г.- рекомендовано проведение ХТ по схеме: пеметрексед №4 курса с послед. контролем.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "осимертиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Продолжен прием осимерт.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "атезолизумаб+бевацизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 4 курса. по данным ПЭТ-КТ всего тела с 18f-ФДГ от 07.02.2025г.",
+      "quote_match": "normalized",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "паклитаксел+карбоплатин+атезолизумаб+бевацизумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 4 курса.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "атезолизумаб+бевацизумаб",
+      "kind": "immunotherapy",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "Рекомендовано проведение по м/жительства лекарственной терапии со сменой режима по схеме: Атезолизумаб 1200 мг в/в+паклитаксел 200 мг/м2+карбоплатин AUC6 в/в+бевацизумаб 15 мг/кг в/в в 1-й день каждые 3 нед. 4 цикла, в дальнейшем - поддерживающая терапия атезолизумабом и бевацизумабом до прогрессирования или непереносимой токсичности.",
+      "quote_match": "normalized",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "доцетаксел 75 мг/м2 в/в+/- нинтеданиб 200 мг внутрь х 2 раза в день",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "Рекомендовано, при отсутствии противопоказаний, проведение по м/жительства лекарственной терапии по одной из схем: Доцетаксел 75 мг/м2 в/в в 1-й день+/- Нинтеданиб 200 мг внутрь х 2 раза в день 2-21 дни, ИЛИ в режиме Пеметрексед 500 мг/м2 в/в в 1-й день на фоне стандартной пре- и постмедикациии, интервал 21 день до прогрессирования или непереносимой токсичности с контролем каждые 2-3 курса лечения.",
+      "quote_match": "normalized",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "пеметрексед 500 мг/м2 в/в в 1-й день на фоне стандартной пре- и постмедикациии",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "МДОК от 14.08.25г.- рекомендовано проведение ХТ по схеме: пеметрексед №4 курса с послед. контролем.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "пеметрекседом",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Состояние после 3-х курсов МХТ пеметрекседом по в/у схеме.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 7,
+    "missing_total": 6,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

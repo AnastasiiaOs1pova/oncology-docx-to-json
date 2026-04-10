@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "date": "09.2024",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "В 09.2024 на УЗИ выявлен узел 3.8 см в правой доле.",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2024",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "МРТ печени с контрастом 10.2024: типичная картина ГЦК (LI-RADS 5), дополнительные мелкие очаги.",
+      "confidence": 0.0
+    },
+    {
+      "date": "11.2024",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "КТ ОГК 11.2024: единичные мтс в лёгких до 6 мм.",
+      "confidence": 0.0
+    },
+    {
+      "date": "12.2024-08.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (12.2024-08.2025): атезолизумаб 1200 мг в/в+бевацизумаб 15 мг/кг в/в каждые 3 недели.",
+      "confidence": 0.0
+    },
+    {
+      "date": "04.2025",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "КТ 04.2025: частичный ответ, уменьшение основного узла до 2.5 см.",
+      "confidence": 0.0
+    },
+    {
+      "date": "09.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 09.2025: рост лёгочных очагов, новый очаг в печени.",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2025-...",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (10.2025-...): ленватиниб 8 мг/сут, далее при токсичности редукция до 4 мг/сут.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

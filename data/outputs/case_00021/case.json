@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "case_id": "case_00021",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "breast",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1973-12-25",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ортная часть ФИО: Пациентка Б., 52 года Дата рождения: 25.12.1973 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Сердечная недостаточность I ФК (ФВ 55%). Аллергии/непе"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Доцетаксел - выраженная отёчность/алопеция (ожидаемая токсично",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Доцетаксел - выраженная отёчность/алопеция (ожидаемая токсичность)."
+      },
+      {
+        "substance": "доцетаксел",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: ьность THP -> T-DM1 -> T-DXd Паспортная часть ФИО: Пациентка Б., 52 года Дата рождения: 25.12.1973 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия. Сердечная недостаточн"
+      }
+    ],
+    "concomitant_meds": []
+  },
+  "diagnoses": [
+    {
+      "disease": "рак молочной железы",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "BRCA1",
+      "name_std": "brca1",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; улярно-генетические данные (фрагменты) HER23+(ИГХ), ER 10%, PR 0%, Ki67 35%. PD-L1 CPS=0. BRCA1/2: не обнаружено. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Диагноз 2022,"
+    },
+    {
+      "name_raw": "BRCA1/2",
+      "name_std": "brca1/2",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; улярно-генетические данные (фрагменты) HER23+(ИГХ), ER 10%, PR 0%, Ki67 35%. PD-L1 CPS=0. BRCA1/2: не обнаружено. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Диагноз 2022,"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "доцетаксел+трастузумаб+пертузумаб, затем поддержка трастузумаб+пертузумаб",
+      "start_date": "2022",
+      "end_date": "2023",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "доцетаксел",
+          "std": "доцетаксел",
+          "alternative_group": null
+        },
+        {
+          "raw": "трастузумаб",
+          "std": "трастузумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "пертузумаб, затем поддержка трастузумаб",
+          "std": "пертузумаб, затем поддержка трастузумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "пертузумаб",
+          "std": "пертузумаб",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "regimen_name": "трастузумаб эмтанзин (T-DM1), стабилизация",
+      "start_date": "2024-09",
+      "end_date": "2025-06",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "трастузумаб эмтанзин (T-DM1), стабилизация",
+          "std": "трастузумаб эмтанзин , стабилизация",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "печени",
+      "date": null,
+      "source": "Диагноз C50.2 Рак левой молочной железы, HER23+, стадия IV (мтс в печени)"
+    }
+  ]
+}

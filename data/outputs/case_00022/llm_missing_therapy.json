@@ -1,0 +1,81 @@
+{
+  "found": [
+    {
+      "regimen": "иматиниб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия: иматиниб 400 мг/сут (2024-2025)",
+      "quote_match": "exact",
+      "date_hint": "2024-2025",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "сунитиниб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия: сунитиниб 50 мг (4 недели приёма/2 недели перерыв)",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "регорафениб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "medium",
+      "quote": "3 линия: регорафениб (по решению консилиума)",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "сунитиниб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия: сунитиниб 50 мг (4 недели приёма/2 недели перерыв)",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "регорафениб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "medium",
+      "quote": "3 линия: регорафениб (по решению консилиума)",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "иматиниб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия: иматиниб 400 мг/сут (2024-2025)",
+      "quote_match": "exact",
+      "date_hint": "2024-2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 2,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

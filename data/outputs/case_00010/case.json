@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "case_id": "case_00010",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gi",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1958-05-05",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "хронический гепатит",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: циентка Н., 67 лет Дата рождения: 05.05.1958 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хронический вирусный гепатит B (на энтекавире). Портальная гипертензия, варикоз вен пищевода (лигиров"
+      },
+      {
+        "name": "цирроз печени",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ные (фрагменты) PD-L1: не указано. TMB 2.6 mut/Mb (низкий). MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Наблюдение по поводу цирроза печени. В 09.2024 на УЗИ выявлен узел 3.8 см в правой доле. МРТ печени с"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: НПВП - бронхоспазм (аспириновая астма в анамнезе",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: НПВП - бронхоспазм (аспириновая астма в анамнезе)."
+      },
+      {
+        "substance": "фоне цирроза",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: на фоне цирроза, ИТ+анти-VEGF Паспортная часть ФИО: Пациентка Н., 67 лет Дата рождения: 05.05.1958 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Хронический вирусный гепатит B (на энтекавире)."
+      },
+      {
+        "substance": "энтекавире",
+        "reaction": null,
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: я: Хронический вирусный гепатит B (на энтекавире). Портальная гипертензия, варикоз вен пищевода (лигирование 2023). Сахарный диабет 2 типа. Аллергии/непереносимость: НПВП - бронхоспазм (аспириновая астма в анамнезе). Диагноз C22.0 Гепатоцел"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "энтекавир",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: энтекавир, пропранолол (варикоз), метформин, диуретики по показаниям."
+      },
+      {
+        "drug": "пропранолол (варикоз)",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: энтекавир, пропранолол (варикоз), метформин, диуретики по показаниям."
+      },
+      {
+        "drug": "метформин",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: энтекавир, пропранолол (варикоз), метформин, диуретики по показаниям."
+      },
+      {
+        "drug": "диуретики по показаниям",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: энтекавир, пропранолол (варикоз), метформин, диуретики по показаниям."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "гепатоцеллюлярная карцинома",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; и молекулярно-генетические данные (фрагменты) PD-L1: не указано. TMB 2.6 mut/Mb (низкий). MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Наблюдение по поводу цирроза печен"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; екулярно-генетические данные (фрагменты) PD-L1: не указано. TMB 2.6 mut/Mb (низкий). MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Наблюдение по поводу цирроза печени. В "
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "атезолизумаб",
+      "start_date": "2024-12",
+      "end_date": "2025-08",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "атезолизумаб",
+          "std": "атезолизумаб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами"
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

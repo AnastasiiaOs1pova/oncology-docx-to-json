@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "case_id": "case_00015",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "kidney",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1965-09-09",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: портная часть ФИО: Пациентка Д., 60 лет Дата рождения: 09.09.1965 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия III ст. ХБП 3a после нефрэктомии. Гипотиреоз (аутоиммун"
+      },
+      {
+        "name": "гипотиреоз",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: 9.1965 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия III ст. ХБП 3a после нефрэктомии. Гипотиреоз (аутоиммунный). Аллергии/непереносимость: Нет данных. Диагноз C64 Све"
+      },
+      {
+        "name": "хроническая болезнь почек",
+        "severity": null,
+        "status": "resolved",
+        "source": "confidence=weak; правила: сопутствующее: 60 лет Дата рождения: 09.09.1965 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия III ст. ХБП 3a после нефрэктомии. Гипотиреоз (аутоиммунный). Аллергии/непереносимость: Н"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Нет данных",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Нет данных."
+      },
+      {
+        "substance": "последовательность ИТ -> ТКИ Паспортная часть анамнез Сопут",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: последовательность ИТ -> ТКИ Паспортная часть ФИО: Пациентка Д., 60 лет Дата рождения: 09.09.1965 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия III ст. ХБП 3a после не"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Артериальная гипертензия",
+        "reaction": null,
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: аллергологический анамнез Сопутствующие заболевания: Артериальная гипертензия III ст. ХБП 3a после нефрэктомии. Гипотиреоз (аутоиммунный). Аллергии/непереносимость: Нет данных. Диагноз C64 Светлоклеточный почечно-клеточный рак, pT3aN0M1 (мт"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "левотироксин",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: левотироксин, ингибитор АПФ, контроль давления."
+      },
+      {
+        "drug": "ингибитор АПФ",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: левотироксин, ингибитор АПФ, контроль давления."
+      },
+      {
+        "drug": "контроль давления",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: левотироксин, ингибитор АПФ, контроль давления."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "светлоклеточный почечно-клеточный рак",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": "T3A",
+        "n": "N0",
+        "m": "M1"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; ры и молекулярно-генетические данные (фрагменты) PD-L1: TPS=10%. TMB 1.9 mut/Mb (низкий). MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Гематурия 2023. КТ 01.2024: опухол"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; молекулярно-генетические данные (фрагменты) PD-L1: TPS=10%. TMB 1.9 mut/Mb (низкий). MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Гематурия 2023. КТ 01.2024: опухоль пра"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "ниволумаб+ипилимумаб,",
+      "start_date": "2024-03",
+      "end_date": "2024-08",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "ниволумаб",
+          "std": "ниволумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "ипилимумаб,",
+          "std": "ипилимумаб,",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "regimen_name": "ленватиниб+эверолимус, мониторинг АД и функции почек",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "ленватиниб",
+          "std": "ленватиниб",
+          "alternative_group": null
+        },
+        {
+          "raw": "эверолимус, мониторинг АД и функции почек",
+          "std": "эверолимус, мониторинг ад и функции почек",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "therapy: удалено подозрительных эпизодов без номера (line=null): 1",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

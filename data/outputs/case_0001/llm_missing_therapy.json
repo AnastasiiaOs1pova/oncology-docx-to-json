@@ -1,0 +1,243 @@
+{
+  "found": [
+    {
+      "regimen": "(паклитаксел+карбоплатин)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 09.2021 по 03.2022 - еженедельная ХТ по схеме ТС: Паклитаксел 80 мг/м2+Карбоплатин AUC2.",
+      "quote_match": "exact",
+      "date_hint": "с 09.2021 по 03.2022",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "эрибулином",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 3 курса ПХТ.",
+      "quote_match": "normalized",
+      "date_hint": "с 03.2022г по 08.2022",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(карбоплатин+гемцитабин+бевацизумаб)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 19.08.2022 по 02.2023 проведено 5 курсов ПХТ.",
+      "quote_match": "exact",
+      "date_hint": "с 19.08.2022 по 02.2023",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "винорельбином",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 22.03.2023 по 05.2023 - проведено 3 курса МХТ винорельбином.",
+      "quote_match": "exact",
+      "date_hint": "с 22.03.2023 по 05.2023",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(иксабепилон+капецитабин)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 3 курса ПХТ.",
+      "quote_match": "normalized",
+      "date_hint": "с 05.23г",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "атезолизумабом",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 1 введение от 02.2024г.",
+      "quote_match": "exact",
+      "date_hint": "02.2024",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(иринотекан+гемцитабин+бевацизумаб)",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Онкологический консилиум МКНЦ Логинова: рекомендовано лечение по схеме: иринотекан 125 мг/м2 1.15 дни+гемцитабин 750 мг/м2 1.15 дни+бевацизумаб 10 мг/кг 1 раз в 3 недели.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "доксорубицином",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "C 12.2024 по 28.01.2025: доксорубицин в еженедельном режиме.",
+      "quote_match": "exact",
+      "date_hint": "с 12.2024 по 28.01.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(циклофосфамид+метотрексат)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 25.05.2025г по 25.07.2025г - химиотерапия в метрономном режиме: циклофосфамид 50 мг внутрь ежедневно+метотрексат по 2.5 мг внутрь 2 раза в день в 1-й и 2-й дни каждой недели.",
+      "quote_match": "exact",
+      "date_hint": "с 25.05.2025г по 25.07.2025г",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(BCD-236+винорельбин)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 28.08.2025 по 11.12.2025 в рамках клинического исследования получала: 20 мг/кг в 1-й день+винорельбин 25 мг/м2 в 1-й и 8-й дни каждого 21-дневного цикла.",
+      "quote_match": "exact",
+      "date_hint": "с 28.08.2025 по 11.12.2025",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [],
+  "present": [
+    {
+      "regimen": "(паклитаксел+карбоплатин)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 09.2021 по 03.2022 - еженедельная ХТ по схеме ТС: Паклитаксел 80 мг/м2+Карбоплатин AUC2.",
+      "quote_match": "exact",
+      "date_hint": "с 09.2021 по 03.2022",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "эрибулином",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 3 курса ПХТ.",
+      "quote_match": "normalized",
+      "date_hint": "с 03.2022г по 08.2022",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(карбоплатин+гемцитабин+бевацизумаб)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 19.08.2022 по 02.2023 проведено 5 курсов ПХТ.",
+      "quote_match": "exact",
+      "date_hint": "с 19.08.2022 по 02.2023",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "винорельбином",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 22.03.2023 по 05.2023 - проведено 3 курса МХТ винорельбином.",
+      "quote_match": "exact",
+      "date_hint": "с 22.03.2023 по 05.2023",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(иксабепилон+капецитабин)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 3 курса ПХТ.",
+      "quote_match": "normalized",
+      "date_hint": "с 05.23г",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "атезолизумабом",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Проведено 1 введение от 02.2024г.",
+      "quote_match": "exact",
+      "date_hint": "02.2024",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(иринотекан+гемцитабин+бевацизумаб)",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "Онкологический консилиум МКНЦ Логинова: рекомендовано лечение по схеме: иринотекан 125 мг/м2 1.15 дни+гемцитабин 750 мг/м2 1.15 дни+бевацизумаб 10 мг/кг 1 раз в 3 недели.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "доксорубицином",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "C 12.2024 по 28.01.2025: доксорубицин в еженедельном режиме.",
+      "quote_match": "exact",
+      "date_hint": "с 12.2024 по 28.01.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(циклофосфамид+метотрексат)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 25.05.2025г по 25.07.2025г - химиотерапия в метрономном режиме: циклофосфамид 50 мг внутрь ежедневно+метотрексат по 2.5 мг внутрь 2 раза в день в 1-й и 2-й дни каждой недели.",
+      "quote_match": "exact",
+      "date_hint": "с 25.05.2025г по 25.07.2025г",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "(BCD-236+винорельбин)",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 28.08.2025 по 11.12.2025 в рамках клинического исследования получала: 20 мг/кг в 1-й день+винорельбин 25 мг/м2 в 1-й и 8-й дни каждого 21-дневного цикла.",
+      "quote_match": "exact",
+      "date_hint": "с 28.08.2025 по 11.12.2025",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "dropped": [
+    {
+      "regimen": "(паклитаксел+карбоплатин/цисплатин)",
+      "kind": "chemo",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "С 08.24г по 11.2024 химиотерапия: Паклитаксел 80 мг/м2 еженедельно+Карбоплатин AUC2 (аллергическая реакция)+Цисplatин 1 раз в 28 дней.",
+      "reason": "quote_not_found_in_text"
+    }
+  ],
+  "stats": {
+    "found_total": 10,
+    "missing_total": 0,
+    "present_total": 10,
+    "dropped_total": 1
+  }
+}

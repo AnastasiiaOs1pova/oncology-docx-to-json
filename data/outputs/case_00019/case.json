@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "case_id": "case_00019",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "lung",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1960-07-17",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, эмфизема. Артериальная гипертензия. Аллергии/непереносимость: Паклитаксел - зуд/сыпь (купи"
+      },
+      {
+        "name": "ХОБЛ",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: аспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, эмфизема. Артериальная гипертензия. Аллергии/непереносимость: Паклитаксел "
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Паклитаксел - зуд/сыпь (купировано",
+        "reaction": "сыпь",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Паклитаксел - зуд/сыпь (купировано)."
+      },
+      {
+        "substance": "соторасиб",
+        "reaction": "сыпь",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: я пембролизумабом и соторасибом Паспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, эмфизема. Артериальная гипертензия. Аллер"
+      },
+      {
+        "substance": "паклитаксел",
+        "reaction": "сыпь",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: 960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, эмфизема. Артериальная гипертензия. Аллергии/непереносимость: Паклитаксел - зуд/сыпь (купировано). Диагноз C34.3 Аденокарцинома нижней д"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "ингаляторы",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляторы, антигипертензивные."
+      },
+      {
+        "drug": "антигипертензивные",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляторы, антигипертензивные."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "немелкоклеточный рак лёгкого",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "EGFR",
+      "name_std": "egfr",
+      "value": "не обнаружено",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаружено; чечник). Биомаркеры и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено. EGFR/ALK/ROS1: не обнаружено. PD-L1 TPS=70%. TMB 9.5 mut/Mb. Фрагменты выписки/консультаций/протоколов "
+    },
+    {
+      "name_raw": "ALK",
+      "name_std": "alk",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; к). Биомаркеры и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено. EGFR/ALK/ROS1: не обнаружено. PD-L1 TPS=70%. TMB 9.5 mut/Mb. Фрагменты выписки/консультаций/протоколов (свободн"
+    },
+    {
+      "name_raw": "ROS1",
+      "name_std": "ros1",
+      "value": "не обнаруж",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=не обнаруж; Биомаркеры и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено. EGFR/ALK/ROS1: не обнаружено. PD-L1 TPS=70%. TMB 9.5 mut/Mb. Фрагменты выписки/консультаций/протоколов (свободный т"
+    },
+    {
+      "name_raw": "KRAS",
+      "name_std": "kras",
+      "value": "G12C",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=G12C; Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом Паспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболе"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "пембролизумаб",
+      "start_date": "2024-10",
+      "end_date": "2025-05",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "пембролизумаб",
+          "std": "пембролизумаб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами"
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "надпочечник",
+      "date": null,
+      "source": "Диагноз C34.3 Аденокарцинома нижней доли левого лёгкого, стадия IV (мтс в надпочечник)"
+    },
+    {
+      "site": "левый надпочечник 2",
+      "date": "2024-09",
+      "source": "Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см"
+    }
+  ]
+}

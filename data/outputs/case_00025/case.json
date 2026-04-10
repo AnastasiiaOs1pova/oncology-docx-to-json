@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "case_id": "case_00025",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "heme",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1985-01-29",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "язвенная болезнь",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: портная часть ФИО: Пациентка Я., 41 год Дата рождения: 29.01.1985 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Язвенная болезнь желудка (анамнез). Аллергии/непереносимость: Пенициллины - сыпь"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Пенициллины - сыпь (по словам пациентки",
+        "reaction": "сыпь",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Пенициллины - сыпь (по словам пациентки)."
+      },
+      {
+        "substance": "ция 7",
+        "reaction": "сыпь",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: ция 7+3, осложнения инфекцией Паспортная часть ФИО: Пациентка Я., 41 год Дата рождения: 29.01.1985 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Язвенная болезнь желудка (анамнез). Аллергии/не"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Язвенная болезнь желудка",
+        "reaction": "сыпь",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: 9.01.1985 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Язвенная болезнь желудка (анамнез). Аллергии/непереносимость: Пенициллины - сыпь (по словам пациентки). Диагноз Острый миелобластный лей"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "противогрибковая профилактика",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: противогрибковая профилактика, трансфузии компонентов крови."
+      },
+      {
+        "drug": "трансфузии компонентов крови",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: противогрибковая профилактика, трансфузии компонентов крови."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "острый миелобластный лейкоз",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": "стационара, удаление ЦВК",
+      "start_date": "2025-09",
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "стационара, удаление ЦВК",
+          "std": "стационара, удаление цвк",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "стационара, удаление ЦВК",
+      "start_date": "2025-11",
+      "end_date": "2026-01",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "стационара, удаление ЦВК",
+          "std": "стационара, удаление цвк",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Биомаркеры не найдены правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

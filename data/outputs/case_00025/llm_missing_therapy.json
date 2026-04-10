@@ -1,0 +1,58 @@
+{
+  "found": [
+    {
+      "regimen": "7+3",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: Индукция (09.2025): цитарабин 100 мг/м2/сут в/в 7 дней+даунорубицин 60 мг/м2/сут в/в 3 дня (режим \"7+3\").",
+      "quote_match": "exact",
+      "date_hint": "09.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "HiDAC",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Ремиссия 10.2025, далее консолидация высокодозным цитарабином (HiDAC) 11.2025-01.2026.",
+      "quote_match": "exact",
+      "date_hint": "11.2025-01.2026",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "7+3",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: Индукция (09.2025): цитарабин 100 мг/м2/сут в/в 7 дней+даунорубицин 60 мг/м2/сут в/в 3 дня (режим \"7+3\").",
+      "quote_match": "exact",
+      "date_hint": "09.2025",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "HiDAC",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Ремиссия 10.2025, далее консолидация высокодозным цитарабином (HiDAC) 11.2025-01.2026.",
+      "quote_match": "exact",
+      "date_hint": "11.2025-01.2026",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 2,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

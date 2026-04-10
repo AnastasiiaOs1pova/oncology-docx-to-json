@@ -1,0 +1,699 @@
+{
+  "version": "2.0",
+  "schema": "biomarkers.catalog",
+  "notes": "Расширенный каталог биомаркеров для извлечения из ИБ после normalize_med_text. Добавлены типы значений, правила извлечения и нормализации (чтобы не превращать статусы в числа, напр. BRCA1/2=2).",
+  "value_types": {
+    "none": "Значение не извлекаем (фиксируем только факт упоминания).",
+    "numeric": "Число (в т.ч. с десятичной точкой/запятой).",
+    "percent": "Проценты (0–100%, допускается пробел перед %).",
+    "ihc_score": "ИГХ-оценка 0/1+/2+/3+ или эквиваленты (negative/positive).",
+    "status": "Категориальный статус (не обнаружено/обнаружено/положительный/отрицательный/WT/мутация и т.п.).",
+    "variant": "Конкретный вариант/мутация/фьюжн (L858R, exon 19 del, V600E, fusion, rearrangement…).",
+    "text": "Короткий текст рядом (до 40–60 символов) — когда формальный парсер значения невозможен."
+  },
+  "biomarkers": [
+    {
+      "canon": "PD-L1",
+      "std": "pd-l1",
+      "group": "immuno",
+      "patterns": [
+        "\\bPD\\s*[- ]?\\s*L\\s*[- ]?\\s*1\\b",
+        "\\bПД\\s*[- ]?\\s*Л\\s*[- ]?\\s*1\\b"
+      ],
+      "value_type": "none",
+      "value_hints": [
+        "CPS",
+        "TPS",
+        "%"
+      ],
+      "comment": "Сам PD-L1 без CPS/TPS часто не имеет явного числа; числа ловятся отдельными маркерами CPS/TPS."
+    },
+    {
+      "canon": "CPS",
+      "std": "cps",
+      "group": "immuno",
+      "patterns": [
+        "\\bCPS\\b",
+        "combined\\s+positive\\s+score"
+      ],
+      "value_type": "numeric",
+      "value_regexes": [
+        "\\bCPS\\b\\s*[:=]?\\s*(\\d{1,3})",
+        "\\bCPS\\s*=\\s*(\\d{1,3})"
+      ],
+      "normalize": {
+        "strip": true
+      }
+    },
+    {
+      "canon": "TPS",
+      "std": "tps",
+      "group": "immuno",
+      "patterns": [
+        "\\bTPS\\b",
+        "tumou?r\\s+proportion\\s+score"
+      ],
+      "value_type": "percent",
+      "value_regexes": [
+        "\\bTPS\\b\\s*[:=]?\\s*(\\d{1,3})\\s*%?",
+        "\\bTPS\\s*=\\s*(\\d{1,3})\\s*%?"
+      ]
+    },
+    {
+      "canon": "MSI",
+      "std": "msi",
+      "group": "immuno",
+      "patterns": [
+        "\\bMSI\\b",
+        "\\bMSI\\s*[- ]?\\s*H\\b",
+        "\\bMSI\\s*[- ]?\\s*L\\b",
+        "\\bМСИ\\b",
+        "\\bМСИ\\s*[- ]?\\s*Н\\b",
+        "microsatellite\\s+instabil"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "MSI\\s*[- ]?\\s*H",
+          "МСИ\\s*[- ]?\\s*Н",
+          "высок",
+          "high"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отсутств",
+          "stable",
+          "stabil",
+          "MSS"
+        ],
+        "unknown": [
+          "не\\s+оцен",
+          "н/о",
+          "нет\\s+данных"
+        ]
+      },
+      "normalize_map": {
+        "positive": "MSI-H",
+        "negative": "не обнаружено",
+        "unknown": "не указано"
+      }
+    },
+    {
+      "canon": "MSS",
+      "std": "mss",
+      "group": "immuno",
+      "patterns": [
+        "\\bMSS\\b",
+        "микросателлитн\\w*\\s+стабил",
+        "microsatellite\\s+stable"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "\\bMSS\\b",
+          "стабил",
+          "stable"
+        ],
+        "unknown": [
+          "не\\s+оцен",
+          "н/о"
+        ]
+      },
+      "normalize_map": {
+        "positive": "MSS",
+        "unknown": "не указано"
+      }
+    },
+    {
+      "canon": "dMMR",
+      "std": "dmmr",
+      "group": "immuno",
+      "patterns": [
+        "\\bdMMR\\b",
+        "deficient\\s+MMR"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "\\bdMMR\\b",
+          "дефицит",
+          "deficient"
+        ],
+        "negative": [
+          "\\bpMMR\\b",
+          "proficient",
+          "сохран"
+        ]
+      },
+      "normalize_map": {
+        "positive": "dMMR",
+        "negative": "не выявлено"
+      }
+    },
+    {
+      "canon": "pMMR",
+      "std": "pmmr",
+      "group": "immuno",
+      "patterns": [
+        "\\bpMMR\\b",
+        "proficient\\s+MMR"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "\\bpMMR\\b",
+          "proficient",
+          "сохран"
+        ],
+        "negative": [
+          "\\bdMMR\\b",
+          "deficient",
+          "дефицит"
+        ]
+      },
+      "normalize_map": {
+        "positive": "pMMR",
+        "negative": "не выявлено"
+      }
+    },
+    {
+      "canon": "TMB",
+      "std": "tmb",
+      "group": "immuno",
+      "patterns": [
+        "\\bTMB\\b",
+        "tumou?r\\s+mutational\\s+burden",
+        "мутационн\\w*\\s+нагрузк"
+      ],
+      "value_type": "numeric",
+      "value_regexes": [
+        "\\bTMB\\b\\s*[:=]?\\s*(\\d+(?:[\\.,]\\d+)?)",
+        "мутационн\\w*\\s+нагрузк\\w*\\s*[:=]?\\s*(\\d+(?:[\\.,]\\d+)?)"
+      ],
+      "unit_hints": [
+        "mut/Mb",
+        "mut/mb",
+        "мутац/мб"
+      ]
+    },
+    {
+      "canon": "ER",
+      "std": "er",
+      "group": "breast",
+      "patterns": [
+        "\\bER\\b",
+        "\\bЭР\\b",
+        "рецептор(ы)?\\s+эстроген"
+      ],
+      "value_type": "percent",
+      "value_regexes": [
+        "\\bER\\b[^0-9]{0,25}(\\d{1,3})\\s*%?",
+        "\\bЭР\\b[^0-9]{0,25}(\\d{1,3})\\s*%?"
+      ]
+    },
+    {
+      "canon": "PR",
+      "std": "pr",
+      "group": "breast",
+      "patterns": [
+        "\\bPR\\b",
+        "\\bПР\\b",
+        "рецептор(ы)?\\s+прогестерон"
+      ],
+      "value_type": "percent",
+      "value_regexes": [
+        "\\bPR\\b[^0-9]{0,25}(\\d{1,3})\\s*%?",
+        "\\bПР\\b[^0-9]{0,25}(\\d{1,3})\\s*%?"
+      ]
+    },
+    {
+      "canon": "HER2",
+      "std": "her2",
+      "group": "breast",
+      "patterns": [
+        "\\bHER\\s*[- ]?\\s*2\\b",
+        "\\bHER2\\b",
+        "\\bERBB\\s*[- ]?\\s*2\\b",
+        "\\bхер\\s*[- ]?\\s*2\\b"
+      ],
+      "value_type": "ihc_score",
+      "value_regexes": [
+        "\\bHER\\s*[- ]?\\s*2\\b[^0-9\\+]{0,30}(0|1\\+|2\\+|3\\+)",
+        "\\bHER2\\b[^0-9\\+]{0,30}(0|1\\+|2\\+|3\\+)",
+        "\\bHER2\\s*/\\s*neu\\b[^0-9\\+]{0,30}(0|1\\+|2\\+|3\\+)",
+        "(?:HER2|HER\\s*2)[^\\n]{0,40}\\b(отрицательн\\w*|негативн\\w*|positive|положительн\\w*)\\b"
+      ],
+      "normalize_map": {
+        "отрицательный": "отрицательный",
+        "отрицательная": "отрицательный",
+        "негативный": "отрицательный",
+        "negative": "отрицательный",
+        "positive": "положительный",
+        "положительный": "положительный"
+      }
+    },
+    {
+      "canon": "Ki67",
+      "std": "ki67",
+      "group": "breast",
+      "patterns": [
+        "\\bKi\\s*[- ]?\\s*67\\b",
+        "\\bKi67\\b",
+        "\\bки\\s*67\\b",
+        "\\bKi\\s*67\\b"
+      ],
+      "value_type": "percent",
+      "value_regexes": [
+        "\\bKi\\s*[- ]?\\s*67\\b[^0-9]{0,25}(\\d{1,3})\\s*%",
+        "\\bKi67\\b[^0-9]{0,25}(\\d{1,3})\\s*%"
+      ]
+    },
+    {
+      "canon": "EGFR",
+      "std": "egfr",
+      "group": "lung",
+      "patterns": [
+        "\\bEGFR\\b",
+        "\\bHER1\\b",
+        "\\bERBB1\\b",
+        "\\bегфр\\b",
+        "\\bEGFR\\+",
+        "\\bEGFR\\s*[+\\-−]"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bEGFR\\b[^\\n]{0,80}\\b(exon\\s*\\d{1,2}[^\\s,;]{0,20}|L858R|T790M|C797S|del\\s*19|ex\\s*19\\s*del|insertion|ins)\\b",
+        "\\bEGFR\\b[^\\n]{0,80}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b",
+        "\\bEGFR\\s*([+\\-−])",
+        "\\bEGFR\\+\\b",
+        "\\bEGFR\\b[^ \\n]{0,80}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b"
+      ]
+    },
+    {
+      "canon": "ALK",
+      "std": "alk",
+      "group": "lung",
+      "patterns": [
+        "\\bALK\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "fusion",
+          "реаранж",
+          "перестройк",
+          "положит",
+          "detected",
+          "\\bALK\\s*\\+",
+          "\\bALK\\+"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат",
+          "not\\s+detected",
+          "\\bALK\\s*(?:-|−)",
+          "\\bALK(?:-|−)"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "ROS1",
+      "std": "ros1",
+      "group": "lung",
+      "patterns": [
+        "\\bROS1\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "fusion",
+          "реаранж",
+          "положит",
+          "detected",
+          "\\bROS1\\s*\\+",
+          "\\bROS1\\+"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат",
+          "not\\s+detected",
+          "\\bROS1\\s*(?:-|−)",
+          "\\bROS1(?:-|−)"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "BRAF",
+      "std": "braf",
+      "group": "lung_gi",
+      "patterns": [
+        "\\bBRAF\\b"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bBRAF\\b[^\\n]{0,60}\\b(V600E|V600K|V600)\\b",
+        "\\bBRAF\\b[^\\n]{0,60}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b"
+      ]
+    },
+    {
+      "canon": "KRAS",
+      "std": "kras",
+      "group": "lung_gi",
+      "patterns": [
+        "\\bKRAS\\b"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bKRAS\\b[^\\n]{0,80}\\b(G12C|G12D|G12V|G13D|Q61[HKR])\\b",
+        "\\bKRAS\\b[^\\n]{0,60}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b"
+      ]
+    },
+    {
+      "canon": "NRAS",
+      "std": "nras",
+      "group": "gi",
+      "patterns": [
+        "\\bNRAS\\b"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bNRAS\\b[^\\n]{0,80}\\b(Q61[HKR]|G12[CDSV]|G13D)\\b",
+        "\\bNRAS\\b[^\\n]{0,60}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b"
+      ]
+    },
+    {
+      "canon": "RAS",
+      "std": "ras",
+      "group": "gi",
+      "patterns": [
+        "\\bRAS\\b",
+        "статус\\s+RAS"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "мутац\\w+",
+          "mutat",
+          "положит"
+        ],
+        "negative": [
+          "дик(ий|ая)\\s+тип",
+          "wild\\s*type",
+          "wt",
+          "отрицат",
+          "не\\s+обнаруж"
+        ]
+      },
+      "normalize_map": {
+        "positive": "мутация",
+        "negative": "WT"
+      }
+    },
+    {
+      "canon": "MET",
+      "std": "met",
+      "group": "lung",
+      "patterns": [
+        "\\bMET\\b"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bMET\\b[^\\n]{0,80}\\b(exon\\s*14\\s*skipping|ex\\s*14\\s*skipping|ex14\\s*skipping)\\b",
+        "\\bMET\\b[^\\n]{0,60}\\b(амплификац\\w+|amplification)\\b",
+        "\\bMET\\b[^\\n]{0,60}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b"
+      ]
+    },
+    {
+      "canon": "RET",
+      "std": "ret",
+      "group": "lung",
+      "patterns": [
+        "\\bRET\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "fusion",
+          "реаранж",
+          "положит",
+          "detected",
+          "\\bRET\\s*\\+",
+          "\\bRET\\+"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат",
+          "not\\s+detected",
+          "\\bRET\\s*(?:-|−)",
+          "\\bRET(?:-|−)"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "NTRK1",
+      "std": "ntrk1",
+      "group": "rare",
+      "patterns": [
+        "\\bNTRK\\s*[- ]?\\s*1\\b",
+        "\\bNTRK1\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "fusion",
+          "реаранж",
+          "detected",
+          "положит"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "NTRK2",
+      "std": "ntrk2",
+      "group": "rare",
+      "patterns": [
+        "\\bNTRK\\s*[- ]?\\s*2\\b",
+        "\\bNTRK2\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "fusion",
+          "реаранж",
+          "detected",
+          "положит"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "NTRK3",
+      "std": "ntrk3",
+      "group": "rare",
+      "patterns": [
+        "\\bNTRK\\s*[- ]?\\s*3\\b",
+        "\\bNTRK3\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "fusion",
+          "реаранж",
+          "detected",
+          "положит"
+        ],
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "CLDN18.2",
+      "std": "cldn18.2",
+      "group": "gi",
+      "patterns": [
+        "\\bCLDN\\s*18\\s*\\.?\\s*2\\b",
+        "claudin\\s*18\\s*\\.?\\s*2",
+        "клаудин\\s*18\\s*\\.?\\s*2"
+      ],
+      "value_type": "ihc_score",
+      "value_regexes": [
+        "CLDN\\s*18\\s*\\.?\\s*2[^0-9\\+%]{0,30}(0|1\\+|2\\+|3\\+|\\d{1,3}%?)"
+      ]
+    },
+    {
+      "canon": "BRCA1",
+      "std": "brca1",
+      "group": "germline",
+      "patterns": [
+        "\\bBRCA\\s*[- ]?\\s*1\\b",
+        "\\bBRCA1\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат",
+          "wild\\s*type",
+          "wt"
+        ],
+        "positive": [
+          "мутац\\w+",
+          "pathogenic",
+          "variant",
+          "обнаруж"
+        ]
+      },
+      "normalize_map": {
+        "negative": "мутации не обнаружены",
+        "positive": "мутация (упомянуто)"
+      }
+    },
+    {
+      "canon": "BRCA2",
+      "std": "brca2",
+      "group": "germline",
+      "patterns": [
+        "\\bBRCA\\s*[- ]?\\s*2\\b",
+        "\\bBRCA2\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат",
+          "wild\\s*type",
+          "wt"
+        ],
+        "positive": [
+          "мутац\\w+",
+          "pathogenic",
+          "variant",
+          "обнаруж"
+        ]
+      },
+      "normalize_map": {
+        "negative": "мутации не обнаружены",
+        "positive": "мутация (упомянуто)"
+      }
+    },
+    {
+      "canon": "BRCA1/2",
+      "std": "brca1/2",
+      "group": "germline",
+      "patterns": [
+        "\\bBRCA\\s*1\\s*/\\s*2\\b",
+        "\\bBRCA1/2\\b",
+        "\\bBRCA\\s*1\\-2\\b",
+        "\\bBRCA\\s*1\\s*и\\s*2\\b"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "negative": [
+          "не\\s+обнаруж",
+          "отрицат",
+          "wild\\s*type",
+          "wt"
+        ],
+        "positive": [
+          "мутац\\w+",
+          "pathogenic",
+          "variant",
+          "обнаруж"
+        ]
+      },
+      "normalize_map": {
+        "negative": "мутации не обнаружены",
+        "positive": "мутация (упомянуто)"
+      }
+    },
+    {
+      "canon": "HRD",
+      "std": "hrd",
+      "group": "germline",
+      "patterns": [
+        "\\bHRD\\b",
+        "homologous\\s+recombination\\s+deficien",
+        "дефект\\s+гомологичн\\w+\\s+рекомбинац"
+      ],
+      "value_type": "status",
+      "status_lexicon": {
+        "positive": [
+          "положит",
+          "high",
+          "deficien",
+          "обнаруж"
+        ],
+        "negative": [
+          "отрицат",
+          "не\\s+обнаруж",
+          "low"
+        ]
+      },
+      "normalize_map": {
+        "positive": "положительный",
+        "negative": "отрицательный"
+      }
+    },
+    {
+      "canon": "PIK3CA",
+      "std": "pik3ca",
+      "group": "breast",
+      "patterns": [
+        "\\bPIK3CA\\b"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bPIK3CA\\b[^\\n]{0,80}\\b(H1047R|E545K|E542K|C420R|N345K)\\b",
+        "\\bPIK3CA\\b[^\\n]{0,60}\\b(мутац\\w+\\s+обнаружен\\w*|не\\s+обнаружен\\w*)\\b"
+      ]
+    },
+    {
+      "canon": "FGFR",
+      "std": "fgfr",
+      "group": "uro_gi",
+      "patterns": [
+        "\\bFGFR\\b",
+        "\\bFGFR\\s*[- ]?\\s*1\\b",
+        "\\bFGFR\\s*[- ]?\\s*2\\b",
+        "\\bFGFR\\s*[- ]?\\s*3\\b"
+      ],
+      "value_type": "variant",
+      "value_regexes": [
+        "\\bFGFR\\s*[- ]?\\s*(1|2|3)\\b[^\\n]{0,80}\\b(fusion|реаранж|mutation|мутац\\w+|amplification|амплификац\\w+)\\b"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "case_id": "case_00011",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gyne",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1974-12-22",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "ожирение",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: портная часть ФИО: Пациентка Р., 51 год Дата рождения: 22.12.1974 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Ожирение I ст. Варикозная болезнь нижних конечностей. Аллергии/непереносимость: "
+      },
+      {
+        "name": "тромбоцитопения",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: я ПХТ (07-09.2025): ещё 3 цикла карбоплатин+паклитаксел. Ответ: нормализация СА-125 (до 22 Ед/мл). Поддержка (10.2025-...): нирампариб 200 мг/сут (редукция при тромбоцитопении). Осложнение 12.2025: тромбоз подвздошной вены - антикоагулянты."
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "растворитель (требовалась усиленная премедикация",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Паклитаксел - реакция на растворитель (требовалась усиленная премедикация)."
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "антикоагулянт",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: антикоагулянт, препараты железа, вит. D."
+      },
+      {
+        "drug": "препараты железа",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: антикоагулянт, препараты железа, вит. D."
+      },
+      {
+        "drug": "вит. D",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: антикоагулянт, препараты железа, вит. D."
+      },
+      {
+        "drug": "вит",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=weak; правила: сопутствующая терапия: Сопутствующая терапия: антикоагулянт, препараты железа, вит"
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "серозная карцинома яичников (высокой степени злокачественности)",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; нетические данные (фрагменты) BRCA1: патогенная мутация (обнаружена). HRD: положительный. MSI: MSS. PD-L1: CPS=1. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: В 01.2025 - увеличен"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; еские данные (фрагменты) BRCA1: патогенная мутация (обнаружена). HRD: положительный. MSI: MSS. PD-L1: CPS=1. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: В 01.2025 - увеличение жи"
+    },
+    {
+      "name_raw": "BRCA1",
+      "name_std": "brca1",
+      "value": "мутация",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=мутация; ачественности, FIGO IIIC, асцит. Биомаркеры и молекулярно-генетические данные (фрагменты) BRCA1: патогенная мутация (обнаружена). HRD: положительный. MSI: MSS. PD-L1: CPS=1. Фрагменты выписки/консуль"
+    },
+    {
+      "name_raw": "HRD",
+      "name_std": "hrd",
+      "value": "положит",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=положит; еры и молекулярно-генетические данные (фрагменты) BRCA1: патогенная мутация (обнаружена). HRD: положительный. MSI: MSS. PD-L1: CPS=1. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамн"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": "карбоплатин AUC5+паклитаксел 175 мг/м2 каждые 21 день, 3 цикла. Интервальная операция 06.2025: циторедукция, оментэктомия, гистерэктомия с п",
+      "start_date": "2025-03",
+      "end_date": "2025-05",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "карбоплатин AUC5",
+          "std": "карбоплатин auc",
+          "alternative_group": null
+        },
+        {
+          "raw": "паклитаксел 175 мг",
+          "std": "паклитаксел",
+          "alternative_group": 1
+        },
+        {
+          "raw": "м2 каждые 21 день, 3 цикла. Интервальная операция 06.2025: циторедукция, оментэктомия, гистерэктомия с п",
+          "std": "м каждые день, цикла. интервальная операция : циторедукция, оментэктомия, гистерэктомия с п",
+          "alternative_group": 1
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "ещё 3 цикла карбоплатин+паклитаксел. Ответ: нормализация СА-125 (до 22 Ед/мл). Поддержка (10.2025-...): нирампариб 200 мг/сут (редукция при ",
+      "start_date": "2025-07",
+      "end_date": "2025-09",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "ещё 3 цикла карбоплатин",
+          "std": "ещё цикла карбоплатин",
+          "alternative_group": null
+        },
+        {
+          "raw": "паклитаксел. Ответ: нормализация СА-125 (до 22 Ед",
+          "std": "паклитаксел. ответ: нормализация са- (до ед",
+          "alternative_group": 1
+        },
+        {
+          "raw": "мл). Поддержка (10.2025-...): нирампариб 200 мг",
+          "std": "мл). поддержка : нирампариб",
+          "alternative_group": 1
+        },
+        {
+          "raw": "сут (редукция при",
+          "std": "сут (редукция при",
+          "alternative_group": 1
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

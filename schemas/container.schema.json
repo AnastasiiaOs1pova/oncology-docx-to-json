@@ -1,0 +1,889 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/oncology/container.schema.json",
+  "title": "Oncology Case Container (Universal MVP) — relaxed v2 (+RT/Procedures/Metastases)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "patient",
+    "diagnoses",
+    "labs",
+    "biomarkers",
+    "treatment_history",
+    "rules_context",
+    "evidence_trace",
+    "quality_gate"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "created_at",
+        "source_type",
+        "language",
+        "mvp_profile",
+        "notes"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ISO 8601 datetime or null"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mvp_profile": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "enabled"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "enabled": {
+              "type": "boolean"
+            }
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "patient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "demographics",
+        "anthropometrics",
+        "performance_status",
+        "comorbidities",
+        "allergies",
+        "concomitant_meds"
+      ],
+      "properties": {
+        "demographics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dob",
+            "sex"
+          ],
+          "properties": {
+            "dob": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^(\\d{4}-\\d{2}-\\d{2}|\\d{2}\\.\\d{2}\\.\\d{4})$",
+              "description": "Дата рождения: YYYY-MM-DD (предпочтительно) или DD.MM.YYYY"
+            },
+            "sex": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "F/M/Ж/М/unknown"
+            }
+          }
+        },
+        "anthropometrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "height_cm",
+            "weight_kg",
+            "bsa_m2"
+          ],
+          "properties": {
+            "height_cm": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 300
+            },
+            "weight_kg": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 500
+            },
+            "bsa_m2": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 5
+            }
+          }
+        },
+        "performance_status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ecog",
+            "karnofsky"
+          ],
+          "properties": {
+            "ecog": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 5
+            },
+            "karnofsky": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        },
+        "comorbidities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "severity",
+              "status",
+              "source"
+            ],
+            "properties": {
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "severity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "active/resolved/unknown"
+              },
+              "source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "allergies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "substance",
+              "reaction",
+              "severity",
+              "source"
+            ],
+            "properties": {
+              "substance": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reaction": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "severity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "concomitant_meds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "drug",
+              "dose_value",
+              "dose_unit",
+              "route",
+              "frequency",
+              "start_date",
+              "end_date",
+              "source"
+            ],
+            "properties": {
+              "drug": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dose_value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "dose_unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "route": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "frequency": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "start_date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "end_date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "diagnoses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "disease",
+          "subtype",
+          "icd10",
+          "morphology",
+          "stage",
+          "tnm",
+          "setting",
+          "intent",
+          "dates"
+        ],
+        "properties": {
+          "disease": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "subtype": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "icd10": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "morphology": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tnm": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "t": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "n": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "m": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "type": "object"
+                },
+                "then": {
+                  "required": [
+                    "t",
+                    "n",
+                    "m"
+                  ]
+                }
+              }
+            ]
+          },
+          "setting": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "neoadjuvant/adjuvant/metastatic/etc"
+          },
+          "line": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "description": "Линия лечения (если явно указана или надёжно выведена), иначе null"
+          },
+          "intent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dates": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "diagnosis_date",
+              "progression_dates"
+            ],
+            "properties": {
+              "diagnosis_date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "progression_dates": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "labs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "name_raw",
+          "value"
+        ],
+        "properties": {
+          "name_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name_std": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ref_low": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ref_high": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "biomarkers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "name_raw",
+          "value"
+        ],
+        "properties": {
+          "name_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name_std": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "treatment_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "regimen_name",
+          "start_date",
+          "end_date",
+          "response",
+          "reason_for_change",
+          "drugs"
+        ],
+        "properties": {
+          "line": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "description": "Номер линии (если явно указан/надёжно восстановлен). Иначе null."
+          },
+          "regimen_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "start_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "end_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "response": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason_for_change": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "drugs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "line_inferred": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "description": "Опционально: вычисленная линийность по времени (если line отсутствует)"
+          }
+        }
+      }
+    },
+    "rules_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_set",
+        "drug_availability_constraints",
+        "local_constraints"
+      ],
+      "properties": {
+        "protocol_set": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "version",
+            "default"
+          ],
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "version": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "default": {
+              "type": "boolean"
+            }
+          }
+        },
+        "drug_availability_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "local_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence_trace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raw_text_path",
+        "spans"
+      ],
+      "properties": {
+        "raw_text_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "spans": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "missing_required_fields",
+        "blocking_missing_fields",
+        "issues"
+      ],
+      "properties": {
+        "missing_required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocking_missing_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "radiotherapy": {
+      "type": "array",
+      "description": "Курсы лучевой терапии (в т.ч. стереотаксическая, паллиативная и т.п.)",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "site",
+          "start_date",
+          "end_date",
+          "technique",
+          "source"
+        ],
+        "properties": {
+          "site": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Локализация (например, головной мозг)"
+          },
+          "start_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "end_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "technique": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Например: стереотаксическая ЛТ"
+          },
+          "dose": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Общая доза (если есть в тексте)"
+          },
+          "fractions": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Фракционирование (если есть)"
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "procedures": {
+      "type": "array",
+      "description": "Процедуры и операции (например, удаление импланта, удаление порт-системы)",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "name",
+          "source"
+        ],
+        "properties": {
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "metastases": {
+      "type": "array",
+      "description": "Локализации метастазов и/или инвазии с датой обнаружения",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "site",
+          "date",
+          "source"
+        ],
+        "properties": {
+          "site": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Например: головной мозг, селезёнка"
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Дата/месяц обнаружения (как в ИБ)"
+          },
+          "details": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Уточнения (например, инвазия в мышцы грудной стенки)"
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

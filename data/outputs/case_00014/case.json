@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "case_id": "case_00014",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "urology",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1956-04-14",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "фибрилляция предсердий",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: 69 лет Дата рождения: 14.04.1956 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, стаж курения 40 пачка-лет. Фибрилляция предсердий (на антикоагулянте). Аллергии/непереносимость: Контраст -"
+      },
+      {
+        "name": "ХОБЛ",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: аспортная часть ФИО: Пациент А., 69 лет Дата рождения: 14.04.1956 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, стаж курения 40 пачка-лет. Фибрилляция предсердий (на антикоагулянте). Алл"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Контраст - крапивница (премедикация",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Контраст - крапивница (премедикация)."
+      },
+      {
+        "substance": "антикоагулянте",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: апия энфортумабом/эрдафитинибом Паспортная часть ФИО: Пациент А., 69 лет Дата рождения: 14.04.1956 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХОБЛ, стаж курения 40 пачка-лет. Фибрилляция пр"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "ингаляционные бронходилататоры",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляционные бронходилататоры, антикоагулянт, бисфосфонат (золедроновая кислота) при костных мтс."
+      },
+      {
+        "drug": "антикоагулянт",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляционные бронходилататоры, антикоагулянт, бисфосфонат (золедроновая кислота) при костных мтс."
+      },
+      {
+        "drug": "бисфосфонат (золедроновая кислота) при костных мтс",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляционные бронходилататоры, антикоагулянт, бисфосфонат (золедроновая кислота) при костных мтс."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак мочевого пузыря (уротелиальный)",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": "T2",
+        "n": "N1",
+        "m": "M0"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; анные (фрагменты) FGFR: мутация/амплификация (указано: FGFR3 alteration). PD-L1: TPS=20%. MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Гематурия 01.2024. ТУР мочевого пу"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; (фрагменты) FGFR: мутация/амплификация (указано: FGFR3 alteration). PD-L1: TPS=20%. MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Гематурия 01.2024. ТУР мочевого пузыря 0"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "69",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=69; Кейс 10. Рак мочевого пузыря (C67), FGFR-изменение, терапия энфортумабом/эрдафитинибом Паспортная часть ФИО: Пациент А., 69 лет Дата рождения: 14.04.1956 Пол: мужской Сопутствующие заболевания и аллер"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "3",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=3; 2N1M0, затем мтс в кости (2025). Биомаркеры и молекулярно-генетические данные (фрагменты) FGFR: мутация/амплификация (указано: FGFR3 alteration). PD-L1: TPS=20%. MSI: MSS. Фрагменты выписки/консультаций/пр"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "2",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=2; ин, частичный ответ, кожная токсичность 2 ст. 3 линия (09.2025-...): эрдафитиниб (на фоне FGFR-изменения), контроль фосфатов, офтальмологический мониторинг. Сопутствующая терапия: ингаляционные бронходилат"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "1",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=1; аркеры и молекулярно-генетические данные (фрагменты) FGFR: мутация/амплификация (указано: FGFR3 alteration). PD-L1: TPS=20%. MSI: MSS. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Г"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": null,
+      "regimen_name": "емцитабин+цисплатин, 4 цикла. С 09.2024 - авелумаб в поддерживающем режиме. Прогрессирование 03.2025: боль в тазу, МРТ - мтс в подвздошной к",
+      "start_date": "2024-05",
+      "end_date": "2024-08",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "емцитабин",
+          "std": "емцитабин",
+          "alternative_group": null
+        },
+        {
+          "raw": "цисплатин, 4 цикла. С 09.2024 - авелумаб в поддерживающем режиме. Прогрессирование 03.2025: боль в тазу, МРТ - мтс в подвздошной к",
+          "std": "цисплатин, цикла. с авелумаб в поддерживающем режиме. прогрессирование : боль в тазу, мрт - мтс в подвздошной к",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": null,
+      "start_date": "2025",
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": []
+    },
+    {
+      "line": null,
+      "regimen_name": null,
+      "start_date": "2025-04",
+      "end_date": "2025-08",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": []
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "кости",
+      "date": "2025",
+      "source": "Диагноз C67 Уротелиальный рак мочевого пузыря, pT2N1M0, затем мтс в кости (2025)"
+    },
+    {
+      "site": "подвздошной кости",
+      "date": "2025-03",
+      "source": "Прогрессирование 03.2025: боль в тазу, МРТ - мтс в подвздошной кости"
+    }
+  ]
+}

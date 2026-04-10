@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "text_hash": "sha256:84f0f895138f80c1b3e66cb6e732249053ac6603427da5df22c2850fe7de76c6",
+    "cleaner_version": "v1.1",
+    "created_at": "2026-02-24T08:08:25.102921+00:00",
+    "lang": "ru",
+    "length": 1060,
+    "source_type": "docx"
+  },
+  "text": {
+    "raw": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПаспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез\nСопутствующие заболевания: ХОБЛ, эмфизема.\nАртериальная гипертензия.\nАллергии/непереносимость: Паклитаксел - зуд/сыпь (купировано).\nДиагноз C34.3 Аденокарцинома нижней доли левого лёгкого, стадия IV (мтс в надпочечник).\nБиомаркеры и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышение АЛТ.\nСопутствующая терапия: ингаляторы, антигипертензивные.",
+    "clean": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПаспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез\nСопутствующие заболевания: ХОБЛ, эмфизема.\nАртериальная гипертензия.\nАллергии/непереносимость: Паклитаксел - зуд/сыпь (купировано).\nДиагноз C34.3 Аденокарцинома нижней доли левого лёгкого, стадия IV (мтс в надпочечник).\nБиомаркеры и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышение АЛТ.\nСопутствующая терапия: ингаляторы, антигипертензивные."
+  },
+  "entities": [
+    {
+      "id": "e000001",
+      "type": "date",
+      "value": "17.07.1960",
+      "norm": null,
+      "span": {
+        "start": 141,
+        "end": 151
+      },
+      "context": "и соторасибом\nПаспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез\nСо",
+      "source": "regex:date_dmy",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000002",
+      "type": "date",
+      "value": "09.2024",
+      "norm": null,
+      "span": {
+        "start": 657,
+        "end": 664
+      },
+      "context": "нты выписки/консультаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцин",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000003",
+      "type": "date",
+      "value": "10.2024",
+      "norm": null,
+      "span": {
+        "start": 788,
+        "end": 795
+      },
+      "context": "сия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000004",
+      "type": "date",
+      "value": "05.2025",
+      "norm": null,
+      "span": {
+        "start": 796,
+        "end": 803
+      },
+      "context": "нокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000005",
+      "type": "date",
+      "value": "06.2025",
+      "norm": null,
+      "span": {
+        "start": 866,
+        "end": 873
+      },
+      "context": "05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): сотораси",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000006",
+      "type": "date",
+      "value": "07.2025",
+      "norm": null,
+      "span": {
+        "start": 921,
+        "end": 928
+      },
+      "context": "огрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышен",
+      "source": "regex:date_my",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000007",
+      "type": "number",
+      "value": "15",
+      "norm": null,
+      "span": {
+        "start": 5,
+        "end": 7
+      },
+      "context": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и сото",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000008",
+      "type": "number",
+      "value": "70",
+      "norm": null,
+      "span": {
+        "start": 42,
+        "end": 44
+      },
+      "context": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПаспортная часть ФИО: Пациент",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000009",
+      "type": "number",
+      "value": "65",
+      "norm": null,
+      "span": {
+        "start": 119,
+        "end": 121
+      },
+      "context": "рапия пембролизумабом и соторасибом\nПаспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000010",
+      "type": "number",
+      "value": "17.07",
+      "norm": null,
+      "span": {
+        "start": 141,
+        "end": 146
+      },
+      "context": "и соторасибом\nПаспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамн",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000011",
+      "type": "number",
+      "value": "1960",
+      "norm": null,
+      "span": {
+        "start": 147,
+        "end": 151
+      },
+      "context": "расибом\nПаспортная часть ФИО: Пациент З., 65 лет Дата рождения: 17.07.1960 Пол: мужской Сопутствующие заболевания и аллергологический анамнез\nСо",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000012",
+      "type": "number",
+      "value": "3",
+      "norm": null,
+      "span": {
+        "start": 363,
+        "end": 364
+      },
+      "context": "гии/непереносимость: Паклитаксел - зуд/сыпь (купировано).\nДиагноз C34.3 Аденокарцинома нижней доли левого лёгкого, стадия IV (мтс в надпочечн",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000013",
+      "type": "number",
+      "value": "70",
+      "norm": null,
+      "span": {
+        "start": 560,
+        "end": 562
+      },
+      "context": "енты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (свободны",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000014",
+      "type": "number",
+      "value": "9.5",
+      "norm": null,
+      "span": {
+        "start": 569,
+        "end": 572
+      },
+      "context": "S G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (свободный текст) А",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000015",
+      "type": "number",
+      "value": "09.2024",
+      "norm": null,
+      "span": {
+        "start": 657,
+        "end": 664
+      },
+      "context": "нты выписки/консультаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцин",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000016",
+      "type": "number",
+      "value": "4.1",
+      "norm": null,
+      "span": {
+        "start": 674,
+        "end": 677
+      },
+      "context": "льтаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRA",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000017",
+      "type": "number",
+      "value": "2.2",
+      "norm": null,
+      "span": {
+        "start": 706,
+        "end": 709
+      },
+      "context": "кст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000018",
+      "type": "number",
+      "value": "70",
+      "norm": null,
+      "span": {
+        "start": 765,
+        "end": 767
+      },
+      "context": "адпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, части",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000019",
+      "type": "number",
+      "value": "1",
+      "norm": null,
+      "span": {
+        "start": 779,
+        "end": 780
+      },
+      "context": " см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nП",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000020",
+      "type": "number",
+      "value": "10.2024",
+      "norm": null,
+      "span": {
+        "start": 788,
+        "end": 795
+      },
+      "context": "сия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000021",
+      "type": "number",
+      "value": "05.2025",
+      "norm": null,
+      "span": {
+        "start": 796,
+        "end": 803
+      },
+      "context": "нокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000022",
+      "type": "number",
+      "value": "200",
+      "norm": null,
+      "span": {
+        "start": 820,
+        "end": 823
+      },
+      "context": "12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечника ",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000023",
+      "type": "number",
+      "value": "06.2025",
+      "norm": null,
+      "span": {
+        "start": 866,
+        "end": 873
+      },
+      "context": "05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): сотораси",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000024",
+      "type": "number",
+      "value": "2",
+      "norm": null,
+      "span": {
+        "start": 912,
+        "end": 913
+      },
+      "context": "ответ.\nПрогрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000025",
+      "type": "number",
+      "value": "07.2025",
+      "norm": null,
+      "span": {
+        "start": 921,
+        "end": 928
+      },
+      "context": "огрессирование 06.2025: рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышен",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000026",
+      "type": "number",
+      "value": "960",
+      "norm": null,
+      "span": {
+        "start": 945,
+        "end": 948
+      },
+      "context": "рост надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышение АЛТ.\nСопутствующа",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000027",
+      "type": "number",
+      "value": "1",
+      "norm": null,
+      "span": {
+        "start": 982,
+        "end": 983
+      },
+      "context": "2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышение АЛТ.\nСопутствующая терапия: ингаляторы, антигипертен",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000028",
+      "type": "number",
+      "value": "2",
+      "norm": null,
+      "span": {
+        "start": 984,
+        "end": 985
+      },
+      "context": "линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышение АЛТ.\nСопутствующая терапия: ингаляторы, антигипертензи",
+      "source": "regex:number",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000029",
+      "type": "unit",
+      "value": "мг",
+      "norm": null,
+      "span": {
+        "start": 824,
+        "end": 826
+      },
+      "context": " PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечника и л",
+      "source": "regex:unit",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000030",
+      "type": "unit",
+      "value": "мг",
+      "norm": null,
+      "span": {
+        "start": 949,
+        "end": 951
+      },
+      "context": " надпочечника и лёгочного очага.\n2 линия (07.2025-...): соторасиб 960 мг/сут. Побочные эффекты: диарея 1-2 ст., повышение АЛТ.\nСопутствующая т",
+      "source": "regex:unit",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000031",
+      "type": "diagnosis_code",
+      "value": "C34",
+      "norm": null,
+      "span": {
+        "start": 15,
+        "end": 18
+      },
+      "context": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПас",
+      "source": "regex:icd10",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000032",
+      "type": "diagnosis_code",
+      "value": "C34.3",
+      "norm": null,
+      "span": {
+        "start": 359,
+        "end": 364
+      },
+      "context": "ллергии/непереносимость: Паклитаксел - зуд/сыпь (купировано).\nДиагноз C34.3 Аденокарцинома нижней доли левого лёгкого, стадия IV (мтс в надпочечн",
+      "source": "regex:icd10",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000033",
+      "type": "biomarker",
+      "value": "KRAS",
+      "norm": "KRAS",
+      "span": {
+        "start": 21,
+        "end": 25
+      },
+      "context": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПаспортная",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000034",
+      "type": "biomarker",
+      "value": "PD-L1",
+      "norm": "PD-L1",
+      "span": {
+        "start": 32,
+        "end": 37
+      },
+      "context": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПаспортная часть ФИО: ",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000035",
+      "type": "biomarker",
+      "value": "TPS",
+      "norm": "TPS",
+      "span": {
+        "start": 38,
+        "end": 41
+      },
+      "context": "Кейс 15. НМРЛ (C34), KRAS G12C, PD-L1 TPS=70%, терапия пембролизумабом и соторасибом\nПаспортная часть ФИО: Паци",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000036",
+      "type": "biomarker",
+      "value": "KRAS",
+      "norm": "KRAS",
+      "span": {
+        "start": 496,
+        "end": 500
+      },
+      "context": "адпочечник).\nБиомаркеры и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000037",
+      "type": "biomarker",
+      "value": "EGFR",
+      "norm": "EGFR",
+      "span": {
+        "start": 520,
+        "end": 524
+      },
+      "context": "и молекулярно-генетические данные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты вып",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000038",
+      "type": "biomarker",
+      "value": "ALK",
+      "norm": "ALK",
+      "span": {
+        "start": 525,
+        "end": 528
+      },
+      "context": "екулярно-генетические данные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000039",
+      "type": "biomarker",
+      "value": "ROS1",
+      "norm": "ROS1",
+      "span": {
+        "start": 529,
+        "end": 533
+      },
+      "context": "ярно-генетические данные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/конс",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000040",
+      "type": "biomarker",
+      "value": "PD-L1",
+      "norm": "PD-L1",
+      "span": {
+        "start": 550,
+        "end": 555
+      },
+      "context": "ные (фрагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (с",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000041",
+      "type": "biomarker",
+      "value": "TPS",
+      "norm": "TPS",
+      "span": {
+        "start": 556,
+        "end": 559
+      },
+      "context": "рагменты) KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (свобо",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000042",
+      "type": "biomarker",
+      "value": "TMB",
+      "norm": "TMB",
+      "span": {
+        "start": 565,
+        "end": 568
+      },
+      "context": " KRAS G12C - обнаружено.\nEGFR/ALK/ROS1: не обнаружено.\nPD-L1 TPS=70%.\nTMB 9.5 mut/Mb.\nФрагменты выписки/консультаций/протоколов (свободный текс",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000043",
+      "type": "biomarker",
+      "value": "KRAS",
+      "norm": "KRAS",
+      "span": {
+        "start": 744,
+        "end": 748
+      },
+      "context": "4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизума",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000044",
+      "type": "biomarker",
+      "value": "PD-L1",
+      "norm": "PD-L1",
+      "span": {
+        "start": 755,
+        "end": 760
+      },
+      "context": " в левый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000045",
+      "type": "biomarker",
+      "value": "TPS",
+      "norm": "TPS",
+      "span": {
+        "start": 761,
+        "end": 764
+      },
+      "context": "ый надпочечник 2.2 см.\nБиопсия: аденокарцинома. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, ча",
+      "source": "regex:biomarker_strong",
+      "confidence": null,
+      "negated": null,
+      "attrs": {
+        "kind": "strong"
+      }
+    },
+    {
+      "id": "e000046",
+      "type": "modality",
+      "value": "КТ",
+      "norm": null,
+      "span": {
+        "start": 650,
+        "end": 652
+      },
+      "context": "\nФрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: КТ ОГК 09.2024: опухоль 4.1 см, мтс в левый надпочечник 2.2 см.\nБиопсия:",
+      "source": "regex:modality",
+      "confidence": null,
+      "negated": null,
+      "attrs": {}
+    },
+    {
+      "id": "e000047",
+      "type": "medication",
+      "value": "Паклитаксел",
+      "norm": "паклитаксел",
+      "span": {
+        "start": 314,
+        "end": 325
+      },
+      "context": ": ХОБЛ, эмфизема.\nАртериальная гипертензия.\nАллергии/непереносимость: Паклитаксел - зуд/сыпь (купировано).\nДиагноз C34.3 Аденокарцинома нижней доли лев",
+      "source": "regex:suffix",
+      "confidence": "low",
+      "negated": null,
+      "attrs": {
+        "evidence": [
+          "suffix"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "e000048",
+      "type": "medication",
+      "value": "пембролизумаб",
+      "norm": "пембролизумаб",
+      "span": {
+        "start": 806,
+        "end": 819
+      },
+      "context": "а. МГИ: KRAS G12C, PD-L1 TPS=70%.\nЛечение: 1 линия (10.2024-05.2025): пембролизумаб 200 мг q3w, частичный ответ.\nПрогрессирование 06.2025: рост надпочечн",
+      "source": "regex:suffix",
+      "confidence": "medium",
+      "negated": null,
+      "attrs": {
+        "evidence": [
+          "suffix",
+          "onco_context"
+        ],
+        "confidence": "medium"
+      }
+    }
+  ],
+  "views": {
+    "date": [
+      "e000001",
+      "e000002",
+      "e000003",
+      "e000004",
+      "e000005",
+      "e000006"
+    ],
+    "number": [
+      "e000007",
+      "e000008",
+      "e000009",
+      "e000010",
+      "e000011",
+      "e000012",
+      "e000013",
+      "e000014",
+      "e000015",
+      "e000016",
+      "e000017",
+      "e000018",
+      "e000019",
+      "e000020",
+      "e000021",
+      "e000022",
+      "e000023",
+      "e000024",
+      "e000025",
+      "e000026",
+      "e000027",
+      "e000028"
+    ],
+    "unit": [
+      "e000029",
+      "e000030"
+    ],
+    "diagnosis_code": [
+      "e000031",
+      "e000032"
+    ],
+    "biomarker": [
+      "e000033",
+      "e000034",
+      "e000035",
+      "e000036",
+      "e000037",
+      "e000038",
+      "e000039",
+      "e000040",
+      "e000041",
+      "e000042",
+      "e000043",
+      "e000044",
+      "e000045"
+    ],
+    "modality": [
+      "e000046"
+    ],
+    "medication": [
+      "e000047",
+      "e000048"
+    ]
+  },
+  "coverage": {
+    "counts": {
+      "date": 6,
+      "number": 22,
+      "unit": 2,
+      "diagnosis_code": 2,
+      "biomarker": 13,
+      "modality": 1,
+      "medication": 2
+    },
+    "notes": [],
+    "dedup_removed": 0
+  },
+  "edges": []
+}

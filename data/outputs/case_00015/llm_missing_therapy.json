@@ -1,0 +1,67 @@
+{
+  "found": [
+    {
+      "regimen": "ниволумаб+ипилимумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (03-08.2024): ниволумаб+ипилимумаб, 4 введения, далее ниволумаб поддержка.",
+      "quote_match": "exact",
+      "date_hint": "03-08.2024",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "кабозантиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (03-10.2025): кабозантиниб 60 мг/сут, редукция до 40 мг/сут из-за ладонно-подошвенного синдрома.",
+      "quote_match": "exact",
+      "date_hint": "03-10.2025",
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "ниволумаб+ипилимумаб",
+      "kind": "immunotherapy",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (03-08.2024): ниволумаб+ипилимумаб, 4 введения, далее ниволумаб поддержка.",
+      "quote_match": "exact",
+      "date_hint": "03-08.2024",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "кабозантиниб",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "2 линия (03-10.2025): кабозантиниб 60 мг/сут, редукция до 40 мг/сут из-за ладонно-подошвенного синдрома.",
+      "quote_match": "exact",
+      "date_hint": "03-10.2025",
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [
+    {
+      "regimen": "ленватиниб+эверолимус",
+      "kind": "targeted",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (с 11.2025): ленvatиниб+эверолимус, мониторинг АД и функции почек.",
+      "reason": "quote_not_found_in_text"
+    }
+  ],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 2,
+    "present_total": 0,
+    "dropped_total": 1
+  }
+}

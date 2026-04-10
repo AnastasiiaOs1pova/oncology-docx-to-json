@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "date": "01.2024",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Острое нарушение речи и судороги 01.2024.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2024",
+      "date_precision": "month",
+      "event_type": "surgery",
+      "text_snippet": "Операция 02.2024: субтотальная резекция.",
+      "confidence": 0.0
+    },
+    {
+      "date": "03-05.2024",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Химиолучевое лечение (03-05.2024): ЛТ 60 Гр+темозоломид ежедневно, далее 6 циклов адъювантного темозоломида (5/23).",
+      "confidence": 0.0
+    },
+    {
+      "date": "09.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Рецидив 09.2025: МРТ - контрастируемый узел по краю резекции.",
+      "confidence": 0.0
+    },
+    {
+      "date": "10.2025",
+      "date_precision": "month",
+      "event_type": "surgery",
+      "text_snippet": "Повторная операция 10.2025, далее темозоломид/терапия по клиническому исследованию (по протоколу).",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

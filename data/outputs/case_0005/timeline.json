@@ -1,0 +1,82 @@
+{
+  "events": [
+    {
+      "date": "2023-10",
+      "date_precision": "month",
+      "event_type": "diagnosis",
+      "text_snippet": "В 10.2023 появились боли внизу живота, эпизоды крови в стуле, снижение массы тела на 6 кг.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2023-11-02",
+      "date_precision": "day",
+      "event_type": "diagnosis",
+      "text_snippet": "Колоноскопия 02.11.2023: опухоль сигмовидной кишки, биопсия - аденокарцинома.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2023-11-15",
+      "date_precision": "day",
+      "event_type": "imaging",
+      "text_snippet": "КТ ОГК/ОБП с контрастом 15.11.2023: мтс очаги в печени (S6 18 мм, S4 11 мм), мезентериальные л/у до 14 мм.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2023-12",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "1 линия (12.2023-04.2024): оксалиплатин+5-фторурацил+кальция фолинат (FOLFOX)+бевацизумаб, 8 циклов.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-05",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Контроль КТ 05.2024: стабилизация, затем рост очагов печени к 08.2024.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-09",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (09.2024-02.2025): пембролизумаб 200 мг каждые 3 недели (на фоне MSI-H). Частичный ответ.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2024-12",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Осложнение 12.2024: иммуноопосредованный тиреоидит (TSH 0.02 -> 18 мЕд/л), назначен левотироксин.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-03",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 03.2025: рост печёночных очагов, новый очаг в S2.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-04",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "3 линия (04.2025-09.2025): энкорафениб+цетуксимаб.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-08",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "ПЭТ-КТ 08.2025 - уменьшение метаболической активности.",
+      "confidence": 0.0
+    },
+    {
+      "date": "2025-10",
+      "date_precision": "month",
+      "event_type": "other",
+      "text_snippet": "С 10.2025 - продолжение терапии, контроль каждые 8-10 недель.",
+      "confidence": 0.0
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "case_id": "case_0009",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "gi",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1968-02-19",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Контраст - тошнота",
+        "reaction": "тошнота",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Контраст - тошнота, зуд (премедикация)."
+      },
+      {
+        "substance": "зуд (премедикация",
+        "reaction": "тошнота",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Контраст - тошнота, зуд (премедикация)."
+      },
+      {
+        "substance": "ая (C22.1",
+        "reaction": "тошнота",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: ая (C22.1), FGFR-ассоц. вариант Паспортная часть ФИО: Пациент П., 58 лет Дата рождения: 19.02.1968 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Первичный склерозирующий холангит (наблюдение у"
+      },
+      {
+        "substance": "ез Сопутствующие заболевания: Первичный склерозирующий холан",
+        "reaction": "тошнота",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: ез Сопутствующие заболевания: Первичный склерозирующий холангит (наблюдение у гастроэнтеролога). Неспецифический язвенный колит (ремиссия). Аллергии/непереносимость: Контраст - тошнота, зуд (премедикация). Диагноз C22.1 Внутрипечёночная хол"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "месалазин",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: месалазин, урсодезоксихолевая кислота, витамин D."
+      },
+      {
+        "drug": "урсодезоксихолевая кислота",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: месалазин, урсодезоксихолевая кислота, витамин D."
+      },
+      {
+        "drug": "витамин D",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: месалазин, урсодезоксихолевая кислота, витамин D."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "холангиокарцинома (внутрипечёночная)",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "III",
+      "tnm": {
+        "t": "T2",
+        "n": "N1",
+        "m": "M0"
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "MSI",
+      "name_std": "msi",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; лярно-генетические данные (фрагменты) FGFR: перестройка/фьюжн (указано в заключении NGS). MSI: MSS; pMMR. TMB 3.0 mut/Mb. PD-L1: TPS=5%. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамне"
+    },
+    {
+      "name_raw": "MSS",
+      "name_std": "mss",
+      "value": "MSS",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=MSS; -генетические данные (фрагменты) FGFR: перестройка/фьюжн (указано в заключении NGS). MSI: MSS; pMMR. TMB 3.0 mut/Mb. PD-L1: TPS=5%. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: С "
+    },
+    {
+      "name_raw": "pMMR",
+      "name_std": "pmmr",
+      "value": "pMMR",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=pMMR; тические данные (фрагменты) FGFR: перестройка/фьюжн (указано в заключении NGS). MSI: MSS; pMMR. TMB 3.0 mut/Mb. PD-L1: TPS=5%. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: С 03.2"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "58",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=58; Кейс 05. Холангиокарцинома внутрипечёночная (C22.1), FGFR-ассоц. вариант Паспортная часть ФИО: Пациент П., 58 лет Дата рождения: 19.02.1968 Пол: мужской Сопутствующие заболевания и аллергологический анамн"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "3.0",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=3.0; III), затем мтс в лёгких (2025). Биомаркеры и молекулярно-генетические данные (фрагменты) FGFR: перестройка/фьюжн (указано в заключении NGS). MSI: MSS; pMMR. TMB 3.0 mut/Mb. PD-L1: TPS=5%. Фрагменты выпи"
+    },
+    {
+      "name_raw": "FGFR",
+      "name_std": "fgfr",
+      "value": "14",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=14; чаги в лёгких, рост внутрипечёночного узла. 2 линия (07.2025-...): пемигатиниб (ингибитор FGFR), режим 14 дней приёма/7 дней перерыв. Побочные эффекты: гиперфосфатемия, сухость кожи; коррекция диетой и пр"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "гемцитабин",
+      "start_date": "2024-07",
+      "end_date": "2024-12",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "гемцитабин",
+          "std": "гемцитабин",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": null,
+      "regimen_name": "1 Внутрипечёночная холангиокарцинома, cT2N1M0 (стадия III), затем мтс в лёгких",
+      "start_date": "2025",
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "1 Внутрипечёночная холангиокарцинома, cT2N1M0 (стадия III), затем мтс в лёгких",
+          "std": "внутрипечёночная холангиокарцинома, ct n m , затем мтс в лёгких",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}

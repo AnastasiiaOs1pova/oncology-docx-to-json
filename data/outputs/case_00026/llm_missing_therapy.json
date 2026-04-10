@@ -1,0 +1,36 @@
+{
+  "found": [
+    {
+      "regimen": "дарутумумаб+бортезомиб +дексаметазон",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (2025): дарутумумаб+бортезомиб (упоминание в выписке как 'ингибитор протеасом')+дексаметазон.",
+      "quote_match": "exact",
+      "date_hint": "2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "missing": [],
+  "present": [
+    {
+      "regimen": "дарутумумаб+бортезомиб +дексаметазон",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (2025): дарутумумаб+бортезомиб (упоминание в выписке как 'ингибитор протеасом')+дексаметазон.",
+      "quote_match": "exact",
+      "date_hint": "2025",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 1,
+    "missing_total": 0,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

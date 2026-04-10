@@ -1,0 +1,81 @@
+{
+  "found": [
+    {
+      "regimen": "ТС+трастузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "6 курсов ХТТ: ТС+трастузумаб (05.25г - 09.25г).",
+      "quote_match": "exact",
+      "date_hint": "05.25г - 09.25г",
+      "line_hint": "1 линия терапии",
+      "note": null
+    },
+    {
+      "regimen": "ТахСр+Трастузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 26.05.2025 г. по 19.09.2025 г. проведено 6 курсов терапии по протоколу: ТахСр+Трастузумаб.",
+      "quote_match": "exact",
+      "date_hint": "26.05.2025 г. - 19.09.2025 г.",
+      "line_hint": null,
+      "note": null
+    },
+    {
+      "regimen": "трастузумаб дерукстекан",
+      "kind": "targeted",
+      "mention_type": "recommended",
+      "confidence": "medium",
+      "quote": "пациентке может быть рекомендовано проведение таргетной противоопухолевой терапии по схеме: трастузумаб дерукстекан 5.4 мг/кг в/в каждые 3 недели до прогрессирования или неприемлемой токсичности.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "трастузумаб дерукстекан",
+      "kind": "targeted",
+      "mention_type": "recommended",
+      "confidence": "medium",
+      "quote": "пациентке может быть рекомендовано проведение таргетной противоопухолевой терапии по схеме: трастузумаб дерукстекан 5.4 мг/кг в/в каждые 3 недели до прогрессирования или неприемлемой токсичности.",
+      "quote_match": "exact",
+      "date_hint": null,
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "ТС+трастузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "6 курсов ХТТ: ТС+трастузумаб (05.25г - 09.25г).",
+      "quote_match": "exact",
+      "date_hint": "05.25г - 09.25г",
+      "line_hint": "1 линия терапии",
+      "note": null
+    },
+    {
+      "regimen": "ТахСр+Трастузумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "С 26.05.2025 г. по 19.09.2025 г. проведено 6 курсов терапии по протоколу: ТахСр+Трастузумаб.",
+      "quote_match": "exact",
+      "date_hint": "26.05.2025 г. - 19.09.2025 г.",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 1,
+    "present_total": 2,
+    "dropped_total": 0
+  }
+}

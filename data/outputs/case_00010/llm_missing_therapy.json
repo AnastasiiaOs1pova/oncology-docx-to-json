@@ -1,0 +1,36 @@
+{
+  "found": [
+    {
+      "regimen": "атезолизумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (12.2024-08.2025): атезолизумаб 1200 мг в/в+бевацизумаб 15 мг/кг в/в каждые 3 недели.",
+      "quote_match": "exact",
+      "date_hint": "1 линия (12.2024-08.2025)",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "missing": [],
+  "present": [
+    {
+      "regimen": "атезолизумаб",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (12.2024-08.2025): атезолизумаб 1200 мг в/в+бевацизумаб 15 мг/кг в/в каждые 3 недели.",
+      "quote_match": "exact",
+      "date_hint": "1 линия (12.2024-08.2025)",
+      "line_hint": null,
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 1,
+    "missing_total": 0,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

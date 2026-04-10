@@ -1,0 +1,59 @@
+{
+  "found": [
+    {
+      "regimen": "гемцитабин",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (07.2024-12.2024): гемцитабин 1000 мг/м2 (дни 1 и 8)+цисплатин 25 мг/м2 (дни 1 и 8) каждые 21 день, 6 циклов.",
+      "quote_match": "exact",
+      "date_hint": "07.2024-12.2024",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "пемигатиниб",
+      "kind": "targeted",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "2 линия (07.2025-...): пемигатиниб (ингибитор FGFR), режим 14 дней приёма/7 дней перерыв.",
+      "quote_match": "exact",
+      "date_hint": "07.2025-...",
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "пемигатиниб",
+      "kind": "targeted",
+      "mention_type": "planned",
+      "confidence": "high",
+      "quote": "2 линия (07.2025-...): пемигатиниб (ингибитор FGFR), режим 14 дней приёма/7 дней перерыв.",
+      "quote_match": "exact",
+      "date_hint": "07.2025-...",
+      "line_hint": "2 линия",
+      "note": null
+    }
+  ],
+  "present": [
+    {
+      "regimen": "гемцитабин",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "Лечение: 1 линия (07.2024-12.2024): гемцитабин 1000 мг/м2 (дни 1 и 8)+цисплатин 25 мг/м2 (дни 1 и 8) каждые 21 день, 6 циклов.",
+      "quote_match": "exact",
+      "date_hint": "07.2024-12.2024",
+      "line_hint": "1 линия",
+      "note": null
+    }
+  ],
+  "dropped": [],
+  "stats": {
+    "found_total": 2,
+    "missing_total": 1,
+    "present_total": 1,
+    "dropped_total": 0
+  }
+}

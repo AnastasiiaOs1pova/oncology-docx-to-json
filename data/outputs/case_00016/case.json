@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "case_id": "case_00016",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "unknown",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1954-02-28",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: .02.1954 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Фибрилляция предсердий (варфарин/апиксабан). Остеопороз. Артериальная гипертензия. Аллергии/непереносимость: Йодконтраст - зуд/крапивница"
+      },
+      {
+        "name": "фибрилляция предсердий",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: спортная часть ФИО: Пациент И., 72 года Дата рождения: 28.02.1954 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Фибрилляция предсердий (варфарин/апиксабан). Остеопороз. Артериальная гипертензи"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: Йодконтраст - зуд/крапивница",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Йодконтраст - зуд/крапивница."
+      },
+      {
+        "substance": "парибом и радиофармпрепаратами Паспортная часть ФИО: Пациент",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: парибом и радиофармпрепаратами Паспортная часть ФИО: Пациент И., 72 года Дата рождения: 28.02.1954 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Фибрилляция предсердий (варфарин/апиксабан). Ос"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Фибрилляция предсердий (в",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=weak; правила: аллергия: я и аллергологический анамнез Сопутствующие заболевания: Фибрилляция предсердий (варфарин/апиксабан). Остеопороз. Артериальная гипертензия. Аллергии/непереносимость: Йодконтраст - зуд/крапивница. Диагноз C61 Аденокарцинома предстательной же"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "деносумаб/золедроновая кислота",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: деносумаб/золедроновая кислота, витамин D/кальций, антикоагулянт."
+      },
+      {
+        "drug": "витамин D/кальций",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: деносумаб/золедроновая кислота, витамин D/кальций, антикоагулянт."
+      },
+      {
+        "drug": "антикоагулянт",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: деносумаб/золедроновая кислота, витамин D/кальций, антикоагулянт."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "рак предстательной железы",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "BRCA2",
+      "name_std": "brca2",
+      "value": "мутация",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=мутация; leason 4+5, мтс в кости, мКРРПЖ. Биомаркеры и молекулярно-генетические данные (фрагменты) BRCA2: мутация обнаружена (соматическая). HRD: положительный. TMB 6.0 mut/Mb. Фрагменты выписки/консультаций/"
+    },
+    {
+      "name_raw": "HRD",
+      "name_std": "hrd",
+      "value": "положит",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=положит; ы и молекулярно-генетические данные (фрагменты) BRCA2: мутация обнаружена (соматическая). HRD: положительный. TMB 6.0 mut/Mb. Фрагменты выписки/консультаций/протоколов (свободный текст) Анамнез: Диаг"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "абиратерон+преднизолон",
+      "start_date": "2022",
+      "end_date": "2023",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "абиратерон",
+          "std": "абиратерон",
+          "alternative_group": null
+        },
+        {
+          "raw": "преднизолон",
+          "std": "преднизолон",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "regimen_name": "радий-223 дихлорид при костных мтс",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "радий-223 дихлорид при костных мтс",
+          "std": "радий- дихлорид при костных мтс",
+          "alternative_group": null
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "regimen_name": "олапариб",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "олапариб",
+          "std": "олапариб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "therapy: удалено подозрительных эпизодов без номера (line=null): 2"
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "кости",
+      "date": null,
+      "source": "Диагноз C61 Аденокарцинома предстательной железы, Gleason 4+5, мтс в кости, мКРРПЖ"
+    }
+  ]
+}

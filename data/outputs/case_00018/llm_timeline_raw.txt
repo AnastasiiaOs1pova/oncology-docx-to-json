@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "date": "01.2025",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "КТ ОГК: опухоль верхней доли справа 3.2 см, множественные очаги.",
+      "confidence": 0.0
+    },
+    {
+      "date": "01.2026",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "2 линия (01.2026-...): лорлатиниб 100 мг/сут.",
+      "confidence": 0.0
+    },
+    {
+      "date": "12.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Прогрессирование 12.2025: новые очаги в ЦНС.",
+      "confidence": 0.0
+    },
+    {
+      "date": "03.2025",
+      "date_precision": "month",
+      "event_type": "imaging",
+      "text_snippet": "МРТ головного мозга 03.2025: множественные мтс до 8 мм - стереотаксическая ЛТ (3 фракции по 8 Гр).",
+      "confidence": 0.0
+    },
+    {
+      "date": "08.2025",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Контроль 08.2025: частичный ответ.",
+      "confidence": 0.0
+    }
+  ]
+}

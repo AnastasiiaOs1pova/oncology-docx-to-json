@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "text_hash": null,
+    "cleaner_version": "v1.1",
+    "created_at": null,
+    "lang": "ru",
+    "length": 0,
+    "source_type": "text"
+  },
+  "text": {
+    "raw": "",
+    "clean": ""
+  },
+  "entities": [],
+  "views": {},
+  "coverage": {},
+  "edges": []
+}

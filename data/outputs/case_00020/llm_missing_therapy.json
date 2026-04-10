@@ -1,0 +1,80 @@
+{
+  "found": [
+    {
+      "regimen": "летрозол+палбоциклиб",
+      "kind": "other",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.",
+      "quote_match": "exact",
+      "date_hint": "02.2024-01.2025",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "фульвестрант+алпелисиб",
+      "kind": "other",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.",
+      "quote_match": "exact",
+      "date_hint": "03.2025-...",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "капецитабин в режиме 14/7",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.",
+      "quote_match": "exact",
+      "date_hint": "с 12.2025",
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "missing": [
+    {
+      "regimen": "летрозол+палбоциклиб",
+      "kind": "other",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "1 линия (02.2024-01.2025): летрозол+палбоциклиб, стабилизация 10 мес.",
+      "quote_match": "exact",
+      "date_hint": "02.2024-01.2025",
+      "line_hint": "1 линия",
+      "note": null
+    },
+    {
+      "regimen": "фульвестрант+алпелисиб",
+      "kind": "other",
+      "mention_type": "planned",
+      "confidence": "medium",
+      "quote": "2 линия (03.2025-...): фульвестрант+алпелисиб (PIK3CA+). Контроль глюкозы, диарея 1-2 ст.",
+      "quote_match": "exact",
+      "date_hint": "03.2025-...",
+      "line_hint": "2 линия",
+      "note": null
+    },
+    {
+      "regimen": "капецитабин в режиме 14/7",
+      "kind": "chemo",
+      "mention_type": "administered",
+      "confidence": "high",
+      "quote": "3 линия (с 12.2025): капецитабин в режиме 14/7 при дальнейшем прогрессировании.",
+      "quote_match": "exact",
+      "date_hint": "с 12.2025",
+      "line_hint": "3 линия",
+      "note": null
+    }
+  ],
+  "present": [],
+  "dropped": [],
+  "stats": {
+    "found_total": 3,
+    "missing_total": 3,
+    "present_total": 0,
+    "dropped_total": 0
+  }
+}

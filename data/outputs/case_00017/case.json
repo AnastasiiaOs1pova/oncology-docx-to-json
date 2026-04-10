@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "case_id": "case_00017",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "skin",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1986-10-10",
+      "sex": "F"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "бронхиальная астма",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: портная часть ФИО: Пациентка Ж., 39 лет Дата рождения: 10.10.1986 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Бронхиальная астма (лёгкое течение). Аллергии/непереносимость: НПВП - крапивница"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "/непереносимость: НПВП - крапивница",
+        "reaction": "крапивница",
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: НПВП - крапивница."
+      },
+      {
+        "substance": "E, иммуноопосредованный колит Паспортная часть анамнез Сопу",
+        "reaction": "крапивница",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: E, иммуноопосредованный колит Паспортная часть ФИО: Пациентка Ж., 39 лет Дата рождения: 10.10.1986 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Бронхиальная астма (лёгкое течение). Аллергии/н"
+      },
+      {
+        "substance": "анамнез Сопутствующие заболевания: Бронхиальная астма (лёгко",
+        "reaction": "крапивница",
+        "severity": "mild",
+        "source": "confidence=weak; правила: аллергия: .10.1986 Пол: женский Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: Бронхиальная астма (лёгкое течение). Аллергии/непереносимость: НПВП - крапивница. Диагноз C43 Меланома кожи спины, стадия IV (мтс в лёгки"
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "ингаляторы при астме",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляторы при астме, гастропротекция."
+      },
+      {
+        "drug": "гастропротекция",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: ингаляторы при астме, гастропротекция."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "меланома кожи",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": "IV",
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [
+    {
+      "name_raw": "BRAF",
+      "name_std": "braf",
+      "value": "V600E",
+      "unit": null,
+      "date": null,
+      "method": null,
+      "source": "правила: TEXT: value=V600E; Кейс 13. Меланома кожи (C43), BRAF V600E, иммуноопосредованный колит Паспортная часть ФИО: Пациентка Ж., 39 лет Дата рождения: 10.10.1986 Пол: женский Сопутствующие заболевания и аллергологическ"
+    }
+  ],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "дабрафениб+траметиниб",
+      "start_date": "2024-07",
+      "end_date": "2024-10",
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "дабрафениб",
+          "std": "дабрафениб",
+          "alternative_group": null
+        },
+        {
+          "raw": "траметиниб",
+          "std": "траметиниб",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Найдены возможные пропуски терапии (LLM-ищейка): см. llm_missing_therapy.json. Не добавлено в treatment_history из-за отсутствия дат/линий."
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": [
+    {
+      "site": "л/у и л",
+      "date": "2024-06",
+      "source": "ПЭТ-КТ 06.2024: мтс в л/у и лёгких"
+    }
+  ]
+}

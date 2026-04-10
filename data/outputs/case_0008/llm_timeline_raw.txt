@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "date": "07-12.2025",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Лечение: 1 линия (07-12.2025): иринотекан+оксалиплатин+5-фторурацил (FOLFIRINOX), 10 циклов.",
+      "confidence": 0.0
+    },
+    {
+      "date": "01.2026",
+      "date_precision": "month",
+      "event_type": "progression",
+      "text_snippet": "Контроль 01.2026: частичный ответ.",
+      "confidence": 0.0
+    },
+    {
+      "date": "02.2026-...",
+      "date_precision": "month",
+      "event_type": "therapy_start",
+      "text_snippet": "Поддержка (02.2026-...): олапариб 300 мг 2 раза/сут (на фоне BRCA2/HRD+).",
+      "confidence": 0.0
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "case_id": "case_00026",
+    "created_at": null,
+    "source_type": "text|table|form",
+    "language": "ru",
+    "mvp_profile": {
+      "name": "heme",
+      "enabled": true
+    },
+    "notes": null
+  },
+  "patient": {
+    "demographics": {
+      "dob": "1956-04-04",
+      "sex": "M"
+    },
+    "anthropometrics": {
+      "height_cm": null,
+      "weight_kg": null,
+      "bsa_m2": null
+    },
+    "performance_status": {
+      "ecog": null,
+      "karnofsky": null
+    },
+    "comorbidities": [
+      {
+        "name": "артериальная гипертензия",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: 70 лет Дата рождения: 04.04.1956 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХБП 3b (креатинин 185 мкмоль/л). Артериальная гипертензия. Аллергии/непереносимость: Золедроновая кислота - грипп"
+      },
+      {
+        "name": "тромбоз/ТЭЛА",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: кислота ежемесячно (премедикация), затем переход на деносумаб при ухудшении функции почек. Сопутствующая терапия: антигипертензивные, гидратация, профилактика тромбозов при высоком риске."
+      },
+      {
+        "name": "хроническая болезнь почек",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: спортная часть ФИО: Пациент ММ., 70 лет Дата рождения: 04.04.1956 Пол: мужской Сопутствующие заболевания и аллергологический анамнез Сопутствующие заболевания: ХБП 3b (креатинин 185 мкмоль/л). Артериальная гипертензия. Аллергии/непереносимо"
+      },
+      {
+        "name": "анемия (хроническая/сопутствующая)",
+        "severity": null,
+        "status": "unknown",
+        "source": "confidence=weak; правила: сопутствующее: Аллергии/непереносимость: Золедроновая кислота - гриппоподобная реакция на 1-й инфузии. Диагноз Множественная миелома, ISS II, поражение костей (Th11, ребра), анемия, ХБП. Биомаркеры и молекулярно-генетические данные (фрагменты) Специфическ"
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "1-й инфузии",
+        "reaction": null,
+        "severity": null,
+        "source": "confidence=strong; правила: аллергия: Аллергии/непереносимость: Золедроновая кислота - гриппоподобная реакция на 1-й инфузии."
+      }
+    ],
+    "concomitant_meds": [
+      {
+        "drug": "антигипертензивные",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: антигипертензивные, гидратация, профилактика тромбозов при высоком риске."
+      },
+      {
+        "drug": "гидратация",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: антигипертензивные, гидратация, профилактика тромбозов при высоком риске."
+      },
+      {
+        "drug": "профилактика тромбозов при высоком риске",
+        "dose_value": null,
+        "dose_unit": null,
+        "route": null,
+        "frequency": null,
+        "start_date": null,
+        "end_date": null,
+        "source": "confidence=strong; правила: сопутствующая терапия: Сопутствующая терапия: антигипертензивные, гидратация, профилактика тромбозов при высоком риске."
+      }
+    ]
+  },
+  "diagnoses": [
+    {
+      "disease": "множественная миелома",
+      "subtype": null,
+      "icd10": null,
+      "morphology": null,
+      "stage": null,
+      "tnm": {
+        "t": null,
+        "n": null,
+        "m": null
+      },
+      "setting": null,
+      "line": null,
+      "intent": null,
+      "dates": {
+        "diagnosis_date": null,
+        "progression_dates": []
+      }
+    }
+  ],
+  "labs": [],
+  "biomarkers": [],
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen_name": "дарутумумаб+бортезомиб +дексаметазон",
+      "start_date": null,
+      "end_date": null,
+      "response": null,
+      "reason_for_change": null,
+      "drugs": [
+        {
+          "raw": "дарутумумаб",
+          "std": "дарутумумаб",
+          "alternative_group": null
+        },
+        {
+          "raw": "бортезомиб",
+          "std": "бортезомиб",
+          "alternative_group": null
+        },
+        {
+          "raw": "дексаметазон",
+          "std": "дексаметазон",
+          "alternative_group": null
+        }
+      ]
+    }
+  ],
+  "rules_context": {
+    "protocol_set": {
+      "name": null,
+      "version": null,
+      "default": true
+    },
+    "drug_availability_constraints": [],
+    "local_constraints": []
+  },
+  "evidence_trace": {
+    "raw_text_path": null,
+    "spans": []
+  },
+  "quality_gate": {
+    "missing_required_fields": [],
+    "blocking_missing_fields": [],
+    "issues": [
+      "TNM не найден правилами",
+      "Биомаркеры не найдены правилами"
+    ]
+  },
+  "radiotherapy": [],
+  "procedures": [],
+  "metastases": []
+}
