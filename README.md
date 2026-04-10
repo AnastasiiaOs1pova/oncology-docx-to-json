@@ -46,17 +46,6 @@ Pipeline включает:
 - качество контролируется через `qc_report.json`;
 - LLM используется только как reviewer и не изменяет итоговый JSON автоматически.
 
-## Архитектура pipeline
-
-```text
-DOCX
- ├─ extract_text.py        -> extracted.txt
- ├─ normalize_med_text.py  -> нормализованный текст
- ├─ coverage_layer.py      -> coverage.json
- ├─ rules/* + builder.py   -> case.json
- ├─ qc_validate.py         -> qc_report.json
- └─ LLM reviewer           -> llm_missing_therapy.json
-
  ## Основные артефакты
 
 После обработки кейса формируются следующие файлы:
